@@ -1,624 +1,640 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Labeur — Track your workday. Simply.</title>
-  <meta name="description" content="Labeur is a simple iOS app to track whether you worked today — from home or the office. All data stays on your device. Zero tracking, no accounts, no cloud.">
-  <meta property="og:title" content="Labeur — Track your workday. Simply.">
-  <meta property="og:description" content="A simple iOS work tracker. Log your day in seconds. All data stays on your device.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://notatechcompany.be/labeur/">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://notatechcompany.be/labeur/">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labeur — Track your workday. Simply.</title>
+    <meta name="description" content="Labeur is a simple iOS app to track whether you worked today — from home or the office. All data stays on your device. Zero tracking, no accounts, no cloud.">
+    <meta property="og:title" content="Labeur — Track your workday. Simply.">
+    <meta property="og:description" content="A simple iOS work tracker. Log your day in seconds. All data stays on your device.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://notatechcompany.be/labeur/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://notatechcompany.be/labeur/">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Anime.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
 
-  <!-- Google Fonts: DM Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind Config -->
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"DM Sans"', 'sans-serif'],
-          },
-          colors: {
-            primary: { DEFAULT: '#2563EB', hover: '#1D4ED8', light: '#DBEAFE' },
-            surface: { DEFAULT: '#FFFFFF', dark: '#18181B' },
-          },
-          borderRadius: {
-            DEFAULT: '12px',
-            lg: '16px',
-            xl: '24px',
-          },
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"DM Sans"', 'sans-serif'],
+            },
+            colors: {
+              primary: { DEFAULT: '#2563EB', hover: '#1D4ED8', light: '#DBEAFE' },
+              surface: { DEFAULT: '#FFFFFF', dark: '#18181B' },
+            },
+            borderRadius: {
+              DEFAULT: '12px',
+              lg: '16px',
+              xl: '24px',
+            },
+          }
         }
       }
-    }
-  </script>
+    </script>
 
-  <style>
-    :root {
-      --color-bg: #FAFAFA;
-      --color-surface: #FFFFFF;
-      --color-text: #111827;
-      --color-text-secondary: #6B7280;
-      --color-primary: #2563EB;
-      --color-primary-hover: #1D4ED8;
-      --color-accent: #3B82F6;
-      --color-border: #E5E7EB;
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
-      --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
-      --radius: 12px;
-    }
-    .dark {
-      --color-bg: #09090B;
-      --color-surface: #18181B;
-      --color-text: #FAFAFA;
-      --color-text-secondary: #A1A1AA;
-      --color-primary: #3B82F6;
-      --color-primary-hover: #60A5FA;
-      --color-border: #27272A;
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
-      --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
-    }
+    <style>
+      :root {
+        --color-bg: #FAFAFA;
+        --color-surface: #FFFFFF;
+        --color-text: #111827;
+        --color-text-secondary: #6B7280;
+        --color-primary: #2563EB;
+        --color-primary-hover: #1D4ED8;
+        --color-accent: #3B82F6;
+        --color-border: #E5E7EB;
+        --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+        --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+        --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
+        --radius: 12px;
+      }
+      .dark {
+        --color-bg: #09090B;
+        --color-surface: #18181B;
+        --color-text: #FAFAFA;
+        --color-text-secondary: #A1A1AA;
+        --color-primary: #3B82F6;
+        --color-primary-hover: #60A5FA;
+        --color-border: #27272A;
+        --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+        --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+        --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
+      }
 
-    * { box-sizing: border-box; }
+      * { box-sizing: border-box; }
 
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background-color: var(--color-bg);
-      color: var(--color-text);
-      overflow-x: hidden;
-    }
+      body {
+        font-family: 'DM Sans', sans-serif;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        overflow-x: hidden;
+      }
 
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-    .reveal-delay-4 { transition-delay: 0.4s; }
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .reveal-delay-1 { transition-delay: 0.1s; }
+      .reveal-delay-2 { transition-delay: 0.2s; }
+      .reveal-delay-3 { transition-delay: 0.3s; }
+      .reveal-delay-4 { transition-delay: 0.4s; }
 
-    .gradient-text {
-      background: linear-gradient(135deg, #3B82F6, #1D4ED8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+      .gradient-text {
+        background: linear-gradient(135deg, #3B82F6, #1D4ED8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
 
-    .nav-blur {
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      background: rgba(250, 250, 250, 0.85);
-      border-bottom: 1px solid var(--color-border);
-    }
-    .dark .nav-blur {
-      background: rgba(9, 9, 11, 0.85);
-    }
+      .nav-blur {
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        background: rgba(250, 250, 250, 0.85);
+        border-bottom: 1px solid var(--color-border);
+      }
+      .dark .nav-blur {
+        background: rgba(9, 9, 11, 0.85);
+      }
 
-    .feature-card {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
-    }
-    .feature-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
-    }
+      .feature-card {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-sm);
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+      }
+      .feature-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+      }
 
-    .btn-primary {
-      background: var(--color-primary);
-      color: #fff;
-      border-radius: 9999px;
-      padding: 14px 32px;
-      font-weight: 700;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
-      display: inline-block;
-      text-decoration: none;
-    }
-    .btn-primary:hover {
-      background: var(--color-primary-hover);
-      transform: scale(1.02) translateY(-1px);
-      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
-    }
+      .btn-primary {
+        background: var(--color-primary);
+        color: #fff;
+        border-radius: 9999px;
+        padding: 14px 32px;
+        font-weight: 700;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+        display: inline-block;
+        text-decoration: none;
+      }
+      .btn-primary:hover {
+        background: var(--color-primary-hover);
+        transform: scale(1.02) translateY(-1px);
+        box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+      }
 
-    .btn-outline {
-      border: 2px solid var(--color-primary);
-      color: var(--color-primary);
-      border-radius: 9999px;
-      padding: 12px 30px;
-      font-weight: 700;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      display: inline-block;
-      text-decoration: none;
-      background: transparent;
-    }
-    .btn-outline:hover {
-      background: var(--color-primary);
-      color: #fff;
-      transform: scale(1.02) translateY(-1px);
-    }
+      .btn-outline {
+        border: 2px solid var(--color-primary);
+        color: var(--color-primary);
+        border-radius: 9999px;
+        padding: 12px 30px;
+        font-weight: 700;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        display: inline-block;
+        text-decoration: none;
+        background: transparent;
+      }
+      .btn-outline:hover {
+        background: var(--color-primary);
+        color: #fff;
+        transform: scale(1.02) translateY(-1px);
+      }
 
-    .hero-word {
-      display: inline-block;
-      opacity: 0;
-    }
+      .hero-word {
+        display: inline-block;
+        opacity: 0;
+      }
 
-    .app-icon {
-      width: 120px;
-      height: 120px;
-      border-radius: 26.67%;
-      background: #3B82F6;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 12px 40px rgba(59, 130, 246, 0.3);
-    }
+      .app-icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 26.67%;
+        background: #3B82F6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 40px rgba(59, 130, 246, 0.3);
+      }
 
-    .privacy-card {
-      background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
-      border: 1px solid #BFDBFE;
-      border-radius: 16px;
-    }
-    .dark .privacy-card {
-      background: linear-gradient(135deg, #1E293B, #1E3A5F);
-      border-color: #2563EB33;
-    }
+      .privacy-card {
+        background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+        border: 1px solid #BFDBFE;
+        border-radius: 16px;
+      }
+      .dark .privacy-card {
+        background: linear-gradient(135deg, #1E293B, #1E3A5F);
+        border-color: #2563EB33;
+      }
 
-    /* Subtle dot grid background */
-    .dot-grid {
-      background-image: radial-gradient(circle, var(--color-border) 1px, transparent 1px);
-      background-size: 32px 32px;
-    }
+      /* Subtle dot grid background */
+      .dot-grid {
+        background-image: radial-gradient(circle, var(--color-border) 1px, transparent 1px);
+        background-size: 32px 32px;
+      }
 
-    *:focus-visible {
-      outline: 3px solid var(--color-primary);
-      outline-offset: 2px;
-      border-radius: 4px;
-    }
+      *:focus-visible {
+        outline: 3px solid var(--color-primary);
+        outline-offset: 2px;
+        border-radius: 4px;
+      }
 
-    section[id] {
-      scroll-margin-top: 80px;
-    }
+      section[id] {
+        scroll-margin-top: 80px;
+      }
 
-    .mobile-menu {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .mobile-menu.open {
-      max-height: 400px;
-    }
-  </style>
-</head>
-<body class="antialiased">
+      .mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .mobile-menu.open {
+        max-height: 400px;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
 
-  <!-- Skip to content -->
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded-full focus:shadow-lg focus:text-blue-600 focus:font-bold">
-    Skip to content
-  </a>
+    <!-- Skip to content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded-full focus:shadow-lg focus:text-blue-600 focus:font-bold">
+      Skip to content
+    </a>
 
-  <!-- ========== NAVIGATION ========== -->
-  <nav class="nav-blur fixed top-0 left-0 right-0 z-50" role="navigation" aria-label="Main navigation">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 md:h-20">
-        <!-- Logo -->
-        <a href="/labeur/" class="flex items-center gap-3 text-lg md:text-xl font-bold" style="color: var(--color-text);" aria-label="Labeur Home">
-          <div class="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="white" class="w-4 h-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
-            </svg>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="nav-blur fixed top-0 left-0 right-0 z-50" role="navigation" aria-label="Main navigation">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 md:h-20">
+          <!-- Logo -->
+          <a href="/labeur/" class="flex items-center gap-3 text-lg md:text-xl font-bold" style="color: var(--color-text);" aria-label="Labeur Home">
+            <div class="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="white" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
+              </svg>
+            </div>
+            <span class="gradient-text">Labeur</span>
+          </a>
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#features" class="text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Features</a>
+            <a href="#privacy" class="text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Privacy</a>
+            <!-- Dark mode toggle -->
+            <button onclick="toggleDark()" aria-label="Toggle dark mode" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" style="color: var(--color-text);">
+              <svg class="hidden dark:block w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+              </svg>
+              <svg class="block dark:hidden w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+              </svg>
+            </button>
           </div>
-          <span class="gradient-text">Labeur</span>
-        </a>
 
-        <!-- Desktop Nav -->
-        <div class="hidden md:flex items-center gap-8">
-          <a href="#features" class="text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Features</a>
-          <a href="#privacy" class="text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Privacy</a>
-          <!-- Dark mode toggle -->
-          <button onclick="toggleDark()" aria-label="Toggle dark mode" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" style="color: var(--color-text);">
-            <svg class="hidden dark:block w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-            </svg>
-            <svg class="block dark:hidden w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Mobile: Dark Toggle + Hamburger -->
-        <div class="flex items-center gap-2 md:hidden">
-          <button onclick="toggleDark()" aria-label="Toggle dark mode" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" style="color: var(--color-text);">
-            <svg class="hidden dark:block w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-            </svg>
-            <svg class="block dark:hidden w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-            </svg>
-          </button>
-          <button onclick="toggleMobileMenu()" aria-label="Toggle mobile menu" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" style="color: var(--color-text);">
-            <svg id="menu-open-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-            <svg id="menu-close-icon" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="mobile-menu md:hidden">
-        <div class="py-4 flex flex-col gap-4 border-t" style="border-color: var(--color-border);">
-          <a href="#features" onclick="closeMobileMenu()" class="text-base font-medium px-2 py-1" style="color: var(--color-text-secondary);">Features</a>
-          <a href="#privacy" onclick="closeMobileMenu()" class="text-base font-medium px-2 py-1" style="color: var(--color-text-secondary);">Privacy</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <main id="main-content">
-
-    <!-- ========== HERO SECTION ========== -->
-    <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden" style="background-color: var(--color-bg);">
-      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32 text-center">
-
-        <!-- App Icon -->
-        <div class="flex justify-center mb-8" id="hero-icon" style="opacity: 0;">
-          <div class="app-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-14 h-14">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
-            </svg>
+          <!-- Mobile: Dark Toggle + Hamburger -->
+          <div class="flex items-center gap-2 md:hidden">
+            <button onclick="toggleDark()" aria-label="Toggle dark mode" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" style="color: var(--color-text);">
+              <svg class="hidden dark:block w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+              </svg>
+              <svg class="block dark:hidden w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+              </svg>
+            </button>
+            <button onclick="toggleMobileMenu()" aria-label="Toggle mobile menu" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" style="color: var(--color-text);">
+              <svg id="menu-open-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <svg id="menu-close-icon" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
           </div>
         </div>
 
-        <!-- Headline -->
-        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6" id="hero-title">
-          <span class="hero-word">Track</span>
-          <span class="hero-word">your</span>
-          <span class="hero-word">workday.</span><br>
-          <span class="hero-word gradient-text">Simply.</span>
-        </h1>
-
-        <!-- Subheadline -->
-        <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10" id="hero-sub" style="opacity: 0; color: var(--color-text-secondary);">
-          Labeur is a simple iOS app that tracks whether you worked today — and whether you were at home or the office. No accounts, no cloud. Just you and your device.
-        </p>
-
-        <!-- CTA -->
-        <div id="hero-ctas" style="opacity: 0;" class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <span class="btn-primary text-base cursor-default" style="opacity: 0.6;">
-            Coming to the App Store
-          </span>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden">
+          <div class="py-4 flex flex-col gap-4 border-t" style="border-color: var(--color-border);">
+            <a href="#features" onclick="closeMobileMenu()" class="text-base font-medium px-2 py-1" style="color: var(--color-text-secondary);">Features</a>
+            <a href="#privacy" onclick="closeMobileMenu()" class="text-base font-medium px-2 py-1" style="color: var(--color-text-secondary);">Privacy</a>
+          </div>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <!-- ========== FEATURES SECTION ========== -->
-    <section id="features" class="relative py-24 md:py-32 dot-grid" style="background-color: var(--color-surface);">
-      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main id="main-content">
 
-        <!-- Section header -->
-        <div class="text-center mb-16 reveal">
-          <p class="text-sm font-bold uppercase tracking-widest mb-4" style="color: var(--color-primary);">Features</p>
-          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" style="color: var(--color-text);">
-            Everything you need. <span class="gradient-text">Nothing you don't.</span>
-          </h2>
-          <p class="text-lg max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
-            Labeur does one thing well: it helps you keep track of your work days without getting in the way.
+      <!-- ========== HERO SECTION ========== -->
+      <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden" style="background-color: var(--color-bg);">
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32 text-center">
+
+          <!-- App Icon -->
+          <div class="flex justify-center mb-8" id="hero-icon" style="opacity: 0;">
+            <div class="app-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-14 h-14">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6" id="hero-title">
+            <span class="hero-word">Track</span>
+            <span class="hero-word">your</span>
+            <span class="hero-word">workday.</span><br>
+            <span class="hero-word gradient-text">Simply.</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10" id="hero-sub" style="opacity: 0; color: var(--color-text-secondary);">
+            Labeur is a simple iOS app that tracks whether you worked today — and whether you were at home or the office. No accounts, no cloud. Just you and your device.
           </p>
-        </div>
 
-        <!-- Feature cards -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="feature-cards">
-
-          <!-- Feature 1: Quick Logging -->
-          <div class="feature-card p-8 reveal reveal-delay-1">
-            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #EFF6FF;">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563EB" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Quick Daily Logging</h3>
-            <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
-              Open the app, tap once, done. Log your workday in under two seconds.
-            </p>
-          </div>
-
-          <!-- Feature 2: Home vs Office -->
-          <div class="feature-card p-8 reveal reveal-delay-2">
-            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #EFF6FF;">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563EB" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Home vs Office</h3>
-            <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
-              Track where you worked — from home or at the office. See your patterns over time.
-            </p>
-          </div>
-
-          <!-- Feature 3: Privacy by Design -->
-          <div class="feature-card p-8 reveal reveal-delay-3">
-            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #EFF6FF;">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563EB" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Privacy by Design</h3>
-            <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
-              No analytics, no ads, no tracking pixels. We literally don't know you exist.
-            </p>
-          </div>
-
-          <!-- Feature 4: On-Device Storage -->
-          <div class="feature-card p-8 reveal reveal-delay-4">
-            <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #EFF6FF;">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563EB" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">On-Device Storage</h3>
-            <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
-              All data stays on your iPhone. No cloud sync, no servers, no accounts required.
-            </p>
+          <!-- CTA -->
+          <div id="hero-ctas" style="opacity: 0;" class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <span class="btn-primary text-base cursor-default" style="opacity: 0.6;">
+              Coming to the App Store
+            </span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ========== PRIVACY SECTION ========== -->
-    <section id="privacy" class="relative py-24 md:py-32" style="background-color: var(--color-bg);">
-      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="privacy-card p-10 md:p-16 reveal">
-          <div class="text-center">
-            <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background: #2563EB;">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-              </svg>
-            </div>
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4" style="color: var(--color-text);">
-              Your data is <span class="gradient-text">yours alone.</span>
+      <!-- ========== FEATURES SECTION ========== -->
+      <section id="features" class="relative py-24 md:py-32 dot-grid" style="background-color: var(--color-surface);">
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <!-- Section header -->
+          <div class="text-center mb-16 reveal">
+            <p class="text-sm font-bold uppercase tracking-widest mb-4" style="color: var(--color-primary);">Features</p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" style="color: var(--color-text);">
+              Everything you need. <span class="gradient-text">Nothing you don't.</span>
             </h2>
-            <p class="text-lg mb-8 max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
-              Labeur was built with a simple philosophy: your work data is nobody's business but your own. We collect absolutely nothing. No analytics, no crash reporting, no usage data, no personal information. Everything lives on your device and never leaves it.
+            <p class="text-lg max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
+              Labeur does one thing well: it helps you keep track of your work days without getting in the way.
             </p>
-            <div class="grid sm:grid-cols-3 gap-6 mb-10 text-left">
-              <div class="text-center">
-                <div class="text-3xl font-bold mb-1" style="color: var(--color-primary);">0</div>
-                <p class="text-sm" style="color: var(--color-text-secondary);">Data collected</p>
+          </div>
+
+          <!-- Feature cards -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="feature-cards">
+
+            <!-- Feature 1: Quick Logging -->
+            <div class="feature-card p-8 reveal reveal-delay-1">
+              <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #EFF6FF;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563EB" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                </svg>
               </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold mb-1" style="color: var(--color-primary);">0</div>
-                <p class="text-sm" style="color: var(--color-text-secondary);">Third-party SDKs</p>
-              </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold mb-1" style="color: var(--color-primary);">0</div>
-                <p class="text-sm" style="color: var(--color-text-secondary);">Network requests</p>
-              </div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Quick Daily Logging</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
+                Open the app, tap once, done. Log your workday in under two seconds.
+              </p>
             </div>
-            <a href="/labeur/privacy.html" class="btn-outline text-sm">Read Our Privacy Policy</a>
+
+            <!-- Feature 2: Home vs Office -->
+            <div class="feature-card p-8 reveal reveal-delay-2">
+              <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #EFF6FF;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563EB" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Home vs Office</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
+                Track where you worked — from home or at the office. See your patterns over time.
+              </p>
+            </div>
+
+            <!-- Feature 3: Privacy by Design -->
+            <div class="feature-card p-8 reveal reveal-delay-3">
+              <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #EFF6FF;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563EB" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Privacy by Design</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
+                No analytics, no ads, no tracking pixels. We literally don't know you exist.
+              </p>
+            </div>
+
+            <!-- Feature 4: Bike Mileage -->
+            <div class="feature-card p-8 reveal reveal-delay-4">
+              <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #ECFDF5;">
+                <svg fill="#059669" class="w-6 h-6" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                  viewBox="0 0 436.842 436.842" xml:space="preserve">
+                  <path d="M343.746,154.841c-12.696,0-24.804,2.558-35.842,7.18l-26.394-51.211h36.89c4.002,0,7.258,3.256,7.258,7.258
+                    s-3.256,7.258-7.258,7.258h-7.871c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5,7.5,7.5h7.871c12.273,0,22.258-9.985,22.258-22.258
+                    s-9.984-22.258-22.258-22.258h-49.192c-2.615,0-5.042,1.363-6.404,3.596c-1.361,2.233-1.461,5.015-0.263,7.34l13.125,25.467H167.423
+                    l-10.92-21.403h17.269c4.143,0,7.5-3.358,7.5-7.5s-3.357-7.5-7.5-7.5h-49.193c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5,7.5,7.5h15.084
+                    l14.576,28.568l-17.132,26.543c-13.113-7.065-28.101-11.08-44.011-11.08C41.763,154.841,0,196.603,0,247.936
+                    c0,51.333,41.763,93.096,93.096,93.096c48.808,0,88.961-37.757,92.793-85.596h22.007l-8.549,27.818h-4.922
+                    c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5,7.5,7.5h27c4.143,0,7.5-3.358,7.5-7.5s-3.357-7.5-7.5-7.5h-6.386l9.869-32.114l62.406-96.327
+                    l7.269,14.103c-26.357,16.458-43.933,45.723-43.933,79.02c0,51.333,41.763,93.096,93.097,93.096
+                    c51.333,0,93.096-41.763,93.096-93.096C436.842,196.603,395.079,154.841,343.746,154.841z M162.121,154.826l43.678,85.61h-19.911
+                    c-2.162-26.985-15.882-50.758-36.193-66.359L162.121,154.826z M170.824,240.436h-63.96l34.661-53.699
+                    C157.734,199.592,168.745,218.724,170.824,240.436z M93.096,326.032C50.033,326.032,15,290.999,15,247.936
+                    c0-43.062,35.033-78.096,78.096-78.096c12.914,0,25.095,3.17,35.837,8.743l-42.139,65.285c-1.489,2.307-1.598,5.244-0.284,7.655
+                    c1.313,2.411,3.84,3.912,6.586,3.912h77.728C167.036,294.992,133.628,326.032,93.096,326.032z M218.819,232.949l-43.743-85.737
+                    h99.289L218.819,232.949z M343.746,326.032c-43.063,0-78.097-35.034-78.097-78.096c0-27.498,14.298-51.704,35.838-65.623
+                    l35.592,69.059c1.332,2.583,3.954,4.065,6.673,4.065c1.157,0,2.331-0.269,3.43-0.835c3.683-1.897,5.129-6.42,3.231-10.103
+                    l-35.603-69.079c8.956-3.586,18.714-5.581,28.936-5.581c43.063,0,78.096,35.034,78.096,78.096
+                    C421.842,290.999,386.809,326.032,343.746,326.032z"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Bike Mileage Tracking</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
+                Automatically tracks your cycling distance to work — perfect for Belgian employees 🇧🇪.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ========== CTA SECTION ========== -->
-    <section class="relative py-20 md:py-28 overflow-hidden" style="background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 50%, #1E40AF 100%);">
-      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="reveal">
-          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Work tracking doesn't need to be complicated.
-          </h2>
-          <p class="text-lg text-white/80 mb-10 max-w-2xl mx-auto">
-            Labeur is built by Not A Tech Company — we make software for humans, not users.
-          </p>
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://notatechcompany.be" class="inline-block bg-white text-blue-700 font-bold rounded-full px-8 py-4 transition-all hover:scale-105 hover:shadow-lg" style="box-shadow: 0 8px 25px -4px rgba(0,0,0,0.2);">
-              Visit Not A Tech Company
-            </a>
+      <!-- ========== PRIVACY SECTION ========== -->
+      <section id="privacy" class="relative py-24 md:py-32" style="background-color: var(--color-bg);">
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="privacy-card p-10 md:p-16 reveal">
+            <div class="text-center">
+              <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background: #2563EB;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-bold mb-4" style="color: var(--color-text);">
+                Your data is <span class="gradient-text">yours alone.</span>
+              </h2>
+              <p class="text-lg mb-8 max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
+                Labeur was built with a simple philosophy: your work data is nobody's business but your own. We collect absolutely nothing. No analytics, no crash reporting, no usage data, no personal information. Everything lives on your device and never leaves it.
+              </p>
+              <div class="grid sm:grid-cols-3 gap-6 mb-10 text-left">
+                <div class="text-center">
+                  <div class="text-3xl font-bold mb-1" style="color: var(--color-primary);">0</div>
+                  <p class="text-sm" style="color: var(--color-text-secondary);">Data collected</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold mb-1" style="color: var(--color-primary);">0</div>
+                  <p class="text-sm" style="color: var(--color-text-secondary);">Third-party SDKs</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold mb-1" style="color: var(--color-primary);">0</div>
+                  <p class="text-sm" style="color: var(--color-text-secondary);">Network requests</p>
+                </div>
+              </div>
+              <a href="/labeur/privacy.html" class="btn-outline text-sm">Read Our Privacy Policy</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+      <!-- ========== CTA SECTION ========== -->
+      <section class="relative py-20 md:py-28 overflow-hidden" style="background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 50%, #1E40AF 100%);">
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div class="reveal">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Work tracking doesn't need to be complicated.
+            </h2>
+            <p class="text-lg text-white/80 mb-10 max-w-2xl mx-auto">
+              Labeur is built by Not A Tech Company — we make software for humans, not users.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="https://notatechcompany.be" class="inline-block bg-white text-blue-700 font-bold rounded-full px-8 py-4 transition-all hover:scale-105 hover:shadow-lg" style="box-shadow: 0 8px 25px -4px rgba(0,0,0,0.2);">
+                Visit Not A Tech Company
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="py-12 md:py-16" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-        <!-- Column 1: Brand -->
-        <div class="sm:col-span-2 lg:col-span-1">
-          <a href="/labeur/" class="text-xl font-bold gradient-text inline-block mb-4">Labeur</a>
-          <p class="text-sm mb-2" style="color: var(--color-text-secondary);">
-            A simple work tracker for iOS. Made with care in Gent, Belgium.
+    <!-- ========== FOOTER ========== -->
+    <footer class="py-12 md:py-16" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+          <!-- Column 1: Brand -->
+          <div class="sm:col-span-2 lg:col-span-1">
+            <a href="/labeur/" class="text-xl font-bold gradient-text inline-block mb-4">Labeur</a>
+            <p class="text-sm mb-2" style="color: var(--color-text-secondary);">
+              A simple work tracker for iOS. Made with care in Gent, Belgium.
+            </p>
+          </div>
+
+          <!-- Column 2: Product -->
+          <div>
+            <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color: var(--color-text);">Product</h4>
+            <ul class="space-y-2">
+              <li><a href="#features" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Features</a></li>
+              <li><a href="#privacy" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Privacy</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Company -->
+          <div>
+            <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color: var(--color-text);">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="https://notatechcompany.be" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Not A Tech Company</a></li>
+              <li><a href="https://notatechcompany.be/#products" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">All Products</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Legal -->
+          <div>
+            <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color: var(--color-text);">Legal</h4>
+            <ul class="space-y-2">
+              <li><a href="/labeur/privacy.html" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4" style="border-top: 1px solid var(--color-border);">
+          <p class="text-sm" style="color: var(--color-text-secondary);">
+            &copy; <span id="footer-year"></span> Not A Tech Company. All rights reserved.
+          </p>
+          <p class="text-sm" style="color: var(--color-text-secondary);">
+            VAT: BE1033.576.768
           </p>
         </div>
-
-        <!-- Column 2: Product -->
-        <div>
-          <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color: var(--color-text);">Product</h4>
-          <ul class="space-y-2">
-            <li><a href="#features" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Features</a></li>
-            <li><a href="#privacy" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Privacy</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Company -->
-        <div>
-          <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color: var(--color-text);">Company</h4>
-          <ul class="space-y-2">
-            <li><a href="https://notatechcompany.be" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Not A Tech Company</a></li>
-            <li><a href="https://notatechcompany.be/#products" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">All Products</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Legal -->
-        <div>
-          <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color: var(--color-text);">Legal</h4>
-          <ul class="space-y-2">
-            <li><a href="/labeur/privacy.html" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Privacy Policy</a></li>
-          </ul>
-        </div>
       </div>
+    </footer>
 
-      <!-- Bottom bar -->
-      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4" style="border-top: 1px solid var(--color-border);">
-        <p class="text-sm" style="color: var(--color-text-secondary);">
-          &copy; <span id="footer-year"></span> Not A Tech Company. All rights reserved.
-        </p>
-        <p class="text-sm" style="color: var(--color-text-secondary);">
-          VAT: BE1033.576.768
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ========== SCRIPTS ========== -->
-  <script>
-    // ---- Dark Mode ----
-    (function() {
-      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var saved = localStorage.getItem('theme');
-      if (saved === 'dark' || (!saved && prefersDark)) {
-        document.documentElement.classList.add('dark');
-      }
-    })();
-
-    function toggleDark() {
-      document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme',
-        document.documentElement.classList.contains('dark') ? 'dark' : 'light'
-      );
-    }
-
-    // ---- Mobile Menu ----
-    function toggleMobileMenu() {
-      var menu = document.getElementById('mobile-menu');
-      var openIcon = document.getElementById('menu-open-icon');
-      var closeIcon = document.getElementById('menu-close-icon');
-      menu.classList.toggle('open');
-      openIcon.classList.toggle('hidden');
-      closeIcon.classList.toggle('hidden');
-    }
-
-    function closeMobileMenu() {
-      var menu = document.getElementById('mobile-menu');
-      var openIcon = document.getElementById('menu-open-icon');
-      var closeIcon = document.getElementById('menu-close-icon');
-      menu.classList.remove('open');
-      openIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
-    }
-
-    // ---- Footer Year ----
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-
-    // ---- Scroll Reveal ----
-    var revealObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
+    <!-- ========== SCRIPTS ========== -->
+    <script>
+      // ---- Dark Mode ----
+      (function() {
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.classList.add('dark');
         }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      })();
 
-    document.querySelectorAll('.reveal').forEach(function(el) {
-      revealObserver.observe(el);
-    });
+      function toggleDark() {
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme',
+          document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+        );
+      }
 
-    // ---- Hero Animations ----
-    document.addEventListener('DOMContentLoaded', function() {
+      // ---- Mobile Menu ----
+      function toggleMobileMenu() {
+        var menu = document.getElementById('mobile-menu');
+        var openIcon = document.getElementById('menu-open-icon');
+        var closeIcon = document.getElementById('menu-close-icon');
+        menu.classList.toggle('open');
+        openIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      }
 
-      // App icon pop in
-      anime({
-        targets: '#hero-icon',
-        opacity: [0, 1],
-        scale: [0.7, 1],
-        easing: 'easeOutBack',
-        duration: 800,
-        delay: 200,
-      });
+      function closeMobileMenu() {
+        var menu = document.getElementById('mobile-menu');
+        var openIcon = document.getElementById('menu-open-icon');
+        var closeIcon = document.getElementById('menu-close-icon');
+        menu.classList.remove('open');
+        openIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
 
-      // Hero words
-      anime({
-        targets: '.hero-word',
-        opacity: [0, 1],
-        translateY: [20, 0],
-        delay: anime.stagger(100, { start: 500 }),
-        easing: 'cubicBezier(0.16, 1, 0.3, 1)',
-        duration: 900,
-      });
+      // ---- Footer Year ----
+      document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-      // Subheadline
-      anime({
-        targets: '#hero-sub',
-        opacity: [0, 1],
-        translateY: [20, 0],
-        easing: 'easeOutCubic',
-        duration: 800,
-        delay: 1100,
-      });
-
-      // CTA buttons
-      anime({
-        targets: '#hero-ctas',
-        opacity: [0, 1],
-        translateY: [20, 0],
-        easing: 'easeOutCubic',
-        duration: 800,
-        delay: 1400,
-      });
-
-      // Feature cards staggered entrance
-      var cardObserver = new IntersectionObserver(function(entries) {
+      // ---- Scroll Reveal ----
+      var revealObserver = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
-            var cards = entry.target.querySelectorAll('.feature-card');
-            if (cards.length > 0) {
-              anime({
-                targets: cards,
-                opacity: [0, 1],
-                translateY: [40, 0],
-                scale: [0.95, 1],
-                delay: anime.stagger(100, { start: 100 }),
-                easing: 'cubicBezier(0.16, 1, 0.3, 1)',
-                duration: 800,
-              });
-            }
-            cardObserver.unobserve(entry.target);
+            entry.target.classList.add('active');
           }
         });
-      }, { threshold: 0.1 });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-      document.querySelectorAll('#feature-cards').forEach(function(el) {
-        cardObserver.observe(el);
+      document.querySelectorAll('.reveal').forEach(function(el) {
+        revealObserver.observe(el);
       });
-    });
-  </script>
 
-</body>
+      // ---- Hero Animations ----
+      document.addEventListener('DOMContentLoaded', function() {
+
+        // App icon pop in
+        anime({
+          targets: '#hero-icon',
+          opacity: [0, 1],
+          scale: [0.7, 1],
+          easing: 'easeOutBack',
+          duration: 800,
+          delay: 200,
+        });
+
+        // Hero words
+        anime({
+          targets: '.hero-word',
+          opacity: [0, 1],
+          translateY: [20, 0],
+          delay: anime.stagger(100, { start: 500 }),
+          easing: 'cubicBezier(0.16, 1, 0.3, 1)',
+          duration: 900,
+        });
+
+        // Subheadline
+        anime({
+          targets: '#hero-sub',
+          opacity: [0, 1],
+          translateY: [20, 0],
+          easing: 'easeOutCubic',
+          duration: 800,
+          delay: 1100,
+        });
+
+        // CTA buttons
+        anime({
+          targets: '#hero-ctas',
+          opacity: [0, 1],
+          translateY: [20, 0],
+          easing: 'easeOutCubic',
+          duration: 800,
+          delay: 1400,
+        });
+
+        // Feature cards staggered entrance
+        var cardObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              var cards = entry.target.querySelectorAll('.feature-card');
+              if (cards.length > 0) {
+                anime({
+                  targets: cards,
+                  opacity: [0, 1],
+                  translateY: [40, 0],
+                  scale: [0.95, 1],
+                  delay: anime.stagger(100, { start: 100 }),
+                  easing: 'cubicBezier(0.16, 1, 0.3, 1)',
+                  duration: 800,
+                });
+              }
+              cardObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('#feature-cards').forEach(function(el) {
+          cardObserver.observe(el);
+        });
+      });
+    </script>
+
+  </body>
 </html>
