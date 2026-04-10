@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Not A Tech Company — Software with a soul.</title>
-  <meta name="description" content="Not A Tech Company builds software for humans, focusing on the human part of problems. Based in Gent, Belgium. Makers of Pret and more.">
+  <meta name="description" content="Not A Tech Company builds software for humans, focusing on the human part of problems. Based in Gent, Belgium. Makers of Pret, Labeur and more.">
   <meta property="og:title" content="Not A Tech Company — Software with a soul.">
   <meta property="og:description" content="We build software for humans, not users. Solving real problems with empathy and simplicity. Based in Gent, Belgium.">
   <meta property="og:type" content="website">
@@ -481,7 +481,7 @@
         </div>
 
         <!-- Product cards -->
-        <div class="grid md:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 max-w-6xl mx-auto">
 
           <!-- Pret Card -->
           <div class="product-card rounded-[20px] overflow-hidden reveal reveal-delay-1" style="background: var(--gradient-card); border: 1px solid var(--color-border);">
@@ -512,8 +512,37 @@
             </div>
           </div>
 
-          <!-- Kids Diary Card -->
+          <!-- Labeur Card -->
           <div class="product-card rounded-[20px] overflow-hidden reveal reveal-delay-2" style="background: var(--gradient-card); border: 1px solid var(--color-border);">
+            <!-- Card Illustration Area -->
+            <div class="p-8 md:p-10 flex items-center justify-center" style="background: linear-gradient(135deg, #3B82F6 0%, #2563EB 50%, #1D4ED8 100%); min-height: 200px;">
+              <div class="text-center">
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm mb-4">
+                  <!-- Briefcase icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
+                  </svg>
+                </div>
+                <p class="text-white font-bold text-lg">Track Your Work. Simply.</p>
+              </div>
+            </div>
+            <!-- Card Content -->
+            <div class="p-8">
+              <div class="flex items-center gap-3 mb-3">
+                <h3 class="text-2xl font-extrabold" style="color: var(--color-text);">
+                  <span aria-hidden="true">&#128188;</span> Labeur
+                </h3>
+                <span class="coming-soon-badge" style="background: linear-gradient(135deg, #3B82F6, #1D4ED8); color: #fff;">New</span>
+              </div>
+              <p class="mb-6" style="color: var(--color-text-secondary);">
+                A simple work tracker that logs whether you worked today — and if you did, from home or the office. No accounts, no cloud sync, no tracking. Just your data, on your device.
+              </p>
+              <a href="/labeur/" class="btn-gradient text-sm inline-block" style="background: linear-gradient(135deg, #3B82F6, #1D4ED8);" aria-label="Learn more about Labeur">Learn More</a>
+            </div>
+          </div>
+
+          <!-- Kids Diary Card -->
+          <div class="product-card rounded-[20px] overflow-hidden reveal reveal-delay-3" style="background: var(--gradient-card); border: 1px solid var(--color-border);">
             <!-- Card Illustration Area -->
             <div class="p-8 md:p-10 flex items-center justify-center" style="background: linear-gradient(135deg, #F5576C 0%, #FFD200 50%, #F093FB 100%); min-height: 200px;">
               <div class="text-center">
@@ -643,6 +672,7 @@
           <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color: var(--color-text);">Products</h4>
           <ul class="space-y-2">
             <li><a href="https://pret.joren.gent" target="_blank" rel="noopener noreferrer" class="text-sm hover:text-purple-500 transition-colors" style="color: var(--color-text-secondary);">Pret <span class="coming-soon-badge text-xs ml-1" style="padding: 2px 8px; background: linear-gradient(135deg, #667EEA, #764BA2); color: #fff;">Beta</span></a></li>
+            <li><a href="/labeur/" class="text-sm hover:text-purple-500 transition-colors" style="color: var(--color-text-secondary);">Labeur <span class="coming-soon-badge text-xs ml-1" style="padding: 2px 8px; background: linear-gradient(135deg, #3B82F6, #1D4ED8); color: #fff;">New</span></a></li>
             <li><span class="text-sm" style="color: var(--color-text-secondary);">Kids Diary <span class="coming-soon-badge text-xs ml-1" style="padding: 2px 8px;">Soon</span></span></li>
           </ul>
         </div>

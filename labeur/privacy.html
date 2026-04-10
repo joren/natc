@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Labeur</title>
+  <meta name="description" content="Privacy Policy for Labeur, a simple iOS work tracker. Labeur collects no data whatsoever. Everything stays on your device.">
+  <meta property="og:title" content="Privacy Policy — Labeur">
+  <meta property="og:description" content="Labeur collects no data. Zero tracking, no analytics, no accounts. Your work data stays on your device.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://notatechcompany.be/labeur/privacy.html">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"DM Sans"', 'sans-serif'],
+          },
+          colors: {
+            primary: { DEFAULT: '#2563EB', hover: '#1D4ED8', light: '#DBEAFE' },
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --color-bg: #FAFAFA;
+      --color-surface: #FFFFFF;
+      --color-text: #111827;
+      --color-text-secondary: #6B7280;
+      --color-primary: #2563EB;
+      --color-border: #E5E7EB;
+    }
+    .dark {
+      --color-bg: #09090B;
+      --color-surface: #18181B;
+      --color-text: #FAFAFA;
+      --color-text-secondary: #A1A1AA;
+      --color-primary: #3B82F6;
+      --color-border: #27272A;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #3B82F6, #1D4ED8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-blur {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(250, 250, 250, 0.85);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .dark .nav-blur {
+      background: rgba(9, 9, 11, 0.85);
+    }
+
+    .prose h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+    }
+    .prose h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-text);
+    }
+    .prose p {
+      margin-bottom: 1rem;
+      line-height: 1.75;
+      color: var(--color-text-secondary);
+    }
+    .prose ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      list-style-type: disc;
+    }
+    .prose ul li {
+      margin-bottom: 0.5rem;
+      line-height: 1.75;
+      color: var(--color-text-secondary);
+    }
+    .prose strong {
+      color: var(--color-text);
+      font-weight: 700;
+    }
+
+    *:focus-visible {
+      outline: 3px solid var(--color-primary);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded-full focus:shadow-lg focus:text-blue-600 focus:font-bold">
+    Skip to content
+  </a>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav-blur fixed top-0 left-0 right-0 z-50" role="navigation" aria-label="Main navigation">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo -->
+        <a href="/labeur/" class="flex items-center gap-3 text-lg md:text-xl font-bold" style="color: var(--color-text);" aria-label="Labeur Home">
+          <div class="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="white" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
+            </svg>
+          </div>
+          <span class="gradient-text">Labeur</span>
+        </a>
+
+        <!-- Nav links -->
+        <div class="flex items-center gap-6">
+          <a href="/labeur/" class="text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Back to Labeur</a>
+          <!-- Dark mode toggle -->
+          <button onclick="toggleDark()" aria-label="Toggle dark mode" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" style="color: var(--color-text);">
+            <svg class="hidden dark:block w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>
+            <svg class="block dark:hidden w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content" class="pt-28 pb-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Header -->
+      <div class="mb-12">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style="color: var(--color-text);">
+          Privacy Policy
+        </h1>
+        <p class="text-lg" style="color: var(--color-text-secondary);">
+          Last updated: April 10, 2026
+        </p>
+      </div>
+
+      <!-- Policy Content -->
+      <div class="prose">
+
+        <h2>The Short Version</h2>
+        <p>
+          <strong>Labeur does not collect, store, or transmit any of your personal data.</strong> The app runs entirely on your device. We have no servers, no analytics, no tracking, and no way to access your information. That's it. That's the privacy policy.
+        </p>
+        <p>
+          If you want the detailed version for legal completeness, keep reading.
+        </p>
+
+        <h2>1. Who We Are</h2>
+        <p>
+          Labeur is developed and published by <strong>Not A Tech Company</strong>, a company registered in Belgium.
+        </p>
+        <ul>
+          <li>Company: Not A Tech Company</li>
+          <li>Location: Gent, Belgium</li>
+          <li>VAT: BE1033.576.768</li>
+          <li>Website: <a href="https://notatechcompany.be" class="text-blue-500 hover:text-blue-700 underline">notatechcompany.be</a></li>
+        </ul>
+
+        <h2>2. Data We Collect</h2>
+        <p>
+          <strong>None.</strong> Labeur does not collect any data from you. Specifically:
+        </p>
+        <ul>
+          <li>We do <strong>not</strong> collect personal information (name, email, phone number, etc.)</li>
+          <li>We do <strong>not</strong> collect usage data or analytics</li>
+          <li>We do <strong>not</strong> collect device identifiers</li>
+          <li>We do <strong>not</strong> collect location data</li>
+          <li>We do <strong>not</strong> use cookies or tracking pixels</li>
+          <li>We do <strong>not</strong> use any third-party analytics or advertising SDKs</li>
+          <li>We do <strong>not</strong> collect crash reports</li>
+        </ul>
+
+        <h2>3. Data Storage</h2>
+        <p>
+          All data you enter into Labeur (your work day logs, home/office preferences) is stored <strong>exclusively on your device</strong> using local on-device storage. This data:
+        </p>
+        <ul>
+          <li>Never leaves your device</li>
+          <li>Is not transmitted to any server</li>
+          <li>Is not synced to any cloud service</li>
+          <li>Is not accessible to us or any third party</li>
+          <li>Is deleted when you delete the app</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <p>
+          Labeur does <strong>not</strong> integrate with any third-party services. There are no analytics tools, no advertising networks, no social media SDKs, and no crash reporting services embedded in the app. The app makes <strong>zero network requests</strong>.
+        </p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>
+          Since Labeur does not collect any data from anyone, it does not collect data from children. The app is safe for use by anyone regardless of age.
+        </p>
+
+        <h2>6. Data Sharing</h2>
+        <p>
+          We do not share any data with third parties because we do not have any data to share. There is no data to sell, transfer, or disclose.
+        </p>
+
+        <h2>7. Your Rights</h2>
+        <p>
+          Under the General Data Protection Regulation (GDPR) and other applicable privacy laws, you have rights regarding your personal data. Since Labeur does not collect or process any personal data, these rights are inherently fulfilled:
+        </p>
+        <ul>
+          <li><strong>Right of access:</strong> There is no data to access.</li>
+          <li><strong>Right to erasure:</strong> Deleting the app removes all locally stored data.</li>
+          <li><strong>Right to data portability:</strong> Your data exists only on your device and is under your full control.</li>
+          <li><strong>Right to object:</strong> There is no data processing to object to.</li>
+        </ul>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>
+          If we ever change this privacy policy, we will update this page with the new policy and update the "Last updated" date at the top. Given our commitment to collecting zero data, we do not anticipate significant changes.
+        </p>
+
+        <h2>9. Open Source</h2>
+        <p>
+          Labeur's source code is available on <a href="https://github.com/joren/ninetofive/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700 underline">GitHub</a>. You can verify our privacy claims by reviewing the code yourself.
+        </p>
+
+        <h2>10. Contact</h2>
+        <p>
+          If you have any questions about this privacy policy, you can reach us through our website at <a href="https://notatechcompany.be" class="text-blue-500 hover:text-blue-700 underline">notatechcompany.be</a>.
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="py-10" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-sm" style="color: var(--color-text-secondary);">
+          &copy; <span id="footer-year"></span> Not A Tech Company. All rights reserved.
+        </p>
+        <div class="flex items-center gap-6">
+          <a href="/labeur/" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Labeur</a>
+          <a href="https://notatechcompany.be" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Not A Tech Company</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // Dark mode
+    (function() {
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+
+    function toggleDark() {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme',
+        document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+      );
+    }
+
+    // Footer year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
