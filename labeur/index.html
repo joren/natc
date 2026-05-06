@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labeur — Track your workday. Simply.</title>
-    <meta name="description" content="Labeur is a simple iOS app to track whether you worked today — from home or the office. All data stays on your device. Zero tracking, no accounts, no cloud.">
-    <meta property="og:title" content="Labeur — Track your workday. Simply.">
-    <meta property="og:description" content="A simple iOS work tracker. Log your day in seconds. All data stays on your device.">
+    <title>Labeur — The workday tracker for Belgian freelancers.</title>
+    <meta name="description" content="Labeur is the iOS workday tracker built for Belgian freelancers and management vennootschap owners. Log days, track home vs office, count fietsvergoeding kilometers, and hand a clean monthly report to your boekhouder. All on-device.">
+    <meta property="og:title" content="Labeur — The workday tracker for Belgian freelancers.">
+    <meta property="og:description" content="Built for Belgian freelancers and management vennootschap owners. Track workdays, home vs office, fietsvergoeding km, and monthly reports. All on-device.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://notatechcompany.be/labeur/">
     <meta name="twitter:card" content="summary_large_image">
@@ -210,6 +210,422 @@
       .mobile-menu.open {
         max-height: 400px;
       }
+
+      /* ===== Belgium badge ===== */
+      .be-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(37, 99, 235, 0.08);
+        border: 1px solid rgba(37, 99, 235, 0.2);
+        color: var(--color-primary);
+        font-size: 13px;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 9999px;
+        letter-spacing: 0.01em;
+      }
+      .dark .be-badge {
+        background: rgba(59, 130, 246, 0.12);
+        border-color: rgba(59, 130, 246, 0.3);
+      }
+
+      /* ===== iPhone mockup ===== */
+      .phone {
+        position: relative;
+        width: 100%;
+        max-width: 270px;
+        aspect-ratio: 9 / 19.5;
+        background: #0a0a0a;
+        border-radius: 42px;
+        padding: 7px;
+        box-shadow:
+          0 0 0 1.5px #2a2a2a,
+          0 30px 60px -15px rgba(0,0,0,0.25),
+          0 12px 30px -8px rgba(0,0,0,0.12);
+      }
+      .dark .phone {
+        box-shadow:
+          0 0 0 1.5px #2a2a2a,
+          0 30px 60px -15px rgba(0,0,0,0.6),
+          0 12px 30px -8px rgba(0,0,0,0.4);
+      }
+      .phone-screen {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #F2F2F7;
+        border-radius: 35px;
+        overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, 'DM Sans', sans-serif;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+      }
+      .phone-notch {
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 84px;
+        height: 22px;
+        background: #0a0a0a;
+        border-radius: 14px;
+        z-index: 20;
+      }
+      .phone-status {
+        position: relative;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 24px 0;
+        font-size: 11px;
+        font-weight: 600;
+        flex-shrink: 0;
+      }
+      .phone-status-icons {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+      }
+      .phone-body {
+        flex: 1;
+        padding: 4px 14px 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .phone-title {
+        font-size: 22px;
+        font-weight: 800;
+        margin: 6px 4px 14px;
+        letter-spacing: -0.02em;
+        color: #000;
+      }
+      .ios-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 6px 14px;
+        margin-bottom: 12px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      }
+      .ios-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 9px 0;
+        color: #000;
+      }
+      .ios-row + .ios-row {
+        border-top: 1px solid #f2f2f7;
+      }
+      .ios-row .muted { color: #8e8e93; font-weight: 500; }
+      .ios-pill {
+        font-size: 11px;
+        font-weight: 500;
+        background: #efeff4;
+        border-radius: 8px;
+        padding: 4px 8px;
+        color: #000;
+      }
+      .ios-toggle {
+        width: 30px;
+        height: 18px;
+        border-radius: 9px;
+        background: #d1d1d6;
+        position: relative;
+        flex-shrink: 0;
+      }
+      .ios-toggle.on { background: #34C759; }
+      .ios-toggle::after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        width: 16px;
+        height: 16px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        left: 1px;
+      }
+      .ios-toggle.on::after { left: 13px; }
+      .ios-section-label {
+        font-size: 10px;
+        font-weight: 700;
+        color: #8e8e93;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin: 4px 4px 6px;
+      }
+      .ios-segment {
+        display: grid;
+        background: #efeff4;
+        border-radius: 10px;
+        padding: 2px;
+        margin-bottom: 12px;
+      }
+      .ios-segment-2 { grid-template-columns: 1fr 1fr; }
+      .ios-segment-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+      .ios-segment .seg {
+        padding: 6px 0;
+        text-align: center;
+        font-size: 10.5px;
+        font-weight: 600;
+        border-radius: 8px;
+        color: #000;
+      }
+      .ios-segment .seg.active {
+        background: #fff;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+      }
+      .ios-button {
+        background: #fff;
+        color: #007AFF;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 12px;
+        border-radius: 14px;
+        text-align: center;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      }
+      .ios-tile-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 6px;
+        margin-bottom: 14px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      }
+      .ios-tile {
+        background: #f2f2f7;
+        border-radius: 9px;
+        padding: 8px 4px;
+        text-align: center;
+      }
+      .ios-tile-emoji { font-size: 18px; line-height: 1; margin-bottom: 2px; }
+      .ios-tile-label { font-size: 9.5px; font-weight: 600; color: #1a1a1a; }
+      .ios-tile-num { font-size: 14px; font-weight: 700; color: #1a1a1a; margin-top: 1px; }
+      .ios-tabbar {
+        display: flex;
+        background: #fff;
+        border-radius: 24px;
+        padding: 6px 4px;
+        margin: auto 16px 12px;
+        justify-content: space-around;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      }
+      .ios-tab {
+        font-size: 9px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
+        color: #8e8e93;
+        padding: 2px 6px;
+      }
+      .ios-tab.active { color: #007AFF; }
+      .ios-tab svg { width: 16px; height: 16px; }
+
+      /* Onboarding screens */
+      .onboard-screen {
+        background: #fff;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 14px 22px 24px;
+      }
+      .onboard-title {
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: #000;
+      }
+      .onboard-feature {
+        display: flex;
+        gap: 12px;
+        text-align: left;
+        margin-top: 18px;
+        align-items: flex-start;
+        width: 100%;
+      }
+      .onboard-feature-ico {
+        width: 28px;
+        flex-shrink: 0;
+        color: #007AFF;
+      }
+      .onboard-feature-ico svg { width: 26px; height: 26px; }
+      .onboard-feature-title {
+        font-size: 12px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 2px;
+      }
+      .onboard-feature-text {
+        font-size: 10.5px;
+        color: #8e8e93;
+        line-height: 1.4;
+      }
+      .onboard-app-icon {
+        width: 76px;
+        height: 76px;
+        border-radius: 17px;
+        background: #007AFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 24px rgba(0,122,255,0.3);
+        margin-bottom: 16px;
+      }
+      .onboard-app-icon svg { width: 38px; height: 38px; color: #fff; }
+      .onboard-pager {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+      .onboard-swipe {
+        font-size: 10px;
+        color: #c7c7cc;
+        font-weight: 500;
+      }
+      .onboard-dots {
+        display: flex;
+        gap: 5px;
+        background: #f2f2f7;
+        padding: 5px 10px;
+        border-radius: 9999px;
+      }
+      .onboard-dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #d1d1d6;
+      }
+      .onboard-dot.active { background: #007AFF; }
+
+      /* Phone stack in hero */
+      .phone-stack {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+      }
+      .phone-stack .phone:nth-child(1) {
+        transform: rotate(-3deg);
+        z-index: 1;
+      }
+      .phone-stack .phone:nth-child(2) {
+        transform: rotate(2deg) translateY(-12px);
+        z-index: 2;
+      }
+      @media (max-width: 640px) {
+        .phone-stack { gap: 0; }
+        .phone-stack .phone {
+          max-width: 200px;
+        }
+        .phone-stack .phone:nth-child(1) {
+          margin-right: -60px;
+          transform: rotate(-5deg);
+        }
+        .phone-stack .phone:nth-child(2) {
+          transform: rotate(3deg) translateY(-8px);
+        }
+      }
+
+      /* Use-case card */
+      .use-card {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 16px;
+        padding: 28px;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+        height: 100%;
+      }
+      .use-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+        border-color: rgba(37, 99, 235, 0.25);
+      }
+      .use-card-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        background: var(--color-primary);
+        color: #fff;
+      }
+      .use-card-icon svg { width: 22px; height: 22px; }
+      .use-card .tag {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--color-primary);
+        background: rgba(37, 99, 235, 0.08);
+        padding: 3px 10px;
+        border-radius: 9999px;
+        margin-bottom: 10px;
+      }
+      .dark .use-card .tag {
+        background: rgba(59, 130, 246, 0.15);
+      }
+
+      /* Screenshots gallery scroll on mobile */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 24px;
+        align-items: end;
+      }
+      @media (max-width: 1024px) {
+        .gallery {
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          gap: 20px;
+          padding: 8px 4px 24px;
+          margin: 0 -16px;
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+        .gallery > * {
+          flex: 0 0 220px;
+          scroll-snap-align: center;
+        }
+      }
+      .gallery .gallery-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+      .gallery-caption {
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+        color: var(--color-text);
+      }
+      .gallery-caption span {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--color-text-secondary);
+        margin-top: 2px;
+      }
     </style>
   </head>
   <body class="antialiased">
@@ -235,6 +651,8 @@
 
           <!-- Desktop Nav -->
           <div class="hidden md:flex items-center gap-8">
+            <a href="#for-belgians" class="text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">For Belgians</a>
+            <a href="#screenshots" class="text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Screenshots</a>
             <a href="#features" class="text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Features</a>
             <a href="#privacy" class="text-sm font-medium hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Privacy</a>
             <!-- Dark mode toggle -->
@@ -272,6 +690,8 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu md:hidden">
           <div class="py-4 flex flex-col gap-4 border-t" style="border-color: var(--color-border);">
+            <a href="#for-belgians" onclick="closeMobileMenu()" class="text-base font-medium px-2 py-1" style="color: var(--color-text-secondary);">For Belgians</a>
+            <a href="#screenshots" onclick="closeMobileMenu()" class="text-base font-medium px-2 py-1" style="color: var(--color-text-secondary);">Screenshots</a>
             <a href="#features" onclick="closeMobileMenu()" class="text-base font-medium px-2 py-1" style="color: var(--color-text-secondary);">Features</a>
             <a href="#privacy" onclick="closeMobileMenu()" class="text-base font-medium px-2 py-1" style="color: var(--color-text-secondary);">Privacy</a>
           </div>
@@ -282,37 +702,533 @@
     <main id="main-content">
 
       <!-- ========== HERO SECTION ========== -->
-      <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden" style="background-color: var(--color-bg);">
-        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32 text-center">
+      <section id="hero" class="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden" style="background-color: var(--color-bg);">
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <!-- App Icon -->
-          <div class="flex justify-center mb-8" id="hero-icon" style="opacity: 0;">
-            <div class="app-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-14 h-14">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
-              </svg>
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+
+            <!-- Left: copy -->
+            <div class="text-center lg:text-left">
+              <div class="mb-6 flex justify-center lg:justify-start" id="hero-badge" style="opacity: 0;">
+                <span class="be-badge">
+                  <span aria-hidden="true">🇧🇪</span>
+                  <span>Made in Gent for Belgian freelancers</span>
+                </span>
+              </div>
+
+              <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6" id="hero-title">
+                <span class="hero-word">The</span>
+                <span class="hero-word">workday</span>
+                <span class="hero-word">log</span>
+                <span class="hero-word">for</span>
+                <span class="hero-word gradient-text">Belgian freelancers.</span>
+              </h1>
+
+              <p class="text-lg md:text-xl max-w-xl mx-auto lg:mx-0 mb-8" id="hero-sub" style="opacity: 0; color: var(--color-text-secondary);">
+                Log a workday in two taps. Track home vs office days, count your <strong style="color: var(--color-text);">fietsvergoeding</strong> kilometers, and hand a clean monthly report to your <strong style="color: var(--color-text);">boekhouder</strong>. Built for zelfstandigen and management vennootschap owners.
+              </p>
+
+              <div id="hero-ctas" style="opacity: 0;" class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-6">
+                <a href="https://apps.apple.com/us/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur on the App Store">
+                  <img src="/assets/app-store-badge-black.svg" alt="Download on the App Store" class="block dark:hidden h-14 w-auto" />
+                  <img src="/assets/app-store-badge-white.svg" alt="Download on the App Store" class="hidden dark:block h-14 w-auto" />
+                </a>
+              </div>
+
+              <p class="text-sm flex items-center justify-center lg:justify-start gap-2" style="color: var(--color-text-secondary); opacity: 0;" id="hero-trust">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" style="color: #16a34a;">
+                  <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.75.75 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.78 8.06a.75.75 0 00-1.06-1.06l-3.97 3.97-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l4.5-4.5z" clip-rule="evenodd" />
+                </svg>
+                On-device only. No accounts. No cloud. No tracking.
+              </p>
+            </div>
+
+            <!-- Right: phone mockups -->
+            <div class="phone-stack" id="hero-phones" style="opacity: 0;">
+              <!-- Phone: Log Day -->
+              <div class="phone" aria-label="Labeur Log Day screen">
+                <div class="phone-screen">
+                  <div class="phone-notch"></div>
+                  <div class="phone-status">
+                    <span>14:26</span>
+                    <div class="phone-status-icons">
+                      <span>••••</span>
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 18.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM2 8.95l2-2A12 12 0 0122 8.95l-2 2a9 9 0 00-16 0l-2-2zm4 4l2-2a6 6 0 0112 0l-2 2a3 3 0 00-8 0z"/></svg>
+                      <svg viewBox="0 0 24 14" fill="none" width="20" height="11"><rect x="0.5" y="0.5" width="19" height="13" rx="3" stroke="currentColor"/><rect x="2" y="2" width="16" height="10" rx="1.5" fill="currentColor"/><rect x="20.5" y="4.5" width="2" height="5" rx="0.5" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                  <div class="phone-body">
+                    <h2 class="phone-title">Log Day</h2>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Date</span>
+                        <span class="ios-pill">11 Apr 2026</span>
+                      </div>
+                    </div>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Did you work?</span>
+                        <div class="ios-toggle on"></div>
+                      </div>
+                      <div class="ios-row">
+                        <span>Half day</span>
+                        <div class="ios-toggle"></div>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Where did you work?</p>
+                    <div class="ios-segment ios-segment-2">
+                      <div class="seg">Home</div>
+                      <div class="seg active">Office</div>
+                    </div>
+                    <p class="ios-section-label">How did you commute?</p>
+                    <div class="ios-segment ios-segment-4">
+                      <div class="seg active">Bike</div>
+                      <div class="seg">Car</div>
+                      <div class="seg">Train</div>
+                      <div class="seg">Other</div>
+                    </div>
+                    <div class="ios-button" style="margin-top:8px;">Update</div>
+                  </div>
+                  <div class="ios-tabbar">
+                    <div class="ios-tab active">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/><circle cx="17" cy="15" r="3" fill="currentColor"/><path d="M17 13.5v3M15.5 15h3" stroke="white" stroke-width="1.2"/></svg>
+                      <span>Log</span>
+                    </div>
+                    <div class="ios-tab">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>
+                      <span>Reports</span>
+                    </div>
+                    <div class="ios-tab">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                      <span>Settings</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone: Reports -->
+              <div class="phone" aria-label="Labeur Reports screen">
+                <div class="phone-screen">
+                  <div class="phone-notch"></div>
+                  <div class="phone-status">
+                    <span>14:28</span>
+                    <div class="phone-status-icons">
+                      <span>••••</span>
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 18.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM2 8.95l2-2A12 12 0 0122 8.95l-2 2a9 9 0 00-16 0l-2-2zm4 4l2-2a6 6 0 0112 0l-2 2a3 3 0 00-8 0z"/></svg>
+                      <svg viewBox="0 0 24 14" fill="none" width="20" height="11"><rect x="0.5" y="0.5" width="19" height="13" rx="3" stroke="currentColor"/><rect x="2" y="2" width="16" height="10" rx="1.5" fill="currentColor"/><rect x="20.5" y="4.5" width="2" height="5" rx="0.5" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                  <div class="phone-body">
+                    <h2 class="phone-title">Reports</h2>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Month</span>
+                        <span style="color:#007AFF; font-weight:600;">April ⌃⌄</span>
+                        <span>Year</span>
+                        <span style="color:#007AFF; font-weight:600;">2026 ⌃⌄</span>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Overview</p>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span style="font-weight:600;">Days worked</span>
+                        <span style="font-weight:600;">7</span>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Location</p>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Home</span>
+                        <span style="color:#8e8e93;">1</span>
+                      </div>
+                      <div class="ios-row">
+                        <span>Office</span>
+                        <span style="color:#8e8e93;">6</span>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Commute</p>
+                    <div class="ios-tile-grid">
+                      <div class="ios-tile">
+                        <div class="ios-tile-emoji">🚲</div>
+                        <div class="ios-tile-label">Bike</div>
+                        <div class="ios-tile-num">4</div>
+                      </div>
+                      <div class="ios-tile">
+                        <div class="ios-tile-emoji">🚗</div>
+                        <div class="ios-tile-label">Car</div>
+                        <div class="ios-tile-num">1</div>
+                      </div>
+                      <div class="ios-tile">
+                        <div class="ios-tile-emoji">🚆</div>
+                        <div class="ios-tile-label">Train</div>
+                        <div class="ios-tile-num">1</div>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Cycling</p>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Total bike km</span>
+                        <span style="color:#8e8e93;">64.0 km</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ios-tabbar">
+                    <div class="ios-tab">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+                      <span>Log</span>
+                    </div>
+                    <div class="ios-tab active">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="12" width="3" height="8" rx="1"/><rect x="10.5" y="6" width="3" height="14" rx="1"/><rect x="17" y="9" width="3" height="11" rx="1"/></svg>
+                      <span>Reports</span>
+                    </div>
+                    <div class="ios-tab">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                      <span>Settings</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== MADE FOR BELGIUM SECTION ========== -->
+      <section id="for-belgians" class="relative py-24 md:py-32" style="background-color: var(--color-surface);">
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div class="text-center mb-14 reveal">
+            <p class="text-sm font-bold uppercase tracking-widest mb-4" style="color: var(--color-primary);">Made for Belgium 🇧🇪</p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" style="color: var(--color-text);">
+              Built for the way <span class="gradient-text">Belgian freelancers actually work.</span>
+            </h2>
+            <p class="text-lg max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
+              Whether you're a zelfstandige in hoofdberoep, running a management vennootschap, or somewhere in between — Labeur tracks the things that matter to you and your boekhouder.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+
+            <!-- Use case 1: Fietsvergoeding -->
+            <div class="use-card reveal reveal-delay-1">
+              <div class="use-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/>
+                  <path d="M9 17l3-7h4M12 10l-3 7M16 10l2 7M14 6h2"/>
+                </svg>
+              </div>
+              <span class="tag">Fietsvergoeding</span>
+              <h3 class="text-xl font-bold mb-3" style="color: var(--color-text);">Every kilometer counts</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
+                Belgium's tax-free bike allowance pays per kilometer commuted. Labeur logs every bike day with distance, so you have airtight records when your management vennootschap or accountant needs them.
+              </p>
+            </div>
+
+            <!-- Use case 2: Thuiswerk vs Office -->
+            <div class="use-card reveal reveal-delay-2">
+              <div class="use-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-7H10v7H4a1 1 0 01-1-1v-9z"/>
+                </svg>
+              </div>
+              <span class="tag">Thuiswerk admin</span>
+              <h3 class="text-xl font-bold mb-3" style="color: var(--color-text);">Home vs office, always clear</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
+                Justifying home-office expenses or proving office presence to a client? Tag every workday as Home or Office and never guess at the end of the quarter again.
+              </p>
+            </div>
+
+            <!-- Use case 3: Boekhouder reports -->
+            <div class="use-card reveal reveal-delay-3">
+              <div class="use-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                  <path d="M14 2v6h6M9 13h6M9 17h4M9 9h2"/>
+                </svg>
+              </div>
+              <span class="tag">Boekhouder-ready</span>
+              <h3 class="text-xl font-bold mb-3" style="color: var(--color-text);">A clean monthly report</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
+                Every month: total days worked, home/office split, commute breakdown, total cycling kilometers. One screen. Forward it to your accountant and move on with your day.
+              </p>
             </div>
           </div>
 
-          <!-- Headline -->
-          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6" id="hero-title">
-            <span class="hero-word">Track</span>
-            <span class="hero-word">your</span>
-            <span class="hero-word">workday.</span><br>
-            <span class="hero-word gradient-text">Simply.</span>
-          </h1>
+          <!-- Pull quote-style strip -->
+          <div class="mt-16 grid sm:grid-cols-3 gap-6 text-center reveal">
+            <div>
+              <div class="text-3xl md:text-4xl font-bold mb-1" style="color: var(--color-primary);">2 taps</div>
+              <p class="text-sm" style="color: var(--color-text-secondary);">to log a full workday</p>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-bold mb-1" style="color: var(--color-primary);">100%</div>
+              <p class="text-sm" style="color: var(--color-text-secondary);">on your iPhone, never in the cloud</p>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-bold mb-1" style="color: var(--color-primary);">€0</div>
+              <p class="text-sm" style="color: var(--color-text-secondary);">subscriptions, ever</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <!-- Subheadline -->
-          <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10" id="hero-sub" style="opacity: 0; color: var(--color-text-secondary);">
-            Labeur is a simple iOS app that tracks whether you worked today — and whether you were at home or the office. No accounts, no cloud. Just you and your device.
-          </p>
+      <!-- ========== SCREENSHOTS GALLERY ========== -->
+      <section id="screenshots" class="relative py-24 md:py-32" style="background-color: var(--color-bg);">
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <!-- CTA -->
-          <div id="hero-ctas" style="opacity: 0;" class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://apps.apple.com/us/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur on the App Store">
-              <img src="/assets/app-store-badge-black.svg" alt="Download on the App Store" class="block dark:hidden h-14 w-auto" />
-              <img src="/assets/app-store-badge-white.svg" alt="Download on the App Store" class="hidden dark:block h-14 w-auto" />
-            </a>
+          <div class="text-center mb-14 reveal">
+            <p class="text-sm font-bold uppercase tracking-widest mb-4" style="color: var(--color-primary);">Screenshots</p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style="color: var(--color-text);">
+              See it in action.
+            </h2>
+            <p class="text-base max-w-xl mx-auto" style="color: var(--color-text-secondary);">
+              Four screens. That's the whole app. We mean it when we say simple.
+            </p>
+          </div>
+
+          <div class="gallery">
+
+            <!-- Screenshot 1: Welcome / Splash -->
+            <div class="gallery-item reveal reveal-delay-1">
+              <div class="phone" aria-label="Welcome screen">
+                <div class="phone-screen" style="background:#fff;">
+                  <div class="phone-notch"></div>
+                  <div class="phone-status">
+                    <span>14:38</span>
+                    <div class="phone-status-icons">
+                      <span>••••</span>
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 18.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM2 8.95l2-2A12 12 0 0122 8.95l-2 2a9 9 0 00-16 0l-2-2zm4 4l2-2a6 6 0 0112 0l-2 2a3 3 0 00-8 0z"/></svg>
+                      <svg viewBox="0 0 24 14" fill="none" width="20" height="11"><rect x="0.5" y="0.5" width="19" height="13" rx="3" stroke="currentColor"/><rect x="2" y="2" width="16" height="10" rx="1.5" fill="currentColor"/><rect x="20.5" y="4.5" width="2" height="5" rx="0.5" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                  <div class="onboard-screen" style="justify-content:center;">
+                    <div class="onboard-app-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" />
+                      </svg>
+                    </div>
+                    <div class="onboard-title">Labeur</div>
+                    <p class="text-xs mt-2" style="color:#8e8e93;">Track your workdays with ease.</p>
+                    <div class="onboard-pager">
+                      <span class="onboard-swipe">Swipe to continue</span>
+                      <div class="onboard-dots">
+                        <span class="onboard-dot active"></span>
+                        <span class="onboard-dot"></span>
+                        <span class="onboard-dot"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-caption">Welcome <span>Built in Gent.</span></div>
+            </div>
+
+            <!-- Screenshot 2: How it works -->
+            <div class="gallery-item reveal reveal-delay-2">
+              <div class="phone" aria-label="How it works">
+                <div class="phone-screen" style="background:#fff;">
+                  <div class="phone-notch"></div>
+                  <div class="phone-status">
+                    <span>14:38</span>
+                    <div class="phone-status-icons">
+                      <span>••••</span>
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 18.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM2 8.95l2-2A12 12 0 0122 8.95l-2 2a9 9 0 00-16 0l-2-2zm4 4l2-2a6 6 0 0112 0l-2 2a3 3 0 00-8 0z"/></svg>
+                      <svg viewBox="0 0 24 14" fill="none" width="20" height="11"><rect x="0.5" y="0.5" width="19" height="13" rx="3" stroke="currentColor"/><rect x="2" y="2" width="16" height="10" rx="1.5" fill="currentColor"/><rect x="20.5" y="4.5" width="2" height="5" rx="0.5" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                  <div class="onboard-screen" style="justify-content:flex-start; padding-top:60px;">
+                    <div class="onboard-title">How it works</div>
+                    <div class="onboard-feature">
+                      <div class="onboard-feature-ico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/><circle cx="17" cy="15" r="3" fill="currentColor"/><path d="M17 13.5v3M15.5 15h3" stroke="white" stroke-width="1.2"/></svg>
+                      </div>
+                      <div>
+                        <div class="onboard-feature-title">Log your day</div>
+                        <div class="onboard-feature-text">Record whether you worked, from where, and how you got there.</div>
+                      </div>
+                    </div>
+                    <div class="onboard-feature">
+                      <div class="onboard-feature-ico">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="12" width="3" height="8" rx="1"/><rect x="10.5" y="6" width="3" height="14" rx="1"/><rect x="17" y="9" width="3" height="11" rx="1"/></svg>
+                      </div>
+                      <div>
+                        <div class="onboard-feature-title">Monthly reports</div>
+                        <div class="onboard-feature-text">See how many days you worked, from home or office, and your bike kilometers.</div>
+                      </div>
+                    </div>
+                    <div class="onboard-feature">
+                      <div class="onboard-feature-ico">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8a6 6 0 00-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 01-3.4 0"/></svg>
+                      </div>
+                      <div>
+                        <div class="onboard-feature-title">Daily reminder</div>
+                        <div class="onboard-feature-text">Get a notification each day so you never forget to log.</div>
+                      </div>
+                    </div>
+                    <div class="onboard-pager">
+                      <span class="onboard-swipe">Swipe to continue</span>
+                      <div class="onboard-dots">
+                        <span class="onboard-dot"></span>
+                        <span class="onboard-dot active"></span>
+                        <span class="onboard-dot"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-caption">Onboarding <span>Three taps and you're set.</span></div>
+            </div>
+
+            <!-- Screenshot 3: Log Day -->
+            <div class="gallery-item reveal reveal-delay-3">
+              <div class="phone" aria-label="Log Day">
+                <div class="phone-screen">
+                  <div class="phone-notch"></div>
+                  <div class="phone-status">
+                    <span>14:26</span>
+                    <div class="phone-status-icons">
+                      <span>••••</span>
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 18.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM2 8.95l2-2A12 12 0 0122 8.95l-2 2a9 9 0 00-16 0l-2-2zm4 4l2-2a6 6 0 0112 0l-2 2a3 3 0 00-8 0z"/></svg>
+                      <svg viewBox="0 0 24 14" fill="none" width="20" height="11"><rect x="0.5" y="0.5" width="19" height="13" rx="3" stroke="currentColor"/><rect x="2" y="2" width="16" height="10" rx="1.5" fill="currentColor"/><rect x="20.5" y="4.5" width="2" height="5" rx="0.5" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                  <div class="phone-body">
+                    <h2 class="phone-title">Log Day</h2>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Date</span>
+                        <span class="ios-pill">11 Apr 2026</span>
+                      </div>
+                    </div>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Did you work?</span>
+                        <div class="ios-toggle on"></div>
+                      </div>
+                      <div class="ios-row">
+                        <span>Half day</span>
+                        <div class="ios-toggle"></div>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Where did you work?</p>
+                    <div class="ios-segment ios-segment-2">
+                      <div class="seg">Home</div>
+                      <div class="seg active">Office</div>
+                    </div>
+                    <p class="ios-section-label">How did you commute?</p>
+                    <div class="ios-segment ios-segment-4">
+                      <div class="seg active">Bike</div>
+                      <div class="seg">Car</div>
+                      <div class="seg">Train</div>
+                      <div class="seg">Other</div>
+                    </div>
+                    <div class="ios-button" style="margin-top:8px;">Update</div>
+                  </div>
+                  <div class="ios-tabbar">
+                    <div class="ios-tab active">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+                      <span>Log</span>
+                    </div>
+                    <div class="ios-tab">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>
+                      <span>Reports</span>
+                    </div>
+                    <div class="ios-tab">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                      <span>Settings</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-caption">Log Day <span>Two taps. That's it.</span></div>
+            </div>
+
+            <!-- Screenshot 4: Reports -->
+            <div class="gallery-item reveal reveal-delay-4">
+              <div class="phone" aria-label="Reports">
+                <div class="phone-screen">
+                  <div class="phone-notch"></div>
+                  <div class="phone-status">
+                    <span>14:28</span>
+                    <div class="phone-status-icons">
+                      <span>••••</span>
+                      <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 18.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM2 8.95l2-2A12 12 0 0122 8.95l-2 2a9 9 0 00-16 0l-2-2zm4 4l2-2a6 6 0 0112 0l-2 2a3 3 0 00-8 0z"/></svg>
+                      <svg viewBox="0 0 24 14" fill="none" width="20" height="11"><rect x="0.5" y="0.5" width="19" height="13" rx="3" stroke="currentColor"/><rect x="2" y="2" width="16" height="10" rx="1.5" fill="currentColor"/><rect x="20.5" y="4.5" width="2" height="5" rx="0.5" fill="currentColor"/></svg>
+                    </div>
+                  </div>
+                  <div class="phone-body">
+                    <h2 class="phone-title">Reports</h2>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Month</span>
+                        <span style="color:#007AFF; font-weight:600;">April ⌃⌄</span>
+                        <span>Year</span>
+                        <span style="color:#007AFF; font-weight:600;">2026 ⌃⌄</span>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Overview</p>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span style="font-weight:600;">Days worked</span>
+                        <span style="font-weight:600;">7</span>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Location</p>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Home</span>
+                        <span style="color:#8e8e93;">1</span>
+                      </div>
+                      <div class="ios-row">
+                        <span>Office</span>
+                        <span style="color:#8e8e93;">6</span>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Commute</p>
+                    <div class="ios-tile-grid">
+                      <div class="ios-tile">
+                        <div class="ios-tile-emoji">🚲</div>
+                        <div class="ios-tile-label">Bike</div>
+                        <div class="ios-tile-num">4</div>
+                      </div>
+                      <div class="ios-tile">
+                        <div class="ios-tile-emoji">🚗</div>
+                        <div class="ios-tile-label">Car</div>
+                        <div class="ios-tile-num">1</div>
+                      </div>
+                      <div class="ios-tile">
+                        <div class="ios-tile-emoji">🚆</div>
+                        <div class="ios-tile-label">Train</div>
+                        <div class="ios-tile-num">1</div>
+                      </div>
+                    </div>
+                    <p class="ios-section-label">Cycling</p>
+                    <div class="ios-card">
+                      <div class="ios-row">
+                        <span>Total bike km</span>
+                        <span style="color:#8e8e93;">64.0 km</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ios-tabbar">
+                    <div class="ios-tab">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+                      <span>Log</span>
+                    </div>
+                    <div class="ios-tab active">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="12" width="3" height="8" rx="1"/><rect x="10.5" y="6" width="3" height="14" rx="1"/><rect x="17" y="9" width="3" height="11" rx="1"/></svg>
+                      <span>Reports</span>
+                    </div>
+                    <div class="ios-tab">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                      <span>Settings</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-caption">Reports <span>The whole month, at a glance.</span></div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -328,7 +1244,7 @@
               Everything you need. <span class="gradient-text">Nothing you don't.</span>
             </h2>
             <p class="text-lg max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
-              Labeur does one thing well: it helps you keep track of your work days without getting in the way.
+              Labeur does one thing well: it helps Belgian freelancers keep track of their workdays without getting in the way.
             </p>
           </div>
 
@@ -342,65 +1258,49 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                 </svg>
               </div>
-              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Quick Daily Logging</h3>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Two-tap logging</h3>
               <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
-                Open the app, tap once, done. Log your workday in under two seconds.
+                Open the app, tap "did you work?", pick where. Done in under five seconds — even between client calls.
               </p>
             </div>
 
-            <!-- Feature 2: Home vs Office -->
+            <!-- Feature 2: Half days -->
             <div class="feature-card p-8 reveal reveal-delay-2">
               <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #EFF6FF;">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563EB" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
                 </svg>
               </div>
-              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Home vs Office</h3>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Half-day support</h3>
               <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
-                Track where you worked — from home or at the office. See your patterns over time.
+                Worked the morning, took a half-day leave? Flag it as a half day so your invoicing and reports add up correctly.
               </p>
             </div>
 
-            <!-- Feature 3: Privacy by Design -->
+            <!-- Feature 3: Bike Mileage -->
             <div class="feature-card p-8 reveal reveal-delay-3">
+              <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #ECFDF5;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.6" class="w-6 h-6">
+                  <circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/>
+                  <path d="M9 17l3-7h4M12 10l-3 7M16 10l2 7M14 6h2"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Fietsvergoeding tracking</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
+                Total bike kilometers per month, ready for your bike allowance paperwork — RSZ, your management vennootschap, or your own pocket.
+              </p>
+            </div>
+
+            <!-- Feature 4: Reports -->
+            <div class="feature-card p-8 reveal reveal-delay-4">
               <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #EFF6FF;">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2563EB" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
                 </svg>
               </div>
-              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Privacy by Design</h3>
+              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Monthly reports</h3>
               <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
-                No analytics, no ads, no tracking pixels. We literally don't know you exist.
-              </p>
-            </div>
-
-            <!-- Feature 4: Bike Mileage -->
-            <div class="feature-card p-8 reveal reveal-delay-4">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #ECFDF5;">
-                <svg fill="#059669" class="w-6 h-6" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                  viewBox="0 0 436.842 436.842" xml:space="preserve">
-                  <path d="M343.746,154.841c-12.696,0-24.804,2.558-35.842,7.18l-26.394-51.211h36.89c4.002,0,7.258,3.256,7.258,7.258
-                    s-3.256,7.258-7.258,7.258h-7.871c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5,7.5,7.5h7.871c12.273,0,22.258-9.985,22.258-22.258
-                    s-9.984-22.258-22.258-22.258h-49.192c-2.615,0-5.042,1.363-6.404,3.596c-1.361,2.233-1.461,5.015-0.263,7.34l13.125,25.467H167.423
-                    l-10.92-21.403h17.269c4.143,0,7.5-3.358,7.5-7.5s-3.357-7.5-7.5-7.5h-49.193c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5,7.5,7.5h15.084
-                    l14.576,28.568l-17.132,26.543c-13.113-7.065-28.101-11.08-44.011-11.08C41.763,154.841,0,196.603,0,247.936
-                    c0,51.333,41.763,93.096,93.096,93.096c48.808,0,88.961-37.757,92.793-85.596h22.007l-8.549,27.818h-4.922
-                    c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5,7.5,7.5h27c4.143,0,7.5-3.358,7.5-7.5s-3.357-7.5-7.5-7.5h-6.386l9.869-32.114l62.406-96.327
-                    l7.269,14.103c-26.357,16.458-43.933,45.723-43.933,79.02c0,51.333,41.763,93.096,93.097,93.096
-                    c51.333,0,93.096-41.763,93.096-93.096C436.842,196.603,395.079,154.841,343.746,154.841z M162.121,154.826l43.678,85.61h-19.911
-                    c-2.162-26.985-15.882-50.758-36.193-66.359L162.121,154.826z M170.824,240.436h-63.96l34.661-53.699
-                    C157.734,199.592,168.745,218.724,170.824,240.436z M93.096,326.032C50.033,326.032,15,290.999,15,247.936
-                    c0-43.062,35.033-78.096,78.096-78.096c12.914,0,25.095,3.17,35.837,8.743l-42.139,65.285c-1.489,2.307-1.598,5.244-0.284,7.655
-                    c1.313,2.411,3.84,3.912,6.586,3.912h77.728C167.036,294.992,133.628,326.032,93.096,326.032z M218.819,232.949l-43.743-85.737
-                    h99.289L218.819,232.949z M343.746,326.032c-43.063,0-78.097-35.034-78.097-78.096c0-27.498,14.298-51.704,35.838-65.623
-                    l35.592,69.059c1.332,2.583,3.954,4.065,6.673,4.065c1.157,0,2.331-0.269,3.43-0.835c3.683-1.897,5.129-6.42,3.231-10.103
-                    l-35.603-69.079c8.956-3.586,18.714-5.581,28.936-5.581c43.063,0,78.096,35.034,78.096,78.096
-                    C421.842,290.999,386.809,326.032,343.746,326.032z"/>
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold mb-2" style="color: var(--color-text);">Bike Mileage Tracking</h3>
-              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
-                Automatically tracks your cycling distance to work — perfect for Belgian employees 🇧🇪.
+                Days worked, home/office split, commute breakdown, cycling km — all on one screen. Pick any month, screenshot it for your boekhouder.
               </p>
             </div>
           </div>
@@ -448,13 +1348,16 @@
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div class="reveal">
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Work tracking doesn't need to be complicated.
+              Less admin. More werk.
             </h2>
             <p class="text-lg text-white/80 mb-10 max-w-2xl mx-auto">
-              Labeur is built by Not A Tech Company — we make software for humans, not users.
+              Stop guessing how many days you worked from home last month. Built in Gent for Belgian freelancers and management vennootschap owners — by Not A Tech Company.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://notatechcompany.be" class="inline-block bg-white text-blue-700 font-bold rounded-full px-8 py-4 transition-all hover:scale-105 hover:shadow-lg" style="box-shadow: 0 8px 25px -4px rgba(0,0,0,0.2);">
+              <a href="https://apps.apple.com/us/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur on the App Store">
+                <img src="/assets/app-store-badge-white.svg" alt="Download on the App Store" class="h-14 w-auto" />
+              </a>
+              <a href="https://notatechcompany.be" class="inline-block bg-white/10 hover:bg-white/20 text-white font-bold rounded-full px-8 py-4 transition-all border border-white/20">
                 Visit Not A Tech Company
               </a>
             </div>
@@ -570,14 +1473,14 @@
       // ---- Hero Animations ----
       document.addEventListener('DOMContentLoaded', function() {
 
-        // App icon pop in
+        // Belgium badge
         anime({
-          targets: '#hero-icon',
+          targets: '#hero-badge',
           opacity: [0, 1],
-          scale: [0.7, 1],
-          easing: 'easeOutBack',
-          duration: 800,
-          delay: 200,
+          translateY: [12, 0],
+          easing: 'easeOutCubic',
+          duration: 700,
+          delay: 100,
         });
 
         // Hero words
@@ -585,7 +1488,7 @@
           targets: '.hero-word',
           opacity: [0, 1],
           translateY: [20, 0],
-          delay: anime.stagger(100, { start: 500 }),
+          delay: anime.stagger(80, { start: 400 }),
           easing: 'cubicBezier(0.16, 1, 0.3, 1)',
           duration: 900,
         });
@@ -597,7 +1500,7 @@
           translateY: [20, 0],
           easing: 'easeOutCubic',
           duration: 800,
-          delay: 1100,
+          delay: 900,
         });
 
         // CTA buttons
@@ -607,7 +1510,26 @@
           translateY: [20, 0],
           easing: 'easeOutCubic',
           duration: 800,
-          delay: 1400,
+          delay: 1100,
+        });
+
+        // Trust line
+        anime({
+          targets: '#hero-trust',
+          opacity: [0, 1],
+          easing: 'easeOutCubic',
+          duration: 700,
+          delay: 1300,
+        });
+
+        // Phone mockups slide in
+        anime({
+          targets: '#hero-phones',
+          opacity: [0, 1],
+          translateY: [40, 0],
+          easing: 'cubicBezier(0.16, 1, 0.3, 1)',
+          duration: 1000,
+          delay: 600,
         });
 
         // Feature cards staggered entrance
