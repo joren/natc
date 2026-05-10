@@ -1167,12 +1167,19 @@
                 Log een werkdag in twee taps. Houd thuis- vs kantoordagen bij, tel je <strong style="color: var(--color-text);">fietsvergoeding</strong>-kilometers en geef een nette maandrapportage aan je <strong style="color: var(--color-text);">boekhouder</strong>. Gemaakt voor zelfstandigen en eigenaars van een managementvennootschap.
               </p>
 
-              <div id="hero-ctas" style="opacity: 0;" class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-6">
+              <div id="hero-ctas" style="opacity: 0;" class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-4">
                 <a href="https://apps.apple.com/us/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur in de App Store">
-                  <img src="/assets/app-store-badge-black.svg" alt="Download in de App Store" class="block dark:hidden h-14 w-auto" />
-                  <img src="/assets/app-store-badge-white.svg" alt="Download in de App Store" class="hidden dark:block h-14 w-auto" />
+                  <img src="/assets/app-store-badge-black.svg" alt="Download in de App Store" class="block dark:hidden h-14 w-auto">
+                  <img src="/assets/app-store-badge-white.svg" alt="Download in de App Store" class="hidden dark:block h-14 w-auto">
                 </a>
               </div>
+
+              <p class="text-sm flex items-center justify-center lg:justify-start gap-2 mb-2" style="color: var(--color-text-secondary); opacity: 0;" id="hero-price">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" style="color: var(--color-primary);">
+                  <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 00-3 3v4.318a3 3 0 00.879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 005.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 00-2.122-.879H5.25zM6.375 7.5a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" clip-rule="evenodd" />
+                </svg>
+                <span><strong style="color: var(--color-text);">€2,99</strong> — eenmalige aankoop. Geen abonnement.</span>
+              </p>
 
               <p class="text-sm flex items-center justify-center lg:justify-start gap-2" style="color: var(--color-text-secondary); opacity: 0;" id="hero-trust">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" style="color: #16a34a;">
@@ -1422,8 +1429,8 @@
               <p class="text-sm" style="color: var(--color-text-secondary);">op je iPhone, nooit in de cloud</p>
             </div>
             <div>
-              <div class="text-3xl md:text-4xl font-bold mb-1" style="color: var(--color-primary);">€0</div>
-              <p class="text-sm" style="color: var(--color-text-secondary);">abonnementen, nooit</p>
+              <div class="text-3xl md:text-4xl font-bold mb-1" style="color: var(--color-primary);">€2,99</div>
+              <p class="text-sm" style="color: var(--color-text-secondary);">geen abonnementen</p>
             </div>
           </div>
         </div>
@@ -1801,12 +1808,15 @@
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="https://apps.apple.com/us/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur in de App Store">
-                <img src="/assets/app-store-badge-white.svg" alt="Download in de App Store" class="h-14 w-auto" />
+                <img src="/assets/app-store-badge-white.svg" alt="Download in de App Store" class="h-14 w-auto">
               </a>
               <a href="https://notatechcompany.be" class="inline-block bg-white/10 hover:bg-white/20 text-white font-bold rounded-full px-8 py-4 transition-all border border-white/20">
                 Bezoek Not A Tech Company
               </a>
             </div>
+            <p class="mt-6 text-sm text-white/80">
+              <strong class="text-white">€2,99</strong> — eenmalige aankoop. Geen abonnement, nooit.
+            </p>
           </div>
         </div>
       </section>
@@ -1959,13 +1969,22 @@
           delay: 1100,
         });
 
+        // Price line
+        anime({
+          targets: '#hero-price',
+          opacity: [0, 1],
+          easing: 'easeOutCubic',
+          duration: 700,
+          delay: 1250,
+        });
+
         // Trust line
         anime({
           targets: '#hero-trust',
           opacity: [0, 1],
           easing: 'easeOutCubic',
           duration: 700,
-          delay: 1300,
+          delay: 1400,
         });
 
         // Phone mockups slide in
