@@ -269,6 +269,7 @@
         background: #0a0a0a;
         border-radius: 42px;
         padding: 7px;
+        overflow: hidden;
         box-shadow:
           0 0 0 1.5px #2a2a2a,
           0 30px 60px -15px rgba(0,0,0,0.25),
@@ -287,6 +288,7 @@
         background: #F2F2F7;
         border-radius: 35px;
         overflow: hidden;
+        isolation: isolate;
         font-family: -apple-system, BlinkMacSystemFont, 'DM Sans', sans-serif;
         color: #000;
         display: flex;
@@ -321,6 +323,7 @@
       }
       .phone-body {
         flex: 1;
+        min-height: 0;
         padding: 4px 14px 0;
         overflow: hidden;
         display: flex;
@@ -683,6 +686,8 @@
         background: #F2F2F7;
         display: flex;
         flex-direction: column;
+        min-height: 0;
+        overflow: hidden;
       }
       .demo-screen.is-light { background: #fff; }
       .demo-screen.is-active {
