@@ -9,11 +9,44 @@
     <meta property="og:description" content="Built for Belgian freelancers and management company owners. Track workdays, home vs office, bike allowance km, and monthly reports. All on-device.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://notatechcompany.be/labeur/">
+    <meta property="og:image" content="https://notatechcompany.be/labeur/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_BE">
+    <meta property="og:locale:alternate" content="nl_BE">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Labeur — The workday tracker for Belgian freelancers.">
+    <meta name="twitter:description" content="Track workdays, home vs office, bike allowance km, and monthly reports. Built in Gent for Belgian freelancers.">
+    <meta name="twitter:image" content="https://notatechcompany.be/labeur/og-image.png">
     <link rel="canonical" href="https://notatechcompany.be/labeur/">
-    <link rel="alternate" hreflang="en" href="https://notatechcompany.be/labeur/">
-    <link rel="alternate" hreflang="nl" href="https://notatechcompany.be/labeur/nl/">
+    <link rel="alternate" hreflang="en-BE" href="https://notatechcompany.be/labeur/">
+    <link rel="alternate" hreflang="nl-BE" href="https://notatechcompany.be/labeur/nl/">
     <link rel="alternate" hreflang="x-default" href="https://notatechcompany.be/labeur/">
+
+    <!-- Structured data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Labeur",
+      "operatingSystem": "iOS 17.0 or later",
+      "applicationCategory": "ProductivityApplication",
+      "description": "A simple iPhone workday tracker for Belgian freelancers and management company owners. Log workdays, track home vs office days, count bike allowance kilometers and hand a clean monthly report to your accountant. All on-device.",
+      "url": "https://notatechcompany.be/labeur/",
+      "downloadUrl": "https://apps.apple.com/be/app/labeur/id6761388629",
+      "inLanguage": ["en", "nl"],
+      "offers": {
+        "@type": "Offer",
+        "price": "2.99",
+        "priceCurrency": "EUR"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Not A Tech Company",
+        "url": "https://notatechcompany.be/"
+      }
+    }
+    </script>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -1055,6 +1088,47 @@
       /* Static (no-JS) state: show all rows */
       html.no-js .reveal-row,
       .static .reveal-row { opacity: 1; transform: none; }
+
+      /* FAQ */
+      .faq-item {
+        background-color: var(--color-bg);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: border-color 0.2s ease;
+      }
+      .faq-item[open] { border-color: var(--color-primary); }
+      .faq-item summary {
+        cursor: pointer;
+        list-style: none;
+        padding: 1.25rem 1.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--color-text);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .faq-item summary::-webkit-details-marker { display: none; }
+      .faq-item summary::after {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.2s ease;
+        flex-shrink: 0;
+      }
+      .faq-item[open] summary::after { transform: rotate(180deg); }
+      .faq-answer {
+        padding: 0 1.5rem 1.25rem;
+        color: var(--color-text-secondary);
+        line-height: 1.65;
+      }
+      .faq-answer p { margin: 0; }
+      .faq-answer p + p { margin-top: 0.75rem; }
     </style>
   </head>
   <body class="antialiased">
@@ -1169,7 +1243,7 @@
               </p>
 
               <div id="hero-ctas" style="opacity: 0;" class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-4">
-                <a href="https://apps.apple.com/us/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur on the App Store">
+                <a href="https://apps.apple.com/be/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur on the App Store">
                   <img src="/assets/app-store-badge-black.svg" alt="Download on the App Store" class="block dark:hidden h-14 w-auto">
                   <img src="/assets/app-store-badge-white.svg" alt="Download on the App Store" class="hidden dark:block h-14 w-auto">
                 </a>
@@ -1797,6 +1871,138 @@
         </div>
       </section>
 
+      <!-- ========== FAQ SECTION ========== -->
+      <section id="faq" class="relative py-24 md:py-32" style="background-color: var(--color-surface);">
+        <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12 reveal">
+            <p class="text-sm font-bold uppercase tracking-widest mb-4" style="color: var(--color-primary);">FAQ</p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style="color: var(--color-text);">
+              Frequently asked <span class="gradient-text">questions.</span>
+            </h2>
+            <p class="text-lg max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
+              Everything you might want to know before downloading Labeur.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <details class="faq-item reveal">
+              <summary>Can I use Labeur to track my fietsvergoeding (bike allowance)?</summary>
+              <div class="faq-answer">
+                <p>Yes. Labeur lets you mark a workday as a bike commute and add the kilometers you cycled. At the end of the month you get a clean total of bike days and kilometers — exactly what you need for your bike allowance paperwork, whether that goes through your management company, your accountant or your own bookkeeping.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Is Labeur for employees or freelancers?</summary>
+              <div class="faq-answer">
+                <p>Labeur is built for Belgian freelancers, zelfstandigen and management company owners. The structure (workdays, half days, home vs office, commute method, monthly reports) is designed around how Belgian self-employed admin actually works — not around employee timesheets.</p>
+                <p>That said, employees who want to keep a personal log of home/office days and bike kilometers can absolutely use it too.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Does Labeur store my data in the cloud?</summary>
+              <div class="faq-answer">
+                <p>No. Everything stays on your iPhone. There are no accounts, no cloud sync, no analytics, no third-party SDKs and no network requests. If you delete the app, the data is gone.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Can I send my monthly report to my accountant?</summary>
+              <div class="faq-answer">
+                <p>Yes. The reports screen shows days worked, half days, home vs office split, commute breakdown and total cycling kilometers for any month you pick. Most users screenshot the month and send it to their boekhouder, or copy the numbers into their own monthly overview.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Does Labeur work without internet or an account?</summary>
+              <div class="faq-answer">
+                <p>Yes. Labeur works fully offline. You don't create an account, you don't log in, and you don't need a connection to log a day or view a report.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>What does Labeur cost?</summary>
+              <div class="faq-answer">
+                <p>€2.99 — a one-time purchase on the App Store. No subscription, no in-app purchases, no upsell.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Which devices does Labeur support?</summary>
+              <div class="faq-answer">
+                <p>Labeur is an iPhone app and requires iOS 17 or later. There is no Android, web or Mac version today.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Can I use Labeur to track my fietsvergoeding (bike allowance)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Labeur lets you mark a workday as a bike commute and add the kilometers you cycled. At the end of the month you get a clean total of bike days and kilometers — exactly what you need for your bike allowance paperwork, whether that goes through your management company, your accountant or your own bookkeeping."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Labeur for employees or freelancers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Labeur is built for Belgian freelancers, zelfstandigen and management company owners. The structure (workdays, half days, home vs office, commute method, monthly reports) is designed around how Belgian self-employed admin actually works. Employees who want to keep a personal log of home/office days and bike kilometers can use it too."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Labeur store my data in the cloud?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Everything stays on your iPhone. There are no accounts, no cloud sync, no analytics, no third-party SDKs and no network requests. If you delete the app, the data is gone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I send my monthly report to my accountant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The reports screen shows days worked, half days, home vs office split, commute breakdown and total cycling kilometers for any month you pick. Most users screenshot the month and send it to their boekhouder, or copy the numbers into their own monthly overview."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Labeur work without internet or an account?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Labeur works fully offline. You don't create an account, you don't log in, and you don't need a connection to log a day or view a report."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Labeur cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "€2.99 — a one-time purchase on the App Store. No subscription, no in-app purchases, no upsell."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which devices does Labeur support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Labeur is an iPhone app and requires iOS 17 or later. There is no Android, web or Mac version today."
+              }
+            }
+          ]
+        }
+        </script>
+      </section>
+
       <!-- ========== CTA SECTION ========== -->
       <section class="relative py-20 md:py-28 overflow-hidden" style="background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 50%, #1E40AF 100%);">
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -1808,7 +2014,7 @@
               Stop guessing how many days you worked from home last month. Built in Gent for Belgian freelancers and management company owners — by Not A Tech Company.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://apps.apple.com/us/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur on the App Store">
+              <a href="https://apps.apple.com/be/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur on the App Store">
                 <img src="/assets/app-store-badge-white.svg" alt="Download on the App Store" class="h-14 w-auto">
               </a>
               <a href="https://notatechcompany.be" class="inline-block bg-white/10 hover:bg-white/20 text-white font-bold rounded-full px-8 py-4 transition-all border border-white/20">

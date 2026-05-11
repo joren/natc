@@ -9,11 +9,44 @@
     <meta property="og:description" content="Gemaakt voor Belgische freelancers en eigenaars van een managementvennootschap. Volg werkdagen, thuis vs kantoor, fietsvergoeding-km en maandrapporten. Alles op je toestel.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://notatechcompany.be/labeur/nl/">
+    <meta property="og:image" content="https://notatechcompany.be/labeur/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="nl_BE">
+    <meta property="og:locale:alternate" content="en_BE">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Labeur — De werkdag-tracker voor Belgische freelancers.">
+    <meta name="twitter:description" content="Volg werkdagen, thuis vs kantoor en fietsvergoeding-kilometers. Gemaakt in Gent voor Belgische zelfstandigen.">
+    <meta name="twitter:image" content="https://notatechcompany.be/labeur/og-image.png">
     <link rel="canonical" href="https://notatechcompany.be/labeur/nl/">
-    <link rel="alternate" hreflang="en" href="https://notatechcompany.be/labeur/">
-    <link rel="alternate" hreflang="nl" href="https://notatechcompany.be/labeur/nl/">
+    <link rel="alternate" hreflang="en-BE" href="https://notatechcompany.be/labeur/">
+    <link rel="alternate" hreflang="nl-BE" href="https://notatechcompany.be/labeur/nl/">
     <link rel="alternate" hreflang="x-default" href="https://notatechcompany.be/labeur/">
+
+    <!-- Structured data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Labeur",
+      "operatingSystem": "iOS 17.0 of nieuwer",
+      "applicationCategory": "ProductivityApplication",
+      "description": "Een eenvoudige iPhone-app voor Belgische zelfstandigen en eigenaars van een managementvennootschap. Houd werkdagen bij, registreer thuis- vs kantoordagen, tel fietsvergoeding-kilometers en geef een nette maandrapportage aan je boekhouder. Alles op je toestel.",
+      "url": "https://notatechcompany.be/labeur/nl/",
+      "downloadUrl": "https://apps.apple.com/be/app/labeur/id6761388629",
+      "inLanguage": ["nl", "en"],
+      "offers": {
+        "@type": "Offer",
+        "price": "2.99",
+        "priceCurrency": "EUR"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Not A Tech Company",
+        "url": "https://notatechcompany.be/"
+      }
+    }
+    </script>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -1055,6 +1088,47 @@
       /* Static (no-JS) state: show all rows */
       html.no-js .reveal-row,
       .static .reveal-row { opacity: 1; transform: none; }
+
+      /* FAQ */
+      .faq-item {
+        background-color: var(--color-bg);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: border-color 0.2s ease;
+      }
+      .faq-item[open] { border-color: var(--color-primary); }
+      .faq-item summary {
+        cursor: pointer;
+        list-style: none;
+        padding: 1.25rem 1.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--color-text);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .faq-item summary::-webkit-details-marker { display: none; }
+      .faq-item summary::after {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.2s ease;
+        flex-shrink: 0;
+      }
+      .faq-item[open] summary::after { transform: rotate(180deg); }
+      .faq-answer {
+        padding: 0 1.5rem 1.25rem;
+        color: var(--color-text-secondary);
+        line-height: 1.65;
+      }
+      .faq-answer p { margin: 0; }
+      .faq-answer p + p { margin-top: 0.75rem; }
     </style>
   </head>
   <body class="antialiased">
@@ -1168,7 +1242,7 @@
               </p>
 
               <div id="hero-ctas" style="opacity: 0;" class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-4">
-                <a href="https://apps.apple.com/us/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur in de App Store">
+                <a href="https://apps.apple.com/be/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur in de App Store">
                   <img src="/assets/app-store-badge-black.svg" alt="Download in de App Store" class="block dark:hidden h-14 w-auto">
                   <img src="/assets/app-store-badge-white.svg" alt="Download in de App Store" class="hidden dark:block h-14 w-auto">
                 </a>
@@ -1383,9 +1457,13 @@
               </div>
               <span class="tag">Fietsvergoeding</span>
               <h3 class="text-xl font-bold mb-3" style="color: var(--color-text);">Elke kilometer telt</h3>
-              <p class="text-sm leading-relaxed" style="color: var(--color-text-secondary);">
+              <p class="text-sm leading-relaxed mb-3" style="color: var(--color-text-secondary);">
                 De Belgische belastingvrije fietsvergoeding wordt per gefietste kilometer berekend. Labeur logt elke fietsdag met afstand, zodat je sluitende registratie hebt wanneer je managementvennootschap of boekhouder erom vraagt.
               </p>
+              <a href="/labeur/fietsvergoeding-belgie/" class="text-sm font-semibold inline-flex items-center gap-1" style="color: var(--color-primary);">
+                Lees onze gids over fietsvergoeding bijhouden
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+              </a>
             </div>
 
             <!-- Use case 2: Thuiswerk vs Office -->
@@ -1796,6 +1874,139 @@
         </div>
       </section>
 
+      <!-- ========== FAQ SECTION ========== -->
+      <section id="faq" class="relative py-24 md:py-32" style="background-color: var(--color-surface);">
+        <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12 reveal">
+            <p class="text-sm font-bold uppercase tracking-widest mb-4" style="color: var(--color-primary);">FAQ</p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style="color: var(--color-text);">
+              Veelgestelde <span class="gradient-text">vragen.</span>
+            </h2>
+            <p class="text-lg max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
+              Alles wat je wil weten voor je Labeur downloadt.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <details class="faq-item reveal">
+              <summary>Kan ik Labeur gebruiken om mijn fietsvergoeding bij te houden?</summary>
+              <div class="faq-answer">
+                <p>Ja. Met Labeur duid je een werkdag aan als fietsdag en voeg je het aantal gefietste kilometers toe. Op het einde van de maand krijg je een net overzicht van je fietsdagen en kilometers — precies wat je nodig hebt voor je fietsvergoeding, of die nu via je managementvennootschap, je boekhouder of je eigen administratie loopt.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Is Labeur voor werknemers of zelfstandigen?</summary>
+              <div class="faq-answer">
+                <p>Labeur is gemaakt voor Belgische zelfstandigen, freelancers en eigenaars van een managementvennootschap. De structuur (werkdagen, halve dagen, thuis vs kantoor, woon-werkverkeer, maandrapporten) is opgebouwd rond hoe Belgische zelfstandige administratie écht werkt — niet rond werknemers-timesheets.</p>
+                <p>Werknemers die zelf een persoonlijk overzicht willen bijhouden van thuis-/kantoordagen en fietskilometers kunnen Labeur uiteraard ook gebruiken.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Slaat Labeur mijn gegevens op in de cloud?</summary>
+              <div class="faq-answer">
+                <p>Nee. Alles blijft op je iPhone. Geen accounts, geen cloud, geen analytics, geen externe SDK's en geen netwerkverkeer. Verwijder je de app, dan zijn je gegevens weg.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Kan ik mijn maandrapport doorsturen naar mijn boekhouder?</summary>
+              <div class="faq-answer">
+                <p>Ja. Het rapportenscherm toont gewerkte dagen, halve dagen, thuis- vs kantoordagen, type woon-werkverkeer en totale fietskilometers voor elke maand die je kiest. De meeste gebruikers maken een screenshot en sturen die door naar hun boekhouder, of nemen de cijfers over in hun eigen maandoverzicht.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Werkt Labeur zonder internet of account?</summary>
+              <div class="faq-answer">
+                <p>Ja. Labeur werkt volledig offline. Je hoeft geen account aan te maken, niet in te loggen en geen verbinding te hebben om een dag te loggen of een rapport te bekijken.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Wat kost Labeur?</summary>
+              <div class="faq-answer">
+                <p>€2,99 — eenmalige aankoop in de App Store. Geen abonnement, geen in-app aankopen, geen upsell.</p>
+              </div>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Welke toestellen ondersteunt Labeur?</summary>
+              <div class="faq-answer">
+                <p>Labeur is een iPhone-app en vereist iOS 17 of nieuwer. Er is vandaag geen Android-, web- of Mac-versie.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "inLanguage": "nl-BE",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Kan ik Labeur gebruiken om mijn fietsvergoeding bij te houden?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Met Labeur duid je een werkdag aan als fietsdag en voeg je het aantal gefietste kilometers toe. Op het einde van de maand krijg je een net overzicht van je fietsdagen en kilometers — precies wat je nodig hebt voor je fietsvergoeding, of die nu via je managementvennootschap, je boekhouder of je eigen administratie loopt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Labeur voor werknemers of zelfstandigen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Labeur is gemaakt voor Belgische zelfstandigen, freelancers en eigenaars van een managementvennootschap. De structuur is opgebouwd rond hoe Belgische zelfstandige administratie werkt. Werknemers die zelf een persoonlijk overzicht willen bijhouden van thuis-/kantoordagen en fietskilometers kunnen Labeur ook gebruiken."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Slaat Labeur mijn gegevens op in de cloud?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nee. Alles blijft op je iPhone. Geen accounts, geen cloud, geen analytics, geen externe SDK's en geen netwerkverkeer. Verwijder je de app, dan zijn je gegevens weg."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kan ik mijn maandrapport doorsturen naar mijn boekhouder?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Het rapportenscherm toont gewerkte dagen, halve dagen, thuis- vs kantoordagen, type woon-werkverkeer en totale fietskilometers voor elke maand die je kiest. De meeste gebruikers maken een screenshot en sturen die door naar hun boekhouder, of nemen de cijfers over in hun eigen maandoverzicht."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Werkt Labeur zonder internet of account?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Labeur werkt volledig offline. Je hoeft geen account aan te maken, niet in te loggen en geen verbinding te hebben om een dag te loggen of een rapport te bekijken."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Wat kost Labeur?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "€2,99 — eenmalige aankoop in de App Store. Geen abonnement, geen in-app aankopen, geen upsell."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Welke toestellen ondersteunt Labeur?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Labeur is een iPhone-app en vereist iOS 17 of nieuwer. Er is vandaag geen Android-, web- of Mac-versie."
+              }
+            }
+          ]
+        }
+        </script>
+      </section>
+
       <!-- ========== CTA SECTION ========== -->
       <section class="relative py-20 md:py-28 overflow-hidden" style="background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 50%, #1E40AF 100%);">
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -1807,7 +2018,7 @@
               Stop met gokken hoeveel dagen je vorige maand thuis werkte. Gemaakt in Gent voor Belgische freelancers en eigenaars van een managementvennootschap — door Not A Tech Company.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://apps.apple.com/us/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur in de App Store">
+              <a href="https://apps.apple.com/be/app/labeur/id6761388629" target="_blank" rel="noopener noreferrer" class="inline-block transition-all hover:scale-[1.03] hover:-translate-y-0.5" aria-label="Download Labeur in de App Store">
                 <img src="/assets/app-store-badge-white.svg" alt="Download in de App Store" class="h-14 w-auto">
               </a>
               <a href="https://notatechcompany.be" class="inline-block bg-white/10 hover:bg-white/20 text-white font-bold rounded-full px-8 py-4 transition-all border border-white/20">
