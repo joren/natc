@@ -1,0 +1,584 @@
+# notatechcompany.be — Full Content
+
+> Concatenated Markdown for all canonical pages on notatechcompany.be. Use this if you prefer a single document over fetching each page separately. Last assembled: 2026-05-12.
+
+Pages included:
+- /  (homepage)
+- /labeur/  (Labeur — English)
+- /labeur/nl/  (Labeur — Nederlands)
+- /labeur/fietsvergoeding-belgie/  (long-form Dutch guide)
+- /labeur/privacy.html  (Labeur privacy — English)
+- /labeur/nl/privacy.html  (Labeur privacy — Nederlands)
+
+---
+
+# Page: https://notatechcompany.be/
+
+# not a tech company — software with a soul
+
+> Human-first software, made in Gent, Belgium. We build apps for humans, focusing on the human part of problems. Because it was never about the tech — it's about what we're solving for you.
+
+**Canonical URL:** https://notatechcompany.be/
+**Language:** English
+**Operated by:** Joren De Groof / Not A Tech Company (VAT BE1033.576.768), Gent, Belgium
+
+---
+
+## Why "not a tech company"?
+
+It's not about the tech. It's about the human on the other side.
+
+We named ourselves "not a tech company" because the technology is just the tool. What matters is the problem we're solving — and the person we're solving it for.
+
+### Philosophy
+
+- **Empathy-driven design.** Every feature starts with a conversation, not a spreadsheet. We listen, we understand, and then we build what actually helps.
+- **Real problems only.** No solutions looking for problems. We tackle the messy, real-life challenges that people actually face — like packing for a trip or capturing your kid's milestones.
+- **Simple over clever.** We believe software should feel obvious. If you need a manual, we messed up. Our apps just work, the way you'd expect them to.
+
+---
+
+## Products
+
+Tools designed around how you actually live — not how a product manager imagines you live.
+
+### Pret — *Pack smart. Travel happy.* (Beta)
+
+Your smart holiday packing assistant. Tell Pret where you're going, when, and with whom — and it takes the stress out of packing. No more forgotten swimsuits or three pairs of the same socks.
+
+→ [Try the beta at pret-app.com](https://pret-app.com)
+
+### Labeur — *Track your work. Simply.* (Live)
+
+A simple work tracker that logs whether you worked today — and if you did, from home or the office. No accounts, no cloud sync, no tracking. Just your data, on your device. €2.99 one-time purchase, iOS only.
+
+→ [Labeur product page](/labeur/) · [App Store](https://apps.apple.com/us/app/labeur/id6761388629)
+
+### Kids Diary — *Memories that last forever.* (Coming soon)
+
+Build a beautiful diary for your kids — capturing their first words, funny quotes, and milestones. When they're old enough, hand over the account and give them a treasure trove of memories to keep forever.
+
+---
+
+## What we stand for
+
+Four things we won't compromise on:
+
+1. **People over code** — Design decisions start with people, not trends.
+2. **Simplicity first** — Less is more. If it's not obvious, it's not done.
+3. **Made in Gent** — Proudly built in Belgium, for the world.
+4. **Solving real problems** — No vanity features. Just things that make life better.
+
+---
+
+## Contact
+
+- Website: https://notatechcompany.be
+- Location: Gent, Belgium
+- VAT: BE1033.576.768
+
+---
+
+# Page: https://notatechcompany.be/labeur/
+
+# Labeur — The workday tracker for Belgian freelancers
+
+> Labeur is an iOS workday tracker built for Belgian freelancers and management-company owners. Log a workday in two taps, track home vs office days, count bike-allowance kilometres, and hand a clean monthly report to your accountant. All on-device.
+
+**Canonical URL:** https://notatechcompany.be/labeur/
+**Language:** English (Belgian English audience)
+**Dutch version:** [/labeur/nl/](/labeur/nl/)
+**Platform:** iPhone, iOS 17 or later
+**Price:** €2.99 — one-time purchase, no subscription
+**App Store:** https://apps.apple.com/be/app/labeur/id6761388629
+**Made in:** Gent, Belgium by Not A Tech Company
+
+---
+
+## Hero
+
+The workday log for Belgian freelancers.
+
+Log a workday in two taps. Track home vs office days, count your **bike allowance** kilometers, and hand a clean monthly report to your **accountant**. Built for freelancers and management company owners.
+
+- €2.99 — one-time purchase. No subscription.
+- On-device only. No accounts. No cloud. No tracking.
+
+---
+
+## Made for Belgium
+
+Built for the way Belgian freelancers actually work. Whether you're a full-time freelancer, running a management company, or somewhere in between — Labeur tracks the things that matter to you and your accountant.
+
+### Every kilometer counts (Fietsvergoeding)
+
+Belgium's tax-free bike allowance pays per kilometer commuted. Labeur logs every bike day with distance, so you have airtight records when your management company or accountant needs them.
+
+### Home vs office, always clear (Thuiswerk admin)
+
+Justifying home-office expenses or proving office presence to a client? Tag every workday as Home or Office and never guess at the end of the quarter again.
+
+### A clean monthly report (Boekhouder-ready)
+
+Every month: total days worked, home/office split, commute breakdown, total cycling kilometers. One screen. Forward it to your accountant and move on with your day.
+
+### At a glance
+
+- **2 taps** to log a full workday
+- **100%** on your iPhone, never in the cloud
+- **€2.99** — no subscriptions, ever
+
+---
+
+## How it works
+
+Two taps. Day logged.
+
+1. **Get a daily reminder.** A push notification at the end of the workday so you never forget to log.
+2. **Log in seconds.** Did you work? Where? How did you commute? Three taps and the day is in.
+3. **Hand a clean report to your accountant.** Monthly totals, home vs office split, and bike kilometers — ready to share.
+
+---
+
+## Features
+
+Everything you need. Nothing you don't. Labeur does one thing well: it helps Belgian freelancers keep track of their workdays without getting in the way.
+
+- **Two-tap logging.** Open the app, tap "did you work?", pick where. Done in under five seconds — even between client calls.
+- **Half-day support.** Worked the morning, took a half-day leave? Flag it as a half day so your invoicing and reports add up correctly.
+- **Fietsvergoeding tracking.** Total bike kilometers per month, ready for your bike allowance paperwork — RSZ, your management company, or your own pocket.
+- **Monthly reports.** Days worked, home/office split, commute breakdown, cycling km — all on one screen. Pick any month, screenshot it for your accountant.
+
+---
+
+## Privacy
+
+Your data is yours alone.
+
+Labeur was built with a simple philosophy: your work data is nobody's business but your own. We collect absolutely nothing. No analytics, no crash reporting, no usage data, no personal information. Everything lives on your device and never leaves it.
+
+- **0** data collected
+- **0** third-party SDKs
+- **0** network requests
+
+See the full [privacy policy](/labeur/privacy.html).
+
+---
+
+## FAQ
+
+**Can I use Labeur to track my fietsvergoeding (bike allowance)?**
+Yes. Labeur lets you mark a workday as a bike commute and add the kilometers you cycled. At the end of the month you get a clean total of bike days and kilometers — exactly what you need for your bike allowance paperwork, whether that goes through your management company, your accountant or your own bookkeeping.
+
+**Is Labeur for employees or freelancers?**
+Labeur is built for Belgian freelancers, zelfstandigen and management company owners. The structure (workdays, half days, home vs office, commute method, monthly reports) is designed around how Belgian self-employed admin actually works — not around employee timesheets. That said, employees who want to keep a personal log of home/office days and bike kilometers can absolutely use it too.
+
+**Does Labeur store my data in the cloud?**
+No. Everything stays on your iPhone. There are no accounts, no cloud sync, no analytics, no third-party SDKs and no network requests. If you delete the app, the data is gone.
+
+**Can I send my monthly report to my accountant?**
+Yes. The reports screen shows days worked, half days, home vs office split, commute breakdown and total cycling kilometers for any month you pick. Most users screenshot the month and send it to their boekhouder, or copy the numbers into their own monthly overview.
+
+**Does Labeur work without internet or an account?**
+Yes. Labeur works fully offline. You don't create an account, you don't log in, and you don't need a connection to log a day or view a report.
+
+**What does Labeur cost?**
+€2.99 — a one-time purchase on the App Store. No subscription, no in-app purchases, no upsell.
+
+**Which devices does Labeur support?**
+Labeur is an iPhone app and requires iOS 17 or later. There is no Android, web or Mac version today.
+
+---
+
+## Less admin. More werk.
+
+Stop guessing how many days you worked from home last month. Built in Gent for Belgian freelancers and management company owners — by Not A Tech Company.
+
+- [Download on the App Store](https://apps.apple.com/be/app/labeur/id6761388629)
+- [Visit Not A Tech Company](https://notatechcompany.be)
+- [Related guide: Fietsvergoeding bijhouden als zelfstandige in België](/labeur/fietsvergoeding-belgie/) (Dutch)
+
+---
+
+# Page: https://notatechcompany.be/labeur/nl/
+
+# Labeur — De werkdag-tracker voor Belgische freelancers
+
+> Labeur is een iOS-werkdag-tracker, gemaakt voor Belgische zelfstandigen en eigenaars van een managementvennootschap. Log een werkdag in twee tikken, registreer thuis vs kantoor, tel je fietsvergoeding-kilometers en bezorg een nette maandrapportage aan je boekhouder. Alles op je toestel.
+
+**Canonieke URL:** https://notatechcompany.be/labeur/nl/
+**Taal:** Nederlands (Belgisch publiek)
+**Engelse versie:** [/labeur/](/labeur/)
+**Platform:** iPhone, iOS 17 of nieuwer
+**Prijs:** €2,99 — eenmalige aankoop, geen abonnement
+**App Store:** https://apps.apple.com/be/app/labeur/id6761388629
+**Gemaakt in:** Gent, België door Not A Tech Company
+
+---
+
+## Hero
+
+De werkdaglog voor Belgische freelancers.
+
+Log een werkdag in twee tikken. Houd thuis- vs kantoordagen bij, tel je **fietsvergoeding**-kilometers en geef een nette maandrapportage aan je **boekhouder**. Gemaakt voor zelfstandigen en eigenaars van een managementvennootschap.
+
+- €2,99 — eenmalige aankoop. Geen abonnement.
+- Enkel op je toestel. Geen accounts. Geen cloud. Geen tracking.
+
+---
+
+## Gemaakt voor België
+
+Gebouwd voor hoe Belgische freelancers écht werken. Of je nu zelfstandige in hoofdberoep bent, een managementvennootschap runt, of iets daartussenin — Labeur houdt bij wat belangrijk is voor jou en je boekhouder.
+
+### Elke kilometer telt (Fietsvergoeding)
+
+De Belgische belastingvrije fietsvergoeding wordt per gefietste kilometer berekend. Labeur logt elke fietsdag met afstand, zodat je sluitende registratie hebt wanneer je managementvennootschap of boekhouder erom vraagt. → [Lees de gids over fietsvergoeding bijhouden](/labeur/fietsvergoeding-belgie/)
+
+### Thuis vs kantoor, altijd duidelijk (Thuiswerk-admin)
+
+Thuiswerkkosten verantwoorden of kantooraanwezigheid aan een klant aantonen? Tag elke werkdag als Thuis of Kantoor en moet nooit meer gokken op het einde van het kwartaal.
+
+### Een nette maandrapportage (Klaar voor je boekhouder)
+
+Elke maand: totaal gewerkte dagen, verdeling thuis/kantoor, opsplitsing woon-werk, totale fietskilometers. Eén scherm. Doorsturen naar je boekhouder en verder met je dag.
+
+### In één oogopslag
+
+- **2 tikken** om een volledige werkdag te loggen
+- **100%** op je iPhone, nooit in de cloud
+- **€2,99** — geen abonnementen
+
+---
+
+## Zo werkt het
+
+Twee tikken. Dag gelogd.
+
+1. **Krijg een dagelijkse herinnering.** Een melding aan het einde van je werkdag, zodat je nooit vergeet te loggen.
+2. **Log in seconden.** Heb je gewerkt? Waar? Hoe ben je gependeld? Drie tikken en je dag staat erin.
+3. **Bezorg je boekhouder een nette rapportage.** Maandtotalen, verdeling thuis vs kantoor en fietskilometers — klaar om door te sturen.
+
+---
+
+## Functies
+
+Alles wat je nodig hebt. Niets wat je niet nodig hebt. Labeur doet één ding goed: Belgische freelancers helpen hun werkdagen bij te houden zonder in de weg te zitten.
+
+- **Loggen in twee tikken.** Open de app, tik "heb je gewerkt?", kies waar. Klaar in minder dan vijf seconden — zelfs tussen twee klantengesprekken door.
+- **Halve dagen.** 's Morgens gewerkt en 's namiddags verlof genomen? Markeer als halve dag, zodat je facturatie en rapporten kloppen.
+- **Fietsvergoeding bijhouden.** Totaal fietskilometers per maand, klaar voor je fietsvergoeding-papierwerk — RSZ, je managementvennootschap of je eigen zak.
+- **Maandrapporten.** Gewerkte dagen, verdeling thuis/kantoor, opsplitsing woon-werk, fiets-km — alles op één scherm. Kies een maand en stuur de screenshot naar je boekhouder.
+
+---
+
+## Privacy
+
+Jouw data is alleen van jou.
+
+Labeur is gebouwd vanuit een eenvoudige filosofie: jouw werkdata is niemands zaak behalve die van jezelf. We verzamelen absoluut niets. Geen analytics, geen crashrapporten, geen gebruiksdata, geen persoonsgegevens. Alles blijft op je toestel en verlaat het nooit.
+
+- **0** verzamelde data
+- **0** externe SDK's
+- **0** netwerkverzoeken
+
+Zie het volledige [privacybeleid](/labeur/nl/privacy.html).
+
+---
+
+## FAQ
+
+**Kan ik Labeur gebruiken om mijn fietsvergoeding bij te houden?**
+Ja. Met Labeur duid je een werkdag aan als fietsdag en voeg je het aantal gefietste kilometers toe. Op het einde van de maand krijg je een net overzicht van je fietsdagen en kilometers — precies wat je nodig hebt voor je fietsvergoeding, of die nu via je managementvennootschap, je boekhouder of je eigen administratie loopt.
+
+**Is Labeur voor werknemers of zelfstandigen?**
+Labeur is gemaakt voor Belgische zelfstandigen, freelancers en eigenaars van een managementvennootschap. De structuur (werkdagen, halve dagen, thuis vs kantoor, woon-werkverkeer, maandrapporten) is opgebouwd rond hoe Belgische zelfstandige administratie écht werkt — niet rond werknemers-timesheets. Werknemers die zelf een persoonlijk overzicht willen bijhouden van thuis-/kantoordagen en fietskilometers kunnen Labeur uiteraard ook gebruiken.
+
+**Slaat Labeur mijn gegevens op in de cloud?**
+Nee. Alles blijft op je iPhone. Geen accounts, geen cloud, geen analytics, geen externe SDK's en geen netwerkverkeer. Verwijder je de app, dan zijn je gegevens weg.
+
+**Kan ik mijn maandrapport doorsturen naar mijn boekhouder?**
+Ja. Het rapportenscherm toont gewerkte dagen, halve dagen, thuis- vs kantoordagen, type woon-werkverkeer en totale fietskilometers voor elke maand die je kiest. De meeste gebruikers maken een screenshot en sturen die door naar hun boekhouder, of nemen de cijfers over in hun eigen maandoverzicht.
+
+**Werkt Labeur zonder internet of account?**
+Ja. Labeur werkt volledig offline. Je hoeft geen account aan te maken, niet in te loggen en geen verbinding te hebben om een dag te loggen of een rapport te bekijken.
+
+**Wat kost Labeur?**
+€2,99 — eenmalige aankoop in de App Store. Geen abonnement, geen in-app aankopen, geen upsell.
+
+**Welke toestellen ondersteunt Labeur?**
+Labeur is een iPhone-app en vereist iOS 17 of nieuwer. Er is vandaag geen Android-, web- of Mac-versie.
+
+---
+
+## Minder admin. Meer werk.
+
+Stop met gissen hoeveel dagen je vorige maand thuis hebt gewerkt. Gemaakt in Gent voor Belgische zelfstandigen en eigenaars van een managementvennootschap — door Not A Tech Company.
+
+- [Download in de App Store](https://apps.apple.com/be/app/labeur/id6761388629)
+- [Bezoek Not A Tech Company](https://notatechcompany.be)
+- [Gerelateerde gids: Fietsvergoeding bijhouden als zelfstandige in België](/labeur/fietsvergoeding-belgie/)
+
+---
+
+# Page: https://notatechcompany.be/labeur/fietsvergoeding-belgie/
+
+# Fietsvergoeding bijhouden als zelfstandige in België
+
+> Een praktische gids voor freelancers en eigenaars van een managementvennootschap. Welke gegevens hou je bij, wat verwacht je boekhouder en hoe maak je er een routine van die geen vrijdagavond opslokt.
+
+**Canonieke URL:** https://notatechcompany.be/labeur/fietsvergoeding-belgie/
+**Taal:** Nederlands (België)
+**Laatst bijgewerkt:** mei 2026 · Leestijd ± 6 minuten
+**Auteur:** Not A Tech Company — Gent, België
+
+---
+
+Fietsen naar je klant of kantoor en daar een vergoeding voor krijgen — het klinkt eenvoudig, en in principe is het dat ook. Maar zodra je boekhouder vraagt om *"de cijfers van vorige maand"*, merken veel zelfstandigen dat ze achteraf zitten te puzzelen: *was dat dinsdag een fietsdag of trein? Hoeveel kilometers was die rit ook alweer?*
+
+Deze gids legt uit wat fietsvergoeding precies is, welke gegevens je moet bijhouden om er gebruik van te maken, en hoe je dat doet zonder dat het een administratieve last wordt.
+
+## Wat is fietsvergoeding eigenlijk?
+
+De **fietsvergoeding** is een kilometervergoeding die je krijgt wanneer je woon-werkverkeer met de fiets aflegt. In België is ze fiscaal en sociaal vrijgesteld tot een bepaald maximumbedrag per kilometer, dat door de federale overheid wordt vastgelegd en periodiek geïndexeerd wordt.
+
+Voor zelfstandigen zijn er twee veelvoorkomende situaties:
+
+- **Eenmanszaak / zelfstandige in hoofdberoep zonder vennootschap.** Je betaalt jezelf strikt genomen geen fietsvergoeding "uit", maar je kan je woon-werk fietskilometers wel meenemen in je administratie en bespreken met je boekhouder hoe die fiscaal verwerkt worden.
+- **Eigenaar van een managementvennootschap.** Je vennootschap kan jou als bedrijfsleider een fietsvergoeding uitbetalen voor je woon-werkverkeer. Voor de vennootschap is dat een aftrekbare kost, voor jou is het (binnen de grenzen) vrij van belastingen en sociale bijdragen.
+
+> **Tarief en fiscaliteit.** De exacte vrijgestelde kilometerprijs en de fiscale behandeling wijzigen geregeld. Vraag altijd je boekhouder naar het actuele bedrag en hoe het in jouw situatie verwerkt wordt — een gids als deze vervangt geen advies op maat.
+
+## Welke gegevens moet je bijhouden?
+
+De gemene deler bij elke aanpak: je hebt een geloofwaardige **onderbouwing** nodig. In de praktijk komt dat neer op deze vier dingen:
+
+1. **De datum** van elke fietsrit (of fietsdag).
+2. **Het traject** — typisch je woonplaats naar je werkadres of klantenlocatie.
+3. **Het aantal kilometers** per rit. Heen-en-terug telt natuurlijk dubbel.
+4. **Een totaal per maand**, zodat je boekhouder of vennootschap er snel mee aan de slag kan.
+
+Je hoeft geen tracker te installeren of GPS-gegevens te bewaren. Een eenvoudig logboek volstaat — papier, spreadsheet of een app — zolang het maar bijgehouden wordt op het moment zelf, en niet drie maanden later wanneer je je een dinsdag in maart probeert te herinneren.
+
+## Waarom een maandoverzicht handig is
+
+Boekhouders werken op maandbasis. Wanneer je hen aan het einde van de maand een net overzicht stuurt met:
+
+- het aantal fietsdagen,
+- het totaal aantal kilometers,
+- en eventueel het bedrag dat je vennootschap zou uitbetalen,
+
+… dan kunnen zij dat in één beweging verwerken. Geen e-mailtjes heen en weer, geen heronderzoek van je agenda, geen schattingen "ongeveer drie keer per week".
+
+## Drie fouten die je beter vermijdt
+
+### 1. Alles op het einde van de maand reconstrueren
+
+Dé klassieker. Je opent op de 30e je agenda en probeert te reconstrueren welke dagen je gefietst hebt. Resultaat: ofwel onderschat je structureel je fietskilometers, ofwel maak je een schatting die niet houdbaar is bij een controle. Beter: registreer op de dag zelf, in 5 seconden.
+
+### 2. Geen onderscheid tussen fiets en andere vervoerswijzen
+
+Soms fiets je, soms neem je de trein, soms ga je met de auto. Wie alleen "ja, ik werk vandaag" noteert, kan achteraf niet zeggen *hoe*. Hou per werkdag bij hoe je gegaan bent — fiets, trein, auto, openbaar vervoer.
+
+### 3. Geen onderscheid tussen thuis- en kantoordagen
+
+Fietsvergoeding geldt voor woon-werkverkeer. Een dag dat je thuis werkt, is geen woon-werkdag. Markeer expliciet waar je gewerkt hebt — thuis of op kantoor / bij de klant.
+
+## Hoe Labeur je hierbij helpt
+
+[Labeur](/labeur/nl/) is een eenvoudige iPhone-app die we exact rond dit probleem gebouwd hebben. In twee tikken log je een werkdag — thuis of kantoor, halve of volle dag, en hoe je gekomen bent. Voor fietsdagen voer je je kilometers in.
+
+Op het einde van de maand zie je in één scherm:
+
+- het totaal aantal gewerkte dagen en halve dagen,
+- de verdeling tussen thuis- en kantoordagen,
+- de verdeling van je woon-werkverkeer (fiets, trein, auto, …),
+- en het totaal aantal gefietste kilometers voor die maand.
+
+Geen account, geen cloud, geen abonnement. Alles blijft op je toestel. **€2,99** als eenmalige aankoop in de App Store.
+
+→ [Download Labeur](https://apps.apple.com/be/app/labeur/id6761388629) — €2,99, eenmalige aankoop.
+
+## Veelgestelde vragen
+
+**Moet ik een GPS-tracker gebruiken om mijn fietsritten te bewijzen?**
+Nee. Een geloofwaardig logboek met datum, traject en kilometers volstaat in de praktijk. Belangrijk is dat je het op het moment zelf bijhoudt en consistent dezelfde afstanden hanteert.
+
+**Kan ik fietsvergoeding krijgen als ik thuiswerk?**
+Nee. Fietsvergoeding is gekoppeld aan woon-werkverkeer. Op een thuiswerkdag is er geen woon-werktraject, dus geen fietsvergoeding voor die dag. Daarom is het zo belangrijk om thuis- en kantoordagen apart bij te houden.
+
+**Wat als ik halve dagen werk?**
+Een halve werkdag waarbij je naar kantoor of de klant fietst, geldt evengoed als woon-werkverkeer — je hebt immers heen en terug gefietst. De kilometers tellen mee. Markeer de dag wel als halve dag voor je eigen overzicht.
+
+**Welk bedrag per kilometer mag ik aanrekenen?**
+Het maximaal vrijgestelde bedrag per kilometer wordt door de federale overheid vastgelegd en periodiek aangepast. Vraag je boekhouder naar het actuele bedrag — het verschilt mogelijk van wat een online artikel uit een vorig jaar vermeldt.
+
+**Geldt fietsvergoeding ook voor een speed pedelec of elektrische fiets?**
+Voor klassieke elektrische fietsen (tot 25 km/u, max 250 W) geldt dezelfde regeling als voor een gewone fiets. Voor speed pedelecs (tot 45 km/u) zijn er specifieke regels — bespreek dat met je boekhouder.
+
+**Wat als ik vergeten ben om enkele dagen bij te houden?**
+In Labeur kan je achteraf nog dagen aanvullen — je tikt gewoon op de juiste datum en logt die. Doe dat liefst zo snel mogelijk, terwijl je het je nog herinnert. Lege dagen blijven anders ongelogd staan.
+
+## Conclusie
+
+Fietsvergoeding is geen ingewikkelde regeling — wél een regeling die staat of valt met goeie cijfers. Wie elke werkdag in 5 seconden noteert *of* en *hoe* hij gewerkt heeft, hoeft op het einde van de maand niets meer te reconstrueren. Je boekhouder krijgt een net overzicht, jij krijgt waar je recht op hebt, en niemand verliest een avond aan agenda's uitpluizen.
+
+Labeur is gemaakt om dat eenvoudig te maken. [Bekijk de app](/labeur/nl/) of [download in de App Store](https://apps.apple.com/be/app/labeur/id6761388629).
+
+---
+
+# Page: https://notatechcompany.be/labeur/privacy.html
+
+# Privacy Policy — Labeur
+
+**Canonical URL:** https://notatechcompany.be/labeur/privacy.html
+**Language:** English
+**Dutch version:** [/labeur/nl/privacy.html](/labeur/nl/privacy.html)
+**Last updated:** April 10, 2026
+
+---
+
+## The Short Version
+
+**Labeur does not collect, store, or transmit any of your personal data.** The app runs entirely on your device. We have no servers, no analytics, no tracking, and no way to access your information. That's it. That's the privacy policy.
+
+If you want the detailed version for legal completeness, keep reading.
+
+## 1. Who We Are
+
+Labeur is developed and published by **Not A Tech Company**, a company registered in Belgium.
+
+- Company: Not A Tech Company
+- Location: Gent, Belgium
+- VAT: BE1033.576.768
+- Website: https://notatechcompany.be
+
+## 2. Data We Collect
+
+**None.** Labeur does not collect any data from you. Specifically:
+
+- We do **not** collect personal information (name, email, phone number, etc.)
+- We do **not** collect usage data or analytics
+- We do **not** collect device identifiers
+- We do **not** collect location data
+- We do **not** use cookies or tracking pixels
+- We do **not** use any third-party analytics or advertising SDKs
+- We do **not** collect crash reports
+
+## 3. Data Storage
+
+All data you enter into Labeur (your work day logs, home/office preferences) is stored **exclusively on your device** using local on-device storage. This data:
+
+- Never leaves your device
+- Is not transmitted to any server
+- Is not synced to any cloud service
+- Is not accessible to us or any third party
+- Is deleted when you delete the app
+
+## 4. Third-Party Services
+
+Labeur does **not** integrate with any third-party services. There are no analytics tools, no advertising networks, no social media SDKs, and no crash reporting services embedded in the app. The app makes **zero network requests**.
+
+## 5. Children's Privacy
+
+Since Labeur does not collect any data from anyone, it does not collect data from children. The app is safe for use by anyone regardless of age.
+
+## 6. Data Sharing
+
+We do not share any data with third parties because we do not have any data to share. There is no data to sell, transfer, or disclose.
+
+## 7. Your Rights
+
+Under the General Data Protection Regulation (GDPR) and other applicable privacy laws, you have rights regarding your personal data. Since Labeur does not collect or process any personal data, these rights are inherently fulfilled:
+
+- **Right of access:** There is no data to access.
+- **Right to erasure:** Deleting the app removes all locally stored data.
+- **Right to data portability:** Your data exists only on your device and is under your full control.
+- **Right to object:** There is no data processing to object to.
+
+## 8. Changes to This Policy
+
+If we ever change this privacy policy, we will update this page with the new policy and update the "Last updated" date at the top. Given our commitment to collecting zero data, we do not anticipate significant changes.
+
+## 9. Contact
+
+If you have any questions about this privacy policy, you can reach us through our website at https://notatechcompany.be.
+
+---
+
+# Page: https://notatechcompany.be/labeur/nl/privacy.html
+
+# Privacybeleid — Labeur
+
+**Canonieke URL:** https://notatechcompany.be/labeur/nl/privacy.html
+**Taal:** Nederlands
+**Engelse versie:** [/labeur/privacy.html](/labeur/privacy.html)
+**Laatst bijgewerkt:** 10 april 2026
+
+---
+
+## De korte versie
+
+**Labeur verzamelt, bewaart of verzendt geen enkele persoonlijke data.** De app draait volledig op je toestel. We hebben geen servers, geen analytics, geen tracking en geen manier om bij je gegevens te komen. Dat is het. Dat is het privacybeleid.
+
+Wil je toch de uitgebreide versie voor juridische volledigheid? Lees dan verder.
+
+## 1. Wie we zijn
+
+Labeur wordt ontwikkeld en uitgegeven door **Not A Tech Company**, een onderneming gevestigd in België.
+
+- Bedrijf: Not A Tech Company
+- Locatie: Gent, België
+- BTW: BE1033.576.768
+- Website: https://notatechcompany.be
+
+## 2. Welke data we verzamelen
+
+**Geen.** Labeur verzamelt geen enkele data van jou. Specifiek:
+
+- We verzamelen **geen** persoonsgegevens (naam, e-mail, telefoonnummer enz.)
+- We verzamelen **geen** gebruiksdata of analytics
+- We verzamelen **geen** toestelidentificatoren
+- We verzamelen **geen** locatiegegevens
+- We gebruiken **geen** cookies of tracking pixels
+- We gebruiken **geen** externe analytics- of advertentie-SDK's
+- We verzamelen **geen** crashrapporten
+
+## 3. Opslag van data
+
+Alle data die je in Labeur invoert (je werkdagregistraties, voorkeuren voor thuis/kantoor) wordt **uitsluitend op je toestel** bewaard met lokale opslag. Deze data:
+
+- Verlaat nooit je toestel
+- Wordt naar geen enkele server verzonden
+- Wordt met geen enkele clouddienst gesynchroniseerd
+- Is voor ons of derden niet toegankelijk
+- Wordt verwijderd wanneer je de app verwijdert
+
+## 4. Diensten van derden
+
+Labeur integreert met **geen** enkele dienst van derden. Er zijn geen analyticstools, geen advertentienetwerken, geen sociale-media-SDK's en geen crashrapportagediensten in de app verwerkt. De app doet **nul netwerkverzoeken**.
+
+## 5. Privacy van kinderen
+
+Aangezien Labeur van niemand data verzamelt, verzamelt de app ook geen data van kinderen. De app is veilig in gebruik voor iedereen, ongeacht leeftijd.
+
+## 6. Delen van data
+
+We delen geen data met derden, want we hebben geen data om te delen. Er is niets om te verkopen, over te dragen of bekend te maken.
+
+## 7. Jouw rechten
+
+Onder de Algemene Verordening Gegevensbescherming (AVG/GDPR) en andere toepasselijke privacywetgeving heb je rechten met betrekking tot je persoonsgegevens. Aangezien Labeur geen persoonsgegevens verzamelt of verwerkt, zijn deze rechten automatisch vervuld:
+
+- **Recht op inzage:** er is geen data om in te zien.
+- **Recht op vergetelheid:** door de app te verwijderen verdwijnt alle lokaal opgeslagen data.
+- **Recht op gegevensoverdraagbaarheid:** je data staat enkel op je toestel en is volledig onder jouw controle.
+- **Recht van bezwaar:** er is geen gegevensverwerking om bezwaar tegen te maken.
+
+## 8. Wijzigingen aan dit beleid
+
+Als we dit privacybeleid ooit wijzigen, werken we deze pagina bij met het nieuwe beleid en passen we de datum "Laatst bijgewerkt" bovenaan aan. Gezien onze toewijding om nul data te verzamelen, verwachten we geen significante wijzigingen.
+
+## 9. Contact
+
+Heb je vragen over dit privacybeleid? Je kunt ons bereiken via onze website op https://notatechcompany.be.

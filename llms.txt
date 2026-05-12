@@ -1,0 +1,28 @@
+# not a tech company
+
+> not a tech company is a small Belgian software studio in Gent that builds human-first apps for everyday problems. The studio is operated by Joren De Groof (VAT BE1033.576.768). Tagline: "software with a soul."
+
+The studio's philosophy: technology is the tool, not the point. Every product starts with a real human problem (packing for a trip, tracking a workday, capturing a child's milestones), is shipped only when it feels obvious to use, and aims to stay out of the way once installed.
+
+Products currently shipped or in development:
+
+- **Labeur** (live) — A €2.99 iPhone app for Belgian freelancers and management-company owners. Log a workday in two taps; track home vs office days, half-days, commute method and bike-allowance kilometres; produce a monthly report for your accountant. 100% on-device — no accounts, no cloud sync, no analytics, no network requests.
+- **Pret** (beta) — A smart holiday packing assistant. Tell it where you're going, when, and with whom; it builds a packing list so you don't forget the swimsuits.
+- **Kids Diary** (coming soon) — A diary parents keep for their kids — first words, funny quotes, milestones — to hand over when the child is old enough.
+
+## Homepage
+
+- [not a tech company — homepage](https://notatechcompany.be/index.md): Studio overview, philosophy, product list, values.
+
+## Labeur
+
+- [Labeur (English)](https://notatechcompany.be/labeur/index.md): Product page for the iOS workday tracker. Hero, features, how-it-works, privacy summary, full FAQ, pricing.
+- [Labeur (Nederlands)](https://notatechcompany.be/labeur/nl/index.md): Dutch (Belgian) version of the Labeur product page.
+- [Fietsvergoeding bijhouden als zelfstandige in België](https://notatechcompany.be/labeur/fietsvergoeding-belgie/index.md): Long-form Dutch guide on how Belgian self-employed people track the bike commute allowance — what to log, what the accountant expects, three mistakes to avoid, and how Labeur fits in.
+- [Labeur Privacy Policy (English)](https://notatechcompany.be/labeur/privacy.md): Full privacy policy. Short version: Labeur collects nothing — no data, no analytics, no network requests.
+- [Labeur Privacybeleid (Nederlands)](https://notatechcompany.be/labeur/nl/privacy.md): Dutch version of the privacy policy.
+
+## Optional
+
+- [llms-full.txt](https://notatechcompany.be/llms-full.txt): Full text of all of the above pages concatenated as Markdown, for clients that prefer a single document.
+- [sitemap.xml](https://notatechcompany.be/sitemap.xml): Machine-readable sitemap with hreflang alternates.
