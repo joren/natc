@@ -1,0 +1,68 @@
+title: not a tech company
+description: Human-first software, made in Gent, Belgium.
+url: https://notatechcompany.be
+baseurl: ""
+lang: en
+
+# Build settings
+markdown: kramdown
+# .md files in this repo are AI/LLM feeds (parallel to llms.txt) — they must
+# be served as raw markdown at their original URLs. Disabling markdown_ext
+# stops Jekyll from auto-rendering .md files to .html and lets them pass
+# through as static files.
+markdown_ext: ""
+theme: null
+plugins:
+  - jekyll-seo-tag
+
+# Don't process the minima theme's SCSS — we write our own CSS inline
+sass:
+  style: compressed
+
+# Keep .md files as raw LLM-readable feeds: only files with YAML front matter
+# are processed. None of the .md files in this repo have front matter, so
+# Jekyll passes them through as static files at their original URLs.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - output
+  - README.md
+  - CLAUDE.md
+  - "*.gemspec"
+
+# Default front matter for every page
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
+  - scope:
+      path: "labeur"
+    values:
+      design: labeur
+  - scope:
+      path: "labeur/nl"
+    values:
+      lang: nl
+
+# Site-wide constants used by includes
+company:
+  name: "Not A Tech Company"
+  display_name: "not a tech company"
+  vat: "BE1033.576.768"
+  city: "Gent"
+  country: "Belgium"
+  website: "https://notatechcompany.be"
+
+labeur:
+  app_store_url: "https://apps.apple.com/be/app/labeur/id6761388629"
+  price_eur: "2,99"
+  ios_min: "17"
+
+# kramdown options
+kramdown:
+  input: GFM
+  hard_wrap: false
+  smart_quotes: ["apos", "apos", "quot", "quot"]

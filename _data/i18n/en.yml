@@ -1,0 +1,69 @@
+# English strings shared across Labeur pages.
+# Access in templates: {{ site.data.i18n.en.<key> }}
+# Or, parameterised by page.lang: {{ site.data.i18n[page.lang].<key> }}
+
+nav:
+  back_to_labeur: "Back to Labeur"
+  privacy: "Privacy policy"
+  aria_main: "Main navigation"
+  aria_lang: "Language"
+  aria_logo_home: "Labeur Home"
+  aria_dark_toggle: "Toggle dark mode"
+
+footer:
+  rights: "All rights reserved."
+  made_in: "Made in Gent"
+
+skip_to_content: "Skip to content"
+
+privacy:
+  page_title: "Privacy Policy — Labeur"
+  page_description: "Privacy Policy for Labeur, a simple iOS work tracker. Labeur collects no data whatsoever. Everything stays on your device."
+  og_description: "Labeur collects no data. Zero tracking, no analytics, no accounts. Your work data stays on your device."
+  heading: "Privacy Policy"
+  last_updated: "Last updated: April 10, 2026"
+  short_version_heading: "The Short Version"
+  short_version_p1_html: "<strong>Labeur does not collect, store, or transmit any of your personal data.</strong> The app runs entirely on your device. We have no servers, no analytics, no tracking, and no way to access your information. That's it. That's the privacy policy."
+  short_version_p2: "If you want the detailed version for legal completeness, keep reading."
+  who_heading: "1. Who We Are"
+  who_p_html: "Labeur is developed and published by <strong>Not A Tech Company</strong>, a company registered in Belgium."
+  who_items:
+    - "Company: Not A Tech Company"
+    - "Location: Gent, Belgium"
+    - "VAT: BE1033.576.768"
+    - 'Website: <a href="https://notatechcompany.be" class="text-blue-500 hover:text-blue-700 underline">notatechcompany.be</a>'
+  data_heading: "2. Data We Collect"
+  data_p_html: "<strong>None.</strong> Labeur does not collect any data from you. Specifically:"
+  data_items_html:
+    - "We do <strong>not</strong> collect personal information (name, email, phone number, etc.)"
+    - "We do <strong>not</strong> collect usage data or analytics"
+    - "We do <strong>not</strong> collect device identifiers"
+    - "We do <strong>not</strong> collect location data"
+    - "We do <strong>not</strong> use cookies or tracking pixels"
+    - "We do <strong>not</strong> use any third-party analytics or advertising SDKs"
+    - "We do <strong>not</strong> collect crash reports"
+  storage_heading: "3. Data Storage"
+  storage_p_html: "All data you enter into Labeur (your work day logs, home/office preferences) is stored <strong>exclusively on your device</strong> using local on-device storage. This data:"
+  storage_items:
+    - "Never leaves your device"
+    - "Is not transmitted to any server"
+    - "Is not synced to any cloud service"
+    - "Is not accessible to us or any third party"
+    - "Is deleted when you delete the app"
+  third_party_heading: "4. Third-Party Services"
+  third_party_p_html: "Labeur does <strong>not</strong> integrate with any third-party services. There are no analytics tools, no advertising networks, no social media SDKs, and no crash reporting services embedded in the app. The app makes <strong>zero network requests</strong>."
+  children_heading: "5. Children's Privacy"
+  children_p: "Since Labeur does not collect any data from anyone, it does not collect data from children. The app is safe for use by anyone regardless of age."
+  sharing_heading: "6. Data Sharing"
+  sharing_p: "We do not share any data with third parties because we do not have any data to share. There is no data to sell, transfer, or disclose."
+  rights_heading: "7. Your Rights"
+  rights_p: "Under the General Data Protection Regulation (GDPR) and other applicable privacy laws, you have rights regarding your personal data. Since Labeur does not collect or process any personal data, these rights are inherently fulfilled:"
+  rights_items_html:
+    - "<strong>Right of access:</strong> There is no data to access."
+    - "<strong>Right to erasure:</strong> Deleting the app removes all locally stored data."
+    - "<strong>Right to data portability:</strong> Your data exists only on your device and is under your full control."
+    - "<strong>Right to object:</strong> There is no data processing to object to."
+  changes_heading: "8. Changes to This Policy"
+  changes_p: 'If we ever change this privacy policy, we will update this page with the new policy and update the "Last updated" date at the top. Given our commitment to collecting zero data, we do not anticipate significant changes.'
+  contact_heading: "9. Contact"
+  contact_p_html: 'If you have any questions about this privacy policy, you can reach us through our website at <a href="https://notatechcompany.be" class="text-blue-500 hover:text-blue-700 underline">notatechcompany.be</a>.'

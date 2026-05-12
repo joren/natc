@@ -1,0 +1,72 @@
+---
+layout: labeur-base
+---
+{%- assign p = site.data.i18n[page.lang].privacy -%}
+<main id="main-content" class="pt-28 pb-20">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="mb-12">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style="color: var(--color-text);">
+        {{ p.heading }}
+      </h1>
+      <p class="text-lg" style="color: var(--color-text-secondary);">
+        {{ p.last_updated }}
+      </p>
+    </div>
+
+    <div class="prose">
+
+      <h2>{{ p.short_version_heading }}</h2>
+      <p>{{ p.short_version_p1_html }}</p>
+      <p>{{ p.short_version_p2 }}</p>
+
+      <h2>{{ p.who_heading }}</h2>
+      <p>{{ p.who_p_html }}</p>
+      <ul>
+        {%- for item in p.who_items %}
+        <li>{{ item }}</li>
+        {%- endfor %}
+      </ul>
+
+      <h2>{{ p.data_heading }}</h2>
+      <p>{{ p.data_p_html }}</p>
+      <ul>
+        {%- for item in p.data_items_html %}
+        <li>{{ item }}</li>
+        {%- endfor %}
+      </ul>
+
+      <h2>{{ p.storage_heading }}</h2>
+      <p>{{ p.storage_p_html }}</p>
+      <ul>
+        {%- for item in p.storage_items %}
+        <li>{{ item }}</li>
+        {%- endfor %}
+      </ul>
+
+      <h2>{{ p.third_party_heading }}</h2>
+      <p>{{ p.third_party_p_html }}</p>
+
+      <h2>{{ p.children_heading }}</h2>
+      <p>{{ p.children_p }}</p>
+
+      <h2>{{ p.sharing_heading }}</h2>
+      <p>{{ p.sharing_p }}</p>
+
+      <h2>{{ p.rights_heading }}</h2>
+      <p>{{ p.rights_p }}</p>
+      <ul>
+        {%- for item in p.rights_items_html %}
+        <li>{{ item }}</li>
+        {%- endfor %}
+      </ul>
+
+      <h2>{{ p.changes_heading }}</h2>
+      <p>{{ p.changes_p }}</p>
+
+      <h2>{{ p.contact_heading }}</h2>
+      <p>{{ p.contact_p_html }}</p>
+
+    </div>
+  </div>
+</main>

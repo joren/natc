@@ -1,0 +1,10 @@
+<script>
+  // Inline so the theme is applied before paint (no FOUC).
+  (function() {
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
