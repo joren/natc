@@ -1,0 +1,43 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.company.name }}",
+  "alternateName": "{{ site.company.display_name }}",
+  "url": "{{ site.url }}/",
+  "logo": "{{ site.url }}/assets/logo/Jorendegroof_Logo_Full_Color_Rgb.svg",
+  "description": "A small Belgian software studio in Gent building human-first apps for everyday problems. Makers of Labeur, Pret and more.",
+  "slogan": "software with a soul",
+  "vatID": "{{ site.company.vat }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ site.company.city }}",
+    "addressCountry": "BE"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Joren De Groof"
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "SoftwareApplication",
+        "name": "Labeur",
+        "url": "{{ site.url }}/labeur/",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "iOS 17.0 or later"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "SoftwareApplication",
+        "name": "Pret",
+        "url": "https://pret-app.com",
+        "applicationCategory": "TravelApplication"
+      }
+    }
+  ]
+}
+</script>

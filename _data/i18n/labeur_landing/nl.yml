@@ -1,0 +1,224 @@
+# Dutch strings for the Labeur product landing page.
+# Access in templates: {{ site.data.i18n.labeur_landing.nl.<key> }}
+# Or, parameterised by page.lang: {{ site.data.i18n.labeur_landing[page.lang].<key> }}
+#
+# Keys mirror the structure of en.yml exactly — both files must keep
+# identical nesting and the same list lengths.
+
+meta:
+  page_title: "Labeur — De werkdag-tracker voor Belgische freelancers."
+  description: "Labeur is de iOS-app voor werkdagregistratie, gemaakt voor Belgische freelancers en eigenaars van een managementvennootschap. Log werkdagen, registreer thuis vs kantoor, tel je fietsvergoeding-kilometers en geef een nette maandrapportage aan je boekhouder. Alles op je toestel."
+  og_title: "Labeur — De werkdag-tracker voor Belgische freelancers."
+  og_description: "Gemaakt voor Belgische freelancers en eigenaars van een managementvennootschap. Volg werkdagen, thuis vs kantoor, fietsvergoeding-km en maandrapporten. Alles op je toestel."
+  og_locale: "nl_BE"
+  og_locale_alternate: "en_BE"
+  twitter_title: "Labeur — De werkdag-tracker voor Belgische freelancers."
+  twitter_description: "Volg werkdagen, thuis vs kantoor en fietsvergoeding-kilometers. Gemaakt in Gent voor Belgische zelfstandigen."
+  schema_operating_system: "iOS 17.0 of nieuwer"
+  schema_description: "Een eenvoudige iPhone-app voor Belgische zelfstandigen en eigenaars van een managementvennootschap. Houd werkdagen bij, registreer thuis- vs kantoordagen, tel fietsvergoeding-kilometers en geef een nette maandrapportage aan je boekhouder. Alles op je toestel."
+  schema_in_language: ["nl", "en"]
+
+skip_to_content: "Spring naar inhoud"
+
+nav:
+  for_belgians: "Voor Belgen"
+  how_it_works: "Zo werkt het"
+  features: "Functies"
+  privacy: "Privacy"
+  aria_main: "Main navigation"
+  aria_language: "Taal"
+  aria_logo_home: "Labeur Home"
+  aria_dark_toggle: "Donkere modus aan/uit"
+  aria_mobile_menu_toggle: "Mobiel menu aan/uit"
+
+hero:
+  badge: "Gemaakt in Gent voor Belgische freelancers"
+  # Hero title splits into a "lead" (animated word-by-word) and a final
+  # gradient phrase. Lead words are space-separated and rendered as
+  # individual <span class="hero-word"> elements by the layout.
+  title_lead: "De werkdaglog voor"
+  title_gradient_word: "Belgische freelancers."
+  subtitle_html: "Log een werkdag in twee taps. Houd thuis- vs kantoordagen bij, tel je <strong style=\"color: var(--color-text);\">fietsvergoeding</strong>-kilometers en geef een nette maandrapportage aan je <strong style=\"color: var(--color-text);\">boekhouder</strong>. Gemaakt voor zelfstandigen en eigenaars van een managementvennootschap."
+  app_store_aria: "Download Labeur in de App Store"
+  app_store_alt: "Download in de App Store"
+  price_note_html: "<strong style=\"color: var(--color-text);\">€2,99</strong> — eenmalige aankoop. Geen abonnement."
+  trust_note: "Enkel op je toestel. Geen accounts. Geen cloud. Geen tracking."
+  phone_aria_log: "Labeur scherm 'Dag loggen'"
+  phone_aria_reports: "Labeur scherm 'Rapporten'"
+
+# iOS mockup labels (used by both hero phones and the "how it works" demo).
+ios_mockup:
+  log_screen:
+    title: "Dag loggen"
+    nav_date: "vrijdag 8 mei 2026"
+    did_you_work: "Heb je gewerkt?"
+    yes_label: "Ja"
+    no_label: "Nee"
+    half_day: "Halve dag"
+    where_did_you_work: "Waar heb je gewerkt?"
+    home: "Thuis"
+    office: "Kantoor"
+    how_did_you_commute: "Hoe ben je naar het werk gegaan?"
+    commute_bike: "Fiets"
+    commute_train: "Trein"
+    commute_other: "Andere"
+    commute_hint: "Kies alles wat van toepassing is."
+  reports_screen:
+    title: "Rapporten"
+    nav_month: "mei 2026"
+    overview: "Overzicht"
+    days_worked: "Gewerkte dagen"
+    days_worked_value: "7,5"
+    location: "Locatie"
+    home: "Thuis"
+    home_value: "1,5"
+    office: "Kantoor"
+    office_value: "6"
+    commute: "Pendelen"
+    cycling: "Fietsen"
+    total_bike_km: "Totaal fietskilometers"
+    total_bike_km_value: "292,0 km"
+  tabs:
+    log: "Log"
+    reports: "Rapporten"
+    settings: "Instellingen"
+  lock_screen:
+    date: "vrijdag 8 mei"
+    time: "20:25"
+    notification_app: "LABEUR"
+    notification_when: "nu"
+    notification_title: "Heb je vandaag gewerkt?"
+    notification_text: "Tik om je dag te loggen in twee tikken."
+
+for_belgians:
+  eyebrow_html: "Gemaakt voor België 🇧🇪"
+  title_html: "Gebouwd voor hoe <span class=\"gradient-text\">Belgische freelancers écht werken.</span>"
+  subtitle: "Of je nu zelfstandige in hoofdberoep bent, een managementvennootschap runt, of iets daartussenin — Labeur houdt bij wat belangrijk is voor jou en je boekhouder."
+  cards:
+    - tag: "Fietsvergoeding"
+      title: "Elke kilometer telt"
+      body: "De Belgische belastingvrije fietsvergoeding wordt per gefietste kilometer berekend. Labeur logt elke fietsdag met afstand, zodat je sluitende registratie hebt wanneer je managementvennootschap of boekhouder erom vraagt."
+      # NL has a companion guide page; EN does not (keys still mirror for parity).
+      guide_link_text: "Lees onze gids over fietsvergoeding bijhouden"
+      guide_link_href: "/labeur/fietsvergoeding-belgie/"
+    - tag: "Thuiswerk-admin"
+      title: "Thuis vs kantoor, altijd duidelijk"
+      body: "Thuiswerkkosten verantwoorden of kantoor­aanwezigheid aan een klant aantonen? Tag elke werkdag als Thuis of Kantoor en moet nooit meer gokken op het einde van het kwartaal."
+      guide_link_text: ""
+      guide_link_href: ""
+    - tag: "Klaar voor je boekhouder"
+      title: "Een nette maandrapportage"
+      body: "Elke maand: totaal gewerkte dagen, verdeling thuis/kantoor, opsplitsing woon-werk, totale fietskilometers. Eén scherm. Doorsturen naar je boekhouder en verder met je dag."
+      guide_link_text: ""
+      guide_link_href: ""
+  stats:
+    - number: "2 taps"
+      label: "om een volledige werkdag te loggen"
+    - number: "100%"
+      label: "op je iPhone, nooit in de cloud"
+    - number: "€2,99"
+      label: "geen abonnementen"
+
+how_it_works:
+  eyebrow: "Zo werkt het"
+  title: "Twee tikken. Dag gelogd."
+  subtitle: "Van een dagelijkse herinnering tot een nette maandrapportage — geen frictie, niets vergeten."
+  phone_aria: "Labeur demo"
+  steps:
+    - title: "Krijg een dagelijkse herinnering"
+      text: "Een melding aan het einde van je werkdag, zodat je nooit vergeet te loggen."
+    - title: "Log in seconden"
+      text: "Heb je gewerkt? Waar? Hoe ben je gependeld? Drie tikken en je dag staat erin."
+    - title: "Bezorg je boekhouder een nette rapportage"
+      text: "Maandtotalen, verdeling thuis vs kantoor en fietskilometers — klaar om door te sturen."
+
+features:
+  eyebrow: "Functies"
+  title_html: "Alles wat je nodig hebt. <span class=\"gradient-text\">Niets wat je niet nodig hebt.</span>"
+  subtitle: "Labeur doet één ding goed: Belgische freelancers helpen hun werkdagen bij te houden zonder in de weg te zitten."
+  cards:
+    - title: "Loggen in twee taps"
+      body: "Open de app, tik \"heb je gewerkt?\", kies waar. Klaar in minder dan vijf seconden — zelfs tussen twee klantengesprekken door."
+    - title: "Halve dagen"
+      body: "'s Morgens gewerkt en 's namiddags verlof genomen? Markeer als halve dag, zodat je facturatie en rapporten kloppen."
+    - title: "Fietsvergoeding bijhouden"
+      body: "Totaal fietskilometers per maand, klaar voor je fietsvergoeding-papierwerk — RSZ, je managementvennootschap of je eigen zak."
+    - title: "Maandrapporten"
+      body: "Gewerkte dagen, verdeling thuis/kantoor, opsplitsing woon-werk, fiets-km — alles op één scherm. Kies een maand en stuur de screenshot naar je boekhouder."
+
+privacy_callout:
+  title_html: "Jouw data is <span class=\"gradient-text\">alleen van jou.</span>"
+  body: "Labeur is gebouwd vanuit een eenvoudige filosofie: jouw werkdata is niemands zaak behalve die van jezelf. We verzamelen absoluut niets. Geen analytics, geen crashrapporten, geen gebruiksdata, geen persoonsgegevens. Alles blijft op je toestel en verlaat het nooit."
+  stats:
+    - number: "0"
+      label: "Verzamelde data"
+    - number: "0"
+      label: "Externe SDK's"
+    - number: "0"
+      label: "Netwerkverzoeken"
+  cta_text: "Lees ons privacybeleid"
+  cta_href: "/labeur/nl/privacy.html"
+
+faq:
+  eyebrow: "FAQ"
+  title_html: "Veelgestelde <span class=\"gradient-text\">vragen.</span>"
+  subtitle: "Alles wat je wil weten voor je Labeur downloadt."
+  items:
+    - q: "Kan ik Labeur gebruiken om mijn fietsvergoeding bij te houden?"
+      a_html: |
+        <p>Ja. Met Labeur duid je een werkdag aan als fietsdag en voeg je het aantal gefietste kilometers toe. Op het einde van de maand krijg je een net overzicht van je fietsdagen en kilometers — precies wat je nodig hebt voor je fietsvergoeding, of die nu via je managementvennootschap, je boekhouder of je eigen administratie loopt.</p>
+      schema_answer: "Ja. Met Labeur duid je een werkdag aan als fietsdag en voeg je het aantal gefietste kilometers toe. Op het einde van de maand krijg je een net overzicht van je fietsdagen en kilometers — precies wat je nodig hebt voor je fietsvergoeding, of die nu via je managementvennootschap, je boekhouder of je eigen administratie loopt."
+    - q: "Is Labeur voor werknemers of zelfstandigen?"
+      a_html: |
+        <p>Labeur is gemaakt voor Belgische zelfstandigen, freelancers en eigenaars van een managementvennootschap. De structuur (werkdagen, halve dagen, thuis vs kantoor, woon-werkverkeer, maandrapporten) is opgebouwd rond hoe Belgische zelfstandige administratie écht werkt — niet rond werknemers-timesheets.</p>
+        <p>Werknemers die zelf een persoonlijk overzicht willen bijhouden van thuis-/kantoordagen en fietskilometers kunnen Labeur uiteraard ook gebruiken.</p>
+      schema_answer: "Labeur is gemaakt voor Belgische zelfstandigen, freelancers en eigenaars van een managementvennootschap. De structuur is opgebouwd rond hoe Belgische zelfstandige administratie werkt. Werknemers die zelf een persoonlijk overzicht willen bijhouden van thuis-/kantoordagen en fietskilometers kunnen Labeur ook gebruiken."
+    - q: "Slaat Labeur mijn gegevens op in de cloud?"
+      a_html: |
+        <p>Nee. Alles blijft op je iPhone. Geen accounts, geen cloud, geen analytics, geen externe SDK's en geen netwerkverkeer. Verwijder je de app, dan zijn je gegevens weg.</p>
+      schema_answer: "Nee. Alles blijft op je iPhone. Geen accounts, geen cloud, geen analytics, geen externe SDK's en geen netwerkverkeer. Verwijder je de app, dan zijn je gegevens weg."
+    - q: "Kan ik mijn maandrapport doorsturen naar mijn boekhouder?"
+      a_html: |
+        <p>Ja. Het rapportenscherm toont gewerkte dagen, halve dagen, thuis- vs kantoordagen, type woon-werkverkeer en totale fietskilometers voor elke maand die je kiest. De meeste gebruikers maken een screenshot en sturen die door naar hun boekhouder, of nemen de cijfers over in hun eigen maandoverzicht.</p>
+      schema_answer: "Ja. Het rapportenscherm toont gewerkte dagen, halve dagen, thuis- vs kantoordagen, type woon-werkverkeer en totale fietskilometers voor elke maand die je kiest. De meeste gebruikers maken een screenshot en sturen die door naar hun boekhouder, of nemen de cijfers over in hun eigen maandoverzicht."
+    - q: "Werkt Labeur zonder internet of account?"
+      a_html: |
+        <p>Ja. Labeur werkt volledig offline. Je hoeft geen account aan te maken, niet in te loggen en geen verbinding te hebben om een dag te loggen of een rapport te bekijken.</p>
+      schema_answer: "Ja. Labeur werkt volledig offline. Je hoeft geen account aan te maken, niet in te loggen en geen verbinding te hebben om een dag te loggen of een rapport te bekijken."
+    - q: "Wat kost Labeur?"
+      a_html: |
+        <p>€2,99 — eenmalige aankoop in de App Store. Geen abonnement, geen in-app aankopen, geen upsell.</p>
+      schema_answer: "€2,99 — eenmalige aankoop in de App Store. Geen abonnement, geen in-app aankopen, geen upsell."
+    - q: "Welke toestellen ondersteunt Labeur?"
+      a_html: |
+        <p>Labeur is een iPhone-app en vereist iOS 17 of nieuwer. Er is vandaag geen Android-, web- of Mac-versie.</p>
+      schema_answer: "Labeur is een iPhone-app en vereist iOS 17 of nieuwer. Er is vandaag geen Android-, web- of Mac-versie."
+
+cta_band:
+  title: "Minder admin. Meer werk."
+  body: "Stop met gokken hoeveel dagen je vorige maand thuis werkte. Gemaakt in Gent voor Belgische freelancers en eigenaars van een managementvennootschap — door Not A Tech Company."
+  app_store_alt: "Download in de App Store"
+  app_store_aria: "Download Labeur in de App Store"
+  visit_company: "Bezoek Not A Tech Company"
+  price_note_html: "<strong class=\"text-white\">€2,99</strong> — eenmalige aankoop. Geen abonnement, nooit."
+
+footer:
+  tagline: "Een eenvoudige werkdag-tracker voor iOS. Met zorg gemaakt in Gent, België."
+  product_heading: "Product"
+  company_heading: "Bedrijf"
+  legal_heading: "Juridisch"
+  product_links:
+    - text: "Functies"
+      href: "#features"
+    - text: "Privacy"
+      href: "#privacy"
+  company_links:
+    - text: "Not A Tech Company"
+      href: "https://notatechcompany.be"
+    - text: "Alle producten"
+      href: "https://notatechcompany.be/#products"
+  legal_links:
+    - text: "Privacybeleid"
+      href: "/labeur/nl/privacy.html"
+  copyright_suffix: "Not A Tech Company. Alle rechten voorbehouden."
+  vat: "BTW: BE1033.576.768"

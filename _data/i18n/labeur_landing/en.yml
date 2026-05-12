@@ -1,0 +1,224 @@
+# English strings for the Labeur product landing page.
+# Access in templates: {{ site.data.i18n.labeur_landing.en.<key> }}
+# Or, parameterised by page.lang: {{ site.data.i18n.labeur_landing[page.lang].<key> }}
+#
+# Keys mirror the structure of nl.yml exactly — both files must keep
+# identical nesting and the same list lengths.
+
+meta:
+  page_title: "Labeur — The workday tracker for Belgian freelancers."
+  description: "Labeur is the iOS workday tracker built for Belgian freelancers and management company owners. Log days, track home vs office, count bike allowance kilometers, and hand a clean monthly report to your accountant. All on-device."
+  og_title: "Labeur — The workday tracker for Belgian freelancers."
+  og_description: "Built for Belgian freelancers and management company owners. Track workdays, home vs office, bike allowance km, and monthly reports. All on-device."
+  og_locale: "en_BE"
+  og_locale_alternate: "nl_BE"
+  twitter_title: "Labeur — The workday tracker for Belgian freelancers."
+  twitter_description: "Track workdays, home vs office, bike allowance km, and monthly reports. Built in Gent for Belgian freelancers."
+  schema_operating_system: "iOS 17.0 or later"
+  schema_description: "A simple iPhone workday tracker for Belgian freelancers and management company owners. Log workdays, track home vs office days, count bike allowance kilometers and hand a clean monthly report to your accountant. All on-device."
+  schema_in_language: ["en", "nl"]
+
+skip_to_content: "Skip to content"
+
+nav:
+  for_belgians: "For Belgians"
+  how_it_works: "How it works"
+  features: "Features"
+  privacy: "Privacy"
+  aria_main: "Main navigation"
+  aria_language: "Language"
+  aria_logo_home: "Labeur Home"
+  aria_dark_toggle: "Toggle dark mode"
+  aria_mobile_menu_toggle: "Toggle mobile menu"
+
+hero:
+  badge: "Made in Gent for Belgian freelancers"
+  # Hero title splits into a "lead" (animated word-by-word) and a final
+  # gradient phrase. Lead words are space-separated and rendered as
+  # individual <span class="hero-word"> elements by the layout.
+  title_lead: "The workday log for"
+  title_gradient_word: "Belgian freelancers."
+  subtitle_html: "Log a workday in two taps. Track home vs office days, count your <strong style=\"color: var(--color-text);\">bike allowance</strong> kilometers, and hand a clean monthly report to your <strong style=\"color: var(--color-text);\">accountant</strong>. Built for freelancers and management company owners."
+  app_store_aria: "Download Labeur on the App Store"
+  app_store_alt: "Download on the App Store"
+  price_note_html: "<strong style=\"color: var(--color-text);\">€2.99</strong> — one-time purchase. No subscription."
+  trust_note: "On-device only. No accounts. No cloud. No tracking."
+  phone_aria_log: "Labeur Log Day screen"
+  phone_aria_reports: "Labeur Reports screen"
+
+# iOS mockup labels (used by both hero phones and the "how it works" demo).
+ios_mockup:
+  log_screen:
+    title: "Log Day"
+    nav_date: "Thu, 14 May 2026"
+    did_you_work: "Did you work?"
+    yes_label: "Yes"
+    no_label: "No"
+    half_day: "Half day"
+    where_did_you_work: "Where did you work?"
+    home: "Home"
+    office: "Office"
+    how_did_you_commute: "How did you commute?"
+    commute_bike: "Bike"
+    commute_train: "Train"
+    commute_other: "Other"
+    commute_hint: "Pick all that apply."
+  reports_screen:
+    title: "Reports"
+    nav_month: "May 2026"
+    overview: "Overview"
+    days_worked: "Days worked"
+    days_worked_value: "7.5"
+    location: "Location"
+    home: "Home"
+    home_value: "1.5"
+    office: "Office"
+    office_value: "6"
+    commute: "Commute"
+    cycling: "Cycling"
+    total_bike_km: "Total bike km"
+    total_bike_km_value: "292.0 km"
+  tabs:
+    log: "Log"
+    reports: "Reports"
+    settings: "Settings"
+  lock_screen:
+    date: "Thursday, 14 May"
+    time: "20:25"
+    notification_app: "LABEUR"
+    notification_when: "now"
+    notification_title: "Did you work today?"
+    notification_text: "Tap to log your day in two taps."
+
+for_belgians:
+  eyebrow_html: "Made for Belgium 🇧🇪"
+  title_html: "Built for the way <span class=\"gradient-text\">Belgian freelancers actually work.</span>"
+  subtitle: "Whether you're a full-time freelancer, running a management company, or somewhere in between — Labeur tracks the things that matter to you and your accountant."
+  cards:
+    - tag: "Fietsvergoeding"
+      title: "Every kilometer counts"
+      body: "Belgium's tax-free bike allowance pays per kilometer commuted. Labeur logs every bike day with distance, so you have airtight records when your management company or accountant needs them."
+      # No companion guide page in EN yet — keep keys present so structure matches NL.
+      guide_link_text: ""
+      guide_link_href: ""
+    - tag: "Thuiswerk admin"
+      title: "Home vs office, always clear"
+      body: "Justifying home-office expenses or proving office presence to a client? Tag every workday as Home or Office and never guess at the end of the quarter again."
+      guide_link_text: ""
+      guide_link_href: ""
+    - tag: "Boekhouder-ready"
+      title: "A clean monthly report"
+      body: "Every month: total days worked, home/office split, commute breakdown, total cycling kilometers. One screen. Forward it to your accountant and move on with your day."
+      guide_link_text: ""
+      guide_link_href: ""
+  stats:
+    - number: "2 taps"
+      label: "to log a full workday"
+    - number: "100%"
+      label: "on your iPhone, never in the cloud"
+    - number: "€2,99"
+      label: "no subscriptions, ever"
+
+how_it_works:
+  eyebrow: "How it works"
+  title: "Two taps. Day logged."
+  subtitle: "From a daily reminder to a clean monthly report — no friction, no forgetting."
+  phone_aria: "Labeur demo"
+  steps:
+    - title: "Get a daily reminder"
+      text: "A push notification at the end of the workday so you never forget to log."
+    - title: "Log in seconds"
+      text: "Did you work? Where? How did you commute? Three taps and the day is in."
+    - title: "Hand a clean report to your accountant"
+      text: "Monthly totals, home vs office split, and bike kilometers — ready to share."
+
+features:
+  eyebrow: "Features"
+  title_html: "Everything you need. <span class=\"gradient-text\">Nothing you don't.</span>"
+  subtitle: "Labeur does one thing well: it helps Belgian freelancers keep track of their workdays without getting in the way."
+  cards:
+    - title: "Two-tap logging"
+      body: "Open the app, tap \"did you work?\", pick where. Done in under five seconds — even between client calls."
+    - title: "Half-day support"
+      body: "Worked the morning, took a half-day leave? Flag it as a half day so your invoicing and reports add up correctly."
+    - title: "Fietsvergoeding tracking"
+      body: "Total bike kilometers per month, ready for your bike allowance paperwork — RSZ, your management company, or your own pocket."
+    - title: "Monthly reports"
+      body: "Days worked, home/office split, commute breakdown, cycling km — all on one screen. Pick any month, screenshot it for your accountant."
+
+privacy_callout:
+  title_html: "Your data is <span class=\"gradient-text\">yours alone.</span>"
+  body: "Labeur was built with a simple philosophy: your work data is nobody's business but your own. We collect absolutely nothing. No analytics, no crash reporting, no usage data, no personal information. Everything lives on your device and never leaves it."
+  stats:
+    - number: "0"
+      label: "Data collected"
+    - number: "0"
+      label: "Third-party SDKs"
+    - number: "0"
+      label: "Network requests"
+  cta_text: "Read Our Privacy Policy"
+  cta_href: "/labeur/privacy.html"
+
+faq:
+  eyebrow: "FAQ"
+  title_html: "Frequently asked <span class=\"gradient-text\">questions.</span>"
+  subtitle: "Everything you might want to know before downloading Labeur."
+  items:
+    - q: "Can I use Labeur to track my fietsvergoeding (bike allowance)?"
+      a_html: |
+        <p>Yes. Labeur lets you mark a workday as a bike commute and add the kilometers you cycled. At the end of the month you get a clean total of bike days and kilometers — exactly what you need for your bike allowance paperwork, whether that goes through your management company, your accountant or your own bookkeeping.</p>
+      schema_answer: "Yes. Labeur lets you mark a workday as a bike commute and add the kilometers you cycled. At the end of the month you get a clean total of bike days and kilometers — exactly what you need for your bike allowance paperwork, whether that goes through your management company, your accountant or your own bookkeeping."
+    - q: "Is Labeur for employees or freelancers?"
+      a_html: |
+        <p>Labeur is built for Belgian freelancers, zelfstandigen and management company owners. The structure (workdays, half days, home vs office, commute method, monthly reports) is designed around how Belgian self-employed admin actually works — not around employee timesheets.</p>
+        <p>That said, employees who want to keep a personal log of home/office days and bike kilometers can absolutely use it too.</p>
+      schema_answer: "Labeur is built for Belgian freelancers, zelfstandigen and management company owners. The structure (workdays, half days, home vs office, commute method, monthly reports) is designed around how Belgian self-employed admin actually works. Employees who want to keep a personal log of home/office days and bike kilometers can use it too."
+    - q: "Does Labeur store my data in the cloud?"
+      a_html: |
+        <p>No. Everything stays on your iPhone. There are no accounts, no cloud sync, no analytics, no third-party SDKs and no network requests. If you delete the app, the data is gone.</p>
+      schema_answer: "No. Everything stays on your iPhone. There are no accounts, no cloud sync, no analytics, no third-party SDKs and no network requests. If you delete the app, the data is gone."
+    - q: "Can I send my monthly report to my accountant?"
+      a_html: |
+        <p>Yes. The reports screen shows days worked, half days, home vs office split, commute breakdown and total cycling kilometers for any month you pick. Most users screenshot the month and send it to their boekhouder, or copy the numbers into their own monthly overview.</p>
+      schema_answer: "Yes. The reports screen shows days worked, half days, home vs office split, commute breakdown and total cycling kilometers for any month you pick. Most users screenshot the month and send it to their boekhouder, or copy the numbers into their own monthly overview."
+    - q: "Does Labeur work without internet or an account?"
+      a_html: |
+        <p>Yes. Labeur works fully offline. You don't create an account, you don't log in, and you don't need a connection to log a day or view a report.</p>
+      schema_answer: "Yes. Labeur works fully offline. You don't create an account, you don't log in, and you don't need a connection to log a day or view a report."
+    - q: "What does Labeur cost?"
+      a_html: |
+        <p>€2.99 — a one-time purchase on the App Store. No subscription, no in-app purchases, no upsell.</p>
+      schema_answer: "€2.99 — a one-time purchase on the App Store. No subscription, no in-app purchases, no upsell."
+    - q: "Which devices does Labeur support?"
+      a_html: |
+        <p>Labeur is an iPhone app and requires iOS 17 or later. There is no Android, web or Mac version today.</p>
+      schema_answer: "Labeur is an iPhone app and requires iOS 17 or later. There is no Android, web or Mac version today."
+
+cta_band:
+  title: "Less admin. More werk."
+  body: "Stop guessing how many days you worked from home last month. Built in Gent for Belgian freelancers and management company owners — by Not A Tech Company."
+  app_store_alt: "Download on the App Store"
+  app_store_aria: "Download Labeur on the App Store"
+  visit_company: "Visit Not A Tech Company"
+  price_note_html: "<strong class=\"text-white\">€2.99</strong> — one-time purchase. No subscription, ever."
+
+footer:
+  tagline: "A simple work tracker for iOS. Made with care in Gent, Belgium."
+  product_heading: "Product"
+  company_heading: "Company"
+  legal_heading: "Legal"
+  product_links:
+    - text: "Features"
+      href: "#features"
+    - text: "Privacy"
+      href: "#privacy"
+  company_links:
+    - text: "Not A Tech Company"
+      href: "https://notatechcompany.be"
+    - text: "All Products"
+      href: "https://notatechcompany.be/#products"
+  legal_links:
+    - text: "Privacy Policy"
+      href: "/labeur/privacy.html"
+  copyright_suffix: "Not A Tech Company. All rights reserved."
+  vat: "VAT: BE1033.576.768"
