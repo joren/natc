@@ -1,0 +1,44 @@
+{%- assign t = site.data.i18n.labeur_landing[page.lang] -%}
+{%- assign canonical_url = site.url | append: page.canonical_url | default: page.url -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Labeur",
+  "operatingSystem": {{ t.meta.schema_operating_system | jsonify }},
+  "applicationCategory": "ProductivityApplication",
+  "description": {{ t.meta.schema_description | jsonify }},
+  "url": {{ canonical_url | jsonify }},
+  "downloadUrl": {{ site.labeur.app_store_url | jsonify }},
+  "inLanguage": {{ t.meta.schema_in_language | jsonify }},
+  "offers": {
+    "@type": "Offer",
+    "price": "2.99",
+    "priceCurrency": "EUR"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Not A Tech Company",
+    "url": "https://notatechcompany.be/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": {% if page.lang == 'nl' %}"nl-BE"{% else %}"en-BE"{% endif %},
+  "mainEntity": [
+    {%- for item in t.faq.items %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.schema_answer | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
