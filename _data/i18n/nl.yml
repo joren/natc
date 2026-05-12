@@ -1,0 +1,68 @@
+# Nederlandse vertalingen, gedeeld over Labeur-pagina's.
+# Toegang in templates: {{ site.data.i18n.nl.<key> }}
+
+nav:
+  back_to_labeur: "Terug naar Labeur"
+  privacy: "Privacybeleid"
+  aria_main: "Hoofdnavigatie"
+  aria_lang: "Taal"
+  aria_logo_home: "Labeur Home"
+  aria_dark_toggle: "Donkere modus aan/uit"
+
+footer:
+  rights: "Alle rechten voorbehouden."
+  made_in: "Gemaakt in Gent"
+
+skip_to_content: "Spring naar inhoud"
+
+privacy:
+  page_title: "Privacybeleid — Labeur"
+  page_description: "Privacybeleid van Labeur, een eenvoudige iOS-werkdag-tracker. Labeur verzamelt absoluut geen data. Alles blijft op je toestel."
+  og_description: "Labeur verzamelt geen data. Geen tracking, geen analytics, geen accounts. Je werkdata blijft op je toestel."
+  heading: "Privacybeleid"
+  last_updated: "Laatst bijgewerkt: 10 april 2026"
+  short_version_heading: "De korte versie"
+  short_version_p1_html: "<strong>Labeur verzamelt, bewaart of verzendt geen enkele persoonlijke data.</strong> De app draait volledig op je toestel. We hebben geen servers, geen analytics, geen tracking en geen manier om bij je gegevens te komen. Dat is het. Dat is het privacybeleid."
+  short_version_p2: "Wil je toch de uitgebreide versie voor juridische volledigheid? Lees dan verder."
+  who_heading: "1. Wie we zijn"
+  who_p_html: "Labeur wordt ontwikkeld en uitgegeven door <strong>Not A Tech Company</strong>, een onderneming gevestigd in België."
+  who_items:
+    - "Bedrijf: Not A Tech Company"
+    - "Locatie: Gent, België"
+    - "BTW: BE1033.576.768"
+    - 'Website: <a href="https://notatechcompany.be" class="text-blue-500 hover:text-blue-700 underline">notatechcompany.be</a>'
+  data_heading: "2. Welke data we verzamelen"
+  data_p_html: "<strong>Geen.</strong> Labeur verzamelt geen enkele data van jou. Specifiek:"
+  data_items_html:
+    - "We verzamelen <strong>geen</strong> persoonsgegevens (naam, e-mail, telefoonnummer enz.)"
+    - "We verzamelen <strong>geen</strong> gebruiksdata of analytics"
+    - "We verzamelen <strong>geen</strong> toestelidentificatoren"
+    - "We verzamelen <strong>geen</strong> locatiegegevens"
+    - "We gebruiken <strong>geen</strong> cookies of tracking pixels"
+    - "We gebruiken <strong>geen</strong> externe analytics- of advertentie-SDK's"
+    - "We verzamelen <strong>geen</strong> crashrapporten"
+  storage_heading: "3. Opslag van data"
+  storage_p_html: "Alle data die je in Labeur invoert (je werkdagregistraties, voorkeuren voor thuis/kantoor) wordt <strong>uitsluitend op je toestel</strong> bewaard met lokale opslag. Deze data:"
+  storage_items:
+    - "Verlaat nooit je toestel"
+    - "Wordt naar geen enkele server verzonden"
+    - "Wordt met geen enkele clouddienst gesynchroniseerd"
+    - "Is voor ons of derden niet toegankelijk"
+    - "Wordt verwijderd wanneer je de app verwijdert"
+  third_party_heading: "4. Diensten van derden"
+  third_party_p_html: "Labeur integreert met <strong>geen</strong> enkele dienst van derden. Er zijn geen analyticstools, geen advertentienetwerken, geen sociale-media-SDK's en geen crashrapportagediensten in de app verwerkt. De app doet <strong>nul netwerkverzoeken</strong>."
+  children_heading: "5. Privacy van kinderen"
+  children_p: "Aangezien Labeur van niemand data verzamelt, verzamelt de app ook geen data van kinderen. De app is veilig in gebruik voor iedereen, ongeacht leeftijd."
+  sharing_heading: "6. Delen van data"
+  sharing_p: "We delen geen data met derden, want we hebben geen data om te delen. Er is niets om te verkopen, over te dragen of bekend te maken."
+  rights_heading: "7. Jouw rechten"
+  rights_p: "Onder de Algemene Verordening Gegevensbescherming (AVG/GDPR) en andere toepasselijke privacywetgeving heb je rechten met betrekking tot je persoonsgegevens. Aangezien Labeur geen persoonsgegevens verzamelt of verwerkt, zijn deze rechten automatisch vervuld:"
+  rights_items_html:
+    - "<strong>Recht op inzage:</strong> er is geen data om in te zien."
+    - "<strong>Recht op vergetelheid:</strong> door de app te verwijderen verdwijnt alle lokaal opgeslagen data."
+    - "<strong>Recht op gegevensoverdraagbaarheid:</strong> je data staat enkel op je toestel en is volledig onder jouw controle."
+    - "<strong>Recht van bezwaar:</strong> er is geen gegevensverwerking om bezwaar tegen te maken."
+  changes_heading: "8. Wijzigingen aan dit beleid"
+  changes_p: 'Als we dit privacybeleid ooit wijzigen, werken we deze pagina bij met het nieuwe beleid en passen we de datum "Laatst bijgewerkt" bovenaan aan. Gezien onze toewijding om nul data te verzamelen, verwachten we geen significante wijzigingen.'
+  contact_heading: "9. Contact"
+  contact_p_html: 'Heb je vragen over dit privacybeleid? Je kunt ons bereiken via onze website op <a href="https://notatechcompany.be" class="text-blue-500 hover:text-blue-700 underline">notatechcompany.be</a>.'

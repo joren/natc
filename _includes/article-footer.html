@@ -1,0 +1,16 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign home = "/labeur/" -%}
+{%- assign privacy = "/labeur/privacy.html" -%}
+{%- if page.lang == "nl" %}{% assign home = "/labeur/nl/" %}{% assign privacy = "/labeur/nl/privacy.html" %}{% endif -%}
+<footer class="py-12 border-t" style="border-color: var(--color-border); background-color: var(--color-surface);">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-sm" style="color: var(--color-text-muted);">
+      &copy; <span id="footer-year"></span> {{ site.company.name }} · {{ t.footer.made_in | default: "Made in Gent" }}
+    </p>
+    <div class="flex items-center gap-6 text-sm" style="color: var(--color-text-muted);">
+      <a href="{{ home }}" class="hover:text-blue-500 transition-colors">Labeur</a>
+      <a href="{{ privacy }}" class="hover:text-blue-500 transition-colors">{{ t.nav.privacy }}</a>
+      <a href="{{ site.company.website }}" class="hover:text-blue-500 transition-colors">NATC</a>
+    </div>
+  </div>
+</footer>

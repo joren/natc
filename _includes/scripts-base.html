@@ -1,0 +1,14 @@
+<script>
+  function toggleDark() {
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme',
+      document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+    );
+  }
+
+  // Footer year — only sets if a #footer-year span exists on the page.
+  (function() {
+    var el = document.getElementById('footer-year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+</script>

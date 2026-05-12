@@ -1,0 +1,41 @@
+{%- assign canonical = page.canonical_url | default: page.url -%}
+{%- assign og_title = page.og_title | default: page.title -%}
+{%- assign og_description = page.og_description | default: page.description -%}
+{%- assign og_type = page.og_type | default: "website" -%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<meta property="og:title" content="{{ og_title }}">
+<meta property="og:description" content="{{ og_description }}">
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:url" content="{{ site.url }}{{ canonical }}">
+{%- if page.og_image %}
+<meta property="og:image" content="{{ page.og_image }}">
+{%- endif %}
+{%- if page.og_locale %}
+<meta property="og:locale" content="{{ page.og_locale }}">
+{%- if page.og_locale_alternate %}
+<meta property="og:locale:alternate" content="{{ page.og_locale_alternate }}">
+{%- endif %}
+{%- endif %}
+<meta name="twitter:card" content="{{ page.twitter_card | default: 'summary_large_image' }}">
+{%- if page.twitter_title %}
+<meta name="twitter:title" content="{{ page.twitter_title }}">
+{%- endif %}
+{%- if page.twitter_description %}
+<meta name="twitter:description" content="{{ page.twitter_description }}">
+{%- endif %}
+{%- if page.twitter_image %}
+<meta name="twitter:image" content="{{ page.twitter_image }}">
+{%- endif %}
+{%- if page.og_image_width %}
+<meta property="og:image:width" content="{{ page.og_image_width }}">
+<meta property="og:image:height" content="{{ page.og_image_height }}">
+{%- endif %}
+<link rel="canonical" href="{{ site.url }}{{ canonical }}">
+{%- if page.hreflang %}
+{%- for entry in page.hreflang %}
+<link rel="alternate" hreflang="{{ entry.lang }}" href="{{ site.url }}{{ entry.href }}">
+{%- endfor %}
+{%- endif %}

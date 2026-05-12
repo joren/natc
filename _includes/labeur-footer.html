@@ -1,0 +1,18 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+<footer class="py-10" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);">
+  <div class="max-w-{{ include.max_width | default: '4xl' }} mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm" style="color: var(--color-text-secondary);">
+        &copy; <span id="footer-year"></span> {{ site.company.name }}. {{ t.footer.rights }}
+      </p>
+      <div class="flex items-center gap-6">
+        {%- if page.lang == "nl" %}
+        <a href="/labeur/nl/" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Labeur</a>
+        {%- else %}
+        <a href="/labeur/" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">Labeur</a>
+        {%- endif %}
+        <a href="{{ site.company.website }}" class="text-sm hover:text-blue-500 transition-colors" style="color: var(--color-text-secondary);">{{ site.company.name }}</a>
+      </div>
+    </div>
+  </div>
+</footer>

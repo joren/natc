@@ -1,0 +1,94 @@
+{%- if page.structured_data.article %}
+{%- assign a = page.structured_data.article -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ a.headline | jsonify }},
+  "description": {{ a.description | jsonify }},
+  "inLanguage": {{ a.inLanguage | jsonify }},
+  "url": {{ a.url | jsonify }},
+  "author": {
+    "@type": "Organization",
+    "name": "Not A Tech Company",
+    "url": "https://notatechcompany.be/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Not A Tech Company",
+    "url": "https://notatechcompany.be/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ a.url | jsonify }}
+  }
+}
+</script>
+{%- endif %}
+{%- if page.structured_data.software_application %}
+{%- assign s = page.structured_data.software_application -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": {{ s.name | jsonify }},
+  "operatingSystem": {{ s.operatingSystem | jsonify }},
+  "applicationCategory": {{ s.applicationCategory | jsonify }},
+  "description": {{ s.description | jsonify }},
+  "url": {{ s.url | jsonify }},
+  "downloadUrl": {{ s.downloadUrl | jsonify }},
+  "inLanguage": {{ s.inLanguage | jsonify }},
+  "offers": {
+    "@type": "Offer",
+    "price": {{ s.price | jsonify }},
+    "priceCurrency": {{ s.priceCurrency | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Not A Tech Company",
+    "url": "https://notatechcompany.be/"
+  }
+}
+</script>
+{%- endif %}
+{%- if page.structured_data.faqs %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": {{ page.structured_data.faq_lang | default: page.lang | jsonify }},
+  "mainEntity": [
+    {%- for q in page.structured_data.faqs %}
+    {
+      "@type": "Question",
+      "name": {{ q.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ q.a | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}
+{%- if page.structured_data.organization %}
+{%- assign o = page.structured_data.organization -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Not A Tech Company",
+  "alternateName": "not a tech company",
+  "url": "https://notatechcompany.be/",
+  "logo": {{ o.logo | jsonify }},
+  "description": {{ o.description | jsonify }}{% if o.same_as %},
+  "sameAs": {{ o.same_as | jsonify }}{% endif %}{% if o.address %},
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": {{ o.address.locality | jsonify }},
+    "addressCountry": {{ o.address.country | jsonify }}
+  }{% endif %}
+}
+</script>
+{%- endif %}

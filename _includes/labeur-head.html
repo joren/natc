@@ -1,0 +1,35 @@
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+{%- if page.use_anime %}
+<!-- Anime.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+{%- endif %}
+
+<!-- Google Fonts: DM Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind Config -->
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['"DM Sans"', 'sans-serif'],
+        },
+        colors: {
+          primary: { DEFAULT: '#2563EB', hover: '#1D4ED8', light: '#DBEAFE' },
+          surface: { DEFAULT: '#FFFFFF', dark: '#18181B' },
+        },
+        borderRadius: {
+          DEFAULT: '12px',
+          lg: '16px',
+          xl: '24px',
+        },
+      }
+    }
+  }
+</script>

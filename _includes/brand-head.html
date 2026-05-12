@@ -1,0 +1,30 @@
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Anime.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
+<!-- Google Fonts: Fraunces (display, slab-serif feel) + Plus Jakarta Sans (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500..900,0..100&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind Config -->
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          display: ['"Fraunces"', 'serif'],
+        },
+        colors: {
+          ink: { DEFAULT: '#273339', soft: '#3A4950' },
+          honey: { DEFAULT: '#F6A227', light: '#FCCC81', deep: '#E38B12' },
+          cream: { DEFAULT: '#FFF7EC', deep: '#FDF0D9' },
+        },
+      }
+    }
+  }
+</script>

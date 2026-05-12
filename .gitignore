@@ -1,1 +1,12 @@
 .DS_Store
+
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+Gemfile.lock
+
+# Local dependencies
+vendor/
+.bundle/
