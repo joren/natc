@@ -144,7 +144,7 @@ features:
     - title: "Fietsvergoeding tracking"
       body: "Total bike kilometers per month, ready for your bike allowance paperwork — RSZ, your management company, or your own pocket."
     - title: "Monthly reports"
-      body: "Days worked, home/office split, commute breakdown, cycling km — all on one screen. Pick any month, screenshot it for your accountant."
+      body: "Days worked, home/office split, commute breakdown, cycling km — all on one screen. Pick any month and export it as CSV for your accountant, or screenshot it."
 
 privacy_callout:
   title_html: "Your data is <span class=\"gradient-text\">yours alone.</span>"

@@ -64,7 +64,7 @@ Alles wat je nodig hebt. Niets wat je niet nodig hebt. Labeur doet één ding go
 - **Loggen in twee tikken.** Open de app, tik "heb je gewerkt?", kies waar. Klaar in minder dan vijf seconden — zelfs tussen twee klantengesprekken door.
 - **Halve dagen.** 's Morgens gewerkt en 's namiddags verlof genomen? Markeer als halve dag, zodat je facturatie en rapporten kloppen.
 - **Fietsvergoeding bijhouden.** Totaal fietskilometers per maand, klaar voor je fietsvergoeding-papierwerk — RSZ, je managementvennootschap of je eigen zak.
-- **Maandrapporten.** Gewerkte dagen, verdeling thuis/kantoor, opsplitsing woon-werk, fiets-km — alles op één scherm. Kies een maand en stuur de screenshot naar je boekhouder.
+- **Maandrapporten.** Gewerkte dagen, verdeling thuis/kantoor, opsplitsing woon-werk, fiets-km — alles op één scherm. Kies een maand en exporteer als CSV voor je boekhouder, of stuur een screenshot.
 
 ---
 

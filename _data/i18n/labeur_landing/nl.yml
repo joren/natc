@@ -144,7 +144,7 @@ features:
     - title: "Fietsvergoeding bijhouden"
       body: "Totaal fietskilometers per maand, klaar voor je fietsvergoeding-papierwerk — RSZ, je managementvennootschap of je eigen zak."
     - title: "Maandrapporten"
-      body: "Gewerkte dagen, verdeling thuis/kantoor, opsplitsing woon-werk, fiets-km — alles op één scherm. Kies een maand en stuur de screenshot naar je boekhouder."
+      body: "Gewerkte dagen, verdeling thuis/kantoor, opsplitsing woon-werk, fiets-km — alles op één scherm. Kies een maand en exporteer als CSV voor je boekhouder, of stuur een screenshot."
 
 privacy_callout:
   title_html: "Jouw data is <span class=\"gradient-text\">alleen van jou.</span>"

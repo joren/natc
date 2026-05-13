@@ -64,7 +64,7 @@ Everything you need. Nothing you don't. Labeur does one thing well: it helps Bel
 - **Two-tap logging.** Open the app, tap "did you work?", pick where. Done in under five seconds — even between client calls.
 - **Half-day support.** Worked the morning, took a half-day leave? Flag it as a half day so your invoicing and reports add up correctly.
 - **Fietsvergoeding tracking.** Total bike kilometers per month, ready for your bike allowance paperwork — RSZ, your management company, or your own pocket.
-- **Monthly reports.** Days worked, home/office split, commute breakdown, cycling km — all on one screen. Pick any month, screenshot it for your accountant.
+- **Monthly reports.** Days worked, home/office split, commute breakdown, cycling km — all on one screen. Pick any month and export it as CSV for your accountant, or screenshot it.
 
 ---
 
