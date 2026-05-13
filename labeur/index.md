@@ -94,7 +94,7 @@ Labeur is built for Belgian freelancers, zelfstandigen and management company ow
 No. Everything stays on your iPhone. There are no accounts, no cloud sync, no analytics, no third-party SDKs and no network requests. If you delete the app, the data is gone.
 
 **Can I send my monthly report to my accountant?**
-Yes. The reports screen shows days worked, half days, home vs office split, commute breakdown and total cycling kilometers for any month you pick. Most users screenshot the month and send it to their boekhouder, or copy the numbers into their own monthly overview.
+Yes. The reports screen shows days worked, half days, home vs office split, commute breakdown and total cycling kilometers for any month you pick. You can export the month as a CSV file straight to your boekhouder, screenshot the screen, or copy the numbers into your own monthly overview — whichever fits your workflow.
 
 **Does Labeur work without internet or an account?**
 Yes. Labeur works fully offline. You don't create an account, you don't log in, and you don't need a connection to log a day or view a report.

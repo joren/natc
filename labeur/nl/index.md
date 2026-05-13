@@ -94,7 +94,7 @@ Labeur is gemaakt voor Belgische zelfstandigen, freelancers en eigenaars van een
 Nee. Alles blijft op je iPhone. Geen accounts, geen cloud, geen analytics, geen externe SDK's en geen netwerkverkeer. Verwijder je de app, dan zijn je gegevens weg.
 
 **Kan ik mijn maandrapport doorsturen naar mijn boekhouder?**
-Ja. Het rapportenscherm toont gewerkte dagen, halve dagen, thuis- vs kantoordagen, type woon-werkverkeer en totale fietskilometers voor elke maand die je kiest. De meeste gebruikers maken een screenshot en sturen die door naar hun boekhouder, of nemen de cijfers over in hun eigen maandoverzicht.
+Ja. Het rapportenscherm toont gewerkte dagen, halve dagen, thuis- vs kantoordagen, type woon-werkverkeer en totale fietskilometers voor elke maand die je kiest. Je kan de maand exporteren als CSV-bestand en rechtstreeks doorsturen naar je boekhouder, een screenshot maken, of de cijfers overnemen in je eigen maandoverzicht — wat het beste in je workflow past.
 
 **Werkt Labeur zonder internet of account?**
 Ja. Labeur werkt volledig offline. Je hoeft geen account aan te maken, niet in te loggen en geen verbinding te hebben om een dag te loggen of een rapport te bekijken.
