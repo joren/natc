@@ -70,9 +70,9 @@ Op het einde van de maand zie je in één scherm:
 - de verdeling van je woon-werkverkeer (fiets, trein, auto, …),
 - en het totaal aantal gefietste kilometers voor die maand.
 
-Geen account, geen cloud, geen abonnement. Alles blijft op je toestel. **€2,99** als eenmalige aankoop in de App Store.
+Geen account, geen cloud. Alles blijft op je toestel. **€0,99/maand** of **€21,99** eenmalig in de App Store.
 
-→ [Download Labeur](https://apps.apple.com/be/app/labeur/id6761388629) — €2,99, eenmalige aankoop.
+→ [Download Labeur](https://apps.apple.com/be/app/labeur/id6761388629) — €0,99/maand of €21,99 eenmalig.
 
 ## Veelgestelde vragen
 

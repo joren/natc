@@ -58,7 +58,8 @@ company:
 
 labeur:
   app_store_url: "https://apps.apple.com/be/app/labeur/id6761388629"
-  price_eur: "2,99"
+  price_monthly_eur: "0,99"
+  price_lifetime_eur: "21,99"
   ios_min: "17"
 
 # kramdown options

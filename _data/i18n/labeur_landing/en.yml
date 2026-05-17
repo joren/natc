@@ -41,7 +41,8 @@ hero:
   subtitle_html: "Log a workday in two taps. Track home vs office days, count your <strong style=\"color: var(--color-text);\">bike allowance</strong> kilometers, and hand a clean monthly report to your <strong style=\"color: var(--color-text);\">accountant</strong>. Built for freelancers and management company owners."
   app_store_aria: "Download Labeur on the App Store"
   app_store_alt: "Download on the App Store"
-  price_note_html: "<strong style=\"color: var(--color-text);\">€2.99</strong> — one-time purchase. No subscription."
+  price_note_monthly_html: "<strong style=\"color: var(--color-text);\">€0.99/month</strong> — less than a daily bike commute earns it back."
+  price_note_lifetime_html: "<strong style=\"color: var(--color-text);\">€21.99</strong> — one-time. About 60 km of bike allowance."
   trust_note: "On-device only. No accounts. No cloud. No tracking."
   phone_aria_log: "Labeur Log Day screen"
   phone_aria_reports: "Labeur Reports screen"
@@ -116,8 +117,8 @@ for_belgians:
       label: "to log a full workday"
     - number: "100%"
       label: "on your iPhone, never in the cloud"
-    - number: "€2,99"
-      label: "no subscriptions, ever"
+    - number: "€21,99"
+      label: "lifetime — no subscription required"
 
 how_it_works:
   eyebrow: "How it works"
@@ -187,8 +188,8 @@ faq:
       schema_answer: "Yes. Labeur works fully offline. You don't create an account, you don't log in, and you don't need a connection to log a day or view a report."
     - q: "What does Labeur cost?"
       a_html: |
-        <p>€2.99 — a one-time purchase on the App Store. No subscription, no in-app purchases, no upsell.</p>
-      schema_answer: "€2.99 — a one-time purchase on the App Store. No subscription, no in-app purchases, no upsell."
+        <p>Two options on the App Store: <strong>€0.99/month</strong> as a subscription, or <strong>€21.99</strong> as a one-time purchase that's yours forever. Pick whichever fits — the lifetime price pays for itself in under two years versus monthly.</p>
+      schema_answer: "Two options on the App Store: €0.99/month as a subscription, or €21.99 as a one-time purchase that is yours forever. The lifetime price pays for itself in under two years versus monthly."
     - q: "Which devices does Labeur support?"
       a_html: |
         <p>Labeur is an iPhone app and requires iOS 17 or later. There is no Android, web or Mac version today.</p>
@@ -200,7 +201,8 @@ cta_band:
   app_store_alt: "Download on the App Store"
   app_store_aria: "Download Labeur on the App Store"
   visit_company: "Visit Not A Tech Company"
-  price_note_html: "<strong class=\"text-white\">€2.99</strong> — one-time purchase. No subscription, ever."
+  price_note_monthly_html: "<strong class=\"text-white\">€0.99/month</strong> — less than a daily bike commute earns it back."
+  price_note_lifetime_html: "<strong class=\"text-white\">€21.99</strong> — one-time. About 60 km of bike allowance."
 
 footer:
   tagline: "A simple work tracker for iOS. Made with care in Gent, Belgium."

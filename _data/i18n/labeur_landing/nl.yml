@@ -41,7 +41,8 @@ hero:
   subtitle_html: "Log een werkdag in twee taps. Houd thuis- vs kantoordagen bij, tel je <strong style=\"color: var(--color-text);\">fietsvergoeding</strong>-kilometers en geef een nette maandrapportage aan je <strong style=\"color: var(--color-text);\">boekhouder</strong>. Gemaakt voor zelfstandigen en eigenaars van een managementvennootschap."
   app_store_aria: "Download Labeur in de App Store"
   app_store_alt: "Download in de App Store"
-  price_note_html: "<strong style=\"color: var(--color-text);\">€2,99</strong> — eenmalige aankoop. Geen abonnement."
+  price_note_monthly_html: "<strong style=\"color: var(--color-text);\">€0,99/maand</strong> — minder dan je dagelijkse fietsrit naar het werk verdient het terug."
+  price_note_lifetime_html: "<strong style=\"color: var(--color-text);\">€21,99</strong> — eenmalig. Ongeveer 60 km fietsvergoeding."
   trust_note: "Enkel op je toestel. Geen accounts. Geen cloud. Geen tracking."
   phone_aria_log: "Labeur scherm 'Dag loggen'"
   phone_aria_reports: "Labeur scherm 'Rapporten'"
@@ -116,8 +117,8 @@ for_belgians:
       label: "om een volledige werkdag te loggen"
     - number: "100%"
       label: "op je iPhone, nooit in de cloud"
-    - number: "€2,99"
-      label: "geen abonnementen"
+    - number: "€21,99"
+      label: "levenslang — geen abonnement nodig"
 
 how_it_works:
   eyebrow: "Zo werkt het"
@@ -187,8 +188,8 @@ faq:
       schema_answer: "Ja. Labeur werkt volledig offline. Je hoeft geen account aan te maken, niet in te loggen en geen verbinding te hebben om een dag te loggen of een rapport te bekijken."
     - q: "Wat kost Labeur?"
       a_html: |
-        <p>€2,99 — eenmalige aankoop in de App Store. Geen abonnement, geen in-app aankopen, geen upsell.</p>
-      schema_answer: "€2,99 — eenmalige aankoop in de App Store. Geen abonnement, geen in-app aankopen, geen upsell."
+        <p>Twee opties in de App Store: <strong>€0,99/maand</strong> als abonnement, of <strong>€21,99</strong> als eenmalige aankoop die voor altijd van jou is. Kies wat past — de eenmalige prijs verdient zichzelf terug op minder dan twee jaar tegenover het abonnement.</p>
+      schema_answer: "Twee opties in de App Store: €0,99/maand als abonnement, of €21,99 als eenmalige aankoop die voor altijd van jou is. De eenmalige prijs verdient zichzelf terug op minder dan twee jaar tegenover het abonnement."
     - q: "Welke toestellen ondersteunt Labeur?"
       a_html: |
         <p>Labeur is een iPhone-app en vereist iOS 17 of nieuwer. Er is vandaag geen Android-, web- of Mac-versie.</p>
@@ -200,7 +201,8 @@ cta_band:
   app_store_alt: "Download in de App Store"
   app_store_aria: "Download Labeur in de App Store"
   visit_company: "Bezoek Not A Tech Company"
-  price_note_html: "<strong class=\"text-white\">€2,99</strong> — eenmalige aankoop. Geen abonnement, nooit."
+  price_note_monthly_html: "<strong class=\"text-white\">€0,99/maand</strong> — minder dan je dagelijkse fietsrit naar het werk verdient het terug."
+  price_note_lifetime_html: "<strong class=\"text-white\">€21,99</strong> — eenmalig. Ongeveer 60 km fietsvergoeding."
 
 footer:
   tagline: "Een eenvoudige werkdag-tracker voor iOS. Met zorg gemaakt in Gent, België."

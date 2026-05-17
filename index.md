@@ -34,7 +34,7 @@ Your smart holiday packing assistant. Tell Pret where you're going, when, and wi
 
 ### Labeur — *Track your work. Simply.* (Live)
 
-A simple work tracker that logs whether you worked today — and if you did, from home or the office. No accounts, no cloud sync, no tracking. Just your data, on your device. €2.99 one-time purchase, iOS only.
+A simple work tracker that logs whether you worked today — and if you did, from home or the office. No accounts, no cloud sync, no tracking. Just your data, on your device. €0.99/month or €21.99 lifetime, iOS only.
 
 → [Labeur product page](/labeur/) · [App Store](https://apps.apple.com/us/app/labeur/id6761388629)
 

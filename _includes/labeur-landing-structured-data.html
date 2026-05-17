@@ -12,9 +12,25 @@
   "downloadUrl": {{ site.labeur.app_store_url | jsonify }},
   "inLanguage": {{ t.meta.schema_in_language | jsonify }},
   "offers": {
-    "@type": "Offer",
-    "price": "2.99",
-    "priceCurrency": "EUR"
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": "0.99",
+    "highPrice": "21.99",
+    "offerCount": 2,
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Monthly subscription",
+        "price": "0.99",
+        "priceCurrency": "EUR"
+      },
+      {
+        "@type": "Offer",
+        "name": "One-time purchase",
+        "price": "21.99",
+        "priceCurrency": "EUR"
+      }
+    ]
   },
   "publisher": {
     "@type": "Organization",

@@ -6,7 +6,7 @@
 **Language:** English (Belgian English audience)
 **Dutch version:** [/labeur/nl/](/labeur/nl/)
 **Platform:** iPhone, iOS 17 or later
-**Price:** €2.99 — one-time purchase, no subscription
+**Price:** €0.99/month or €21.99 one-time (lifetime, no subscription)
 **App Store:** https://apps.apple.com/be/app/labeur/id6761388629
 **Made in:** Gent, Belgium by Not A Tech Company
 
@@ -18,7 +18,8 @@ The workday log for Belgian freelancers.
 
 Log a workday in two taps. Track home vs office days, count your **bike allowance** kilometers, and hand a clean monthly report to your **accountant**. Built for freelancers and management company owners.
 
-- €2.99 — one-time purchase. No subscription.
+- €0.99/month — less than a daily bike commute earns it back.
+- €21.99 — one-time. About 60 km of bike allowance.
 - On-device only. No accounts. No cloud. No tracking.
 
 ---
@@ -43,7 +44,7 @@ Every month: total days worked, home/office split, commute breakdown, total cycl
 
 - **2 taps** to log a full workday
 - **100%** on your iPhone, never in the cloud
-- **€2.99** — no subscriptions, ever
+- **€21.99** lifetime — no subscription required
 
 ---
 
@@ -100,7 +101,7 @@ Yes. The reports screen shows days worked, half days, home vs office split, comm
 Yes. Labeur works fully offline. You don't create an account, you don't log in, and you don't need a connection to log a day or view a report.
 
 **What does Labeur cost?**
-€2.99 — a one-time purchase on the App Store. No subscription, no in-app purchases, no upsell.
+Two options on the App Store: €0.99/month as a subscription, or €21.99 as a one-time purchase that's yours forever. Pick whichever fits — the lifetime price pays for itself in under two years versus monthly.
 
 **Which devices does Labeur support?**
 Labeur is an iPhone app and requires iOS 17 or later. There is no Android, web or Mac version today.

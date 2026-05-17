@@ -6,7 +6,7 @@
 **Taal:** Nederlands (Belgisch publiek)
 **Engelse versie:** [/labeur/](/labeur/)
 **Platform:** iPhone, iOS 17 of nieuwer
-**Prijs:** €2,99 — eenmalige aankoop, geen abonnement
+**Prijs:** €0,99/maand of €21,99 eenmalig (levenslang, geen abonnement)
 **App Store:** https://apps.apple.com/be/app/labeur/id6761388629
 **Gemaakt in:** Gent, België door Not A Tech Company
 
@@ -18,7 +18,8 @@ De werkdaglog voor Belgische freelancers.
 
 Log een werkdag in twee tikken. Houd thuis- vs kantoordagen bij, tel je **fietsvergoeding**-kilometers en geef een nette maandrapportage aan je **boekhouder**. Gemaakt voor zelfstandigen en eigenaars van een managementvennootschap.
 
-- €2,99 — eenmalige aankoop. Geen abonnement.
+- €0,99/maand — minder dan je dagelijkse fietsrit naar het werk verdient het terug.
+- €21,99 — eenmalig. Ongeveer 60 km fietsvergoeding.
 - Enkel op je toestel. Geen accounts. Geen cloud. Geen tracking.
 
 ---
@@ -43,7 +44,7 @@ Elke maand: totaal gewerkte dagen, verdeling thuis/kantoor, opsplitsing woon-wer
 
 - **2 tikken** om een volledige werkdag te loggen
 - **100%** op je iPhone, nooit in de cloud
-- **€2,99** — geen abonnementen
+- **€21,99** levenslang — geen abonnement nodig
 
 ---
 
@@ -100,7 +101,7 @@ Ja. Het rapportenscherm toont gewerkte dagen, halve dagen, thuis- vs kantoordage
 Ja. Labeur werkt volledig offline. Je hoeft geen account aan te maken, niet in te loggen en geen verbinding te hebben om een dag te loggen of een rapport te bekijken.
 
 **Wat kost Labeur?**
-€2,99 — eenmalige aankoop in de App Store. Geen abonnement, geen in-app aankopen, geen upsell.
+Twee opties in de App Store: €0,99/maand als abonnement, of €21,99 als eenmalige aankoop die voor altijd van jou is. Kies wat past — de eenmalige prijs verdient zichzelf terug op minder dan twee jaar tegenover het abonnement.
 
 **Welke toestellen ondersteunt Labeur?**
 Labeur is een iPhone-app en vereist iOS 17 of nieuwer. Er is vandaag geen Android-, web- of Mac-versie.
