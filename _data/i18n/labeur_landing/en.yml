@@ -85,7 +85,7 @@ ios_mockup:
     settings: "Settings"
   lock_screen:
     date: "Thursday, 14 May"
-    time: "20:25"
+    time: "18:00"
     notification_app: "LABEUR"
     notification_when: "now"
     notification_title: "Did you work today?"
